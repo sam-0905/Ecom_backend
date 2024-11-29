@@ -1,42 +1,28 @@
 import "./App.css";
-import logo from "./logo.png";
+import { Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="mockBee logo" width="180" height="180" />
-        <h1 className="brand-title">
-          Welcome to <span>mockBee!</span>
-        </h1>
-        <p className="brand-description">
-          Get started by editing <code>src/App.js</code>
-        </p>
-        <div className="links">
-          <a
-            href="https://mockbee.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore mockBee
-          </a>
-          <a
-            href="https://mockbee.netlify.app/docs/api/introduction"
-            target="_blank"
-            rel="noreferrer"
-          >
-            API Documentation
-          </a>
-          <a
-            href="https://github.com/neogcamp/mockBee"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Contribute
-          </a>
-        </div>
-      </header>
-    </div>
+    <>
+    <h1>App</h1>
+    {/* <Header/> */}
+    <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/body" element={<Body/>} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/mockman" element={<MockMan />} />
+
+        <Route path="/wish" element={<WishList />} />
+        <Route path="*" element={<Error />} /> 
+
+        {/* <Route path="/user" element={<UserComponent />} /> */}
+        {/* <Route path="/login" element={<LoginComp />} /> */}
+        {/* <Route path="/about" element={<AboutComponent />} /> */}
+        {/* this route shld also map to a component. */}
+        {/* <Route path="/product/:ProductId" element={<ProductComponent />} />
+        <Route path="/cateogry" element={<Category />} />*/}
+      </Routes>
+    </>
   );
 }
 

@@ -1,19 +1,20 @@
 import "./App.css";
-import { Routes,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Mockman from "mockman-js";
+
 
 function App() {
   return (
     <>
     <h1>App</h1>
-    {/* <Header/> */}
     <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/body" element={<Body/>} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/mockman" element={<MockMan />} />
+        <Route path="/mock" element={<Mockman/>} />
+        {/* <Route path="/" element={<Home/>} /> */}
+        {/* <Route path="/body" element={<Body/>} /> */}
+        {/* <Route path="/cart" element={<Cart />} /> */}
 
-        <Route path="/wish" element={<WishList />} />
-        <Route path="*" element={<Error />} /> 
+        {/* <Route path="/wish" element={<WishList />} /> */}
+        {/* <Route path="*" element={<Error />} />  */}
 
         {/* <Route path="/user" element={<UserComponent />} /> */}
         {/* <Route path="/login" element={<LoginComp />} /> */}

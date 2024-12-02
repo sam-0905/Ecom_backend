@@ -471,7 +471,6 @@ export const products = [
   categoryName: "Iphone Buds",
 },
 
-
 ];
 
  // -------------------------------------

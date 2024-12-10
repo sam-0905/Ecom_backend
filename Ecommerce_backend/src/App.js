@@ -1,12 +1,13 @@
 import "./App.css";
 import { Routes, Route } from 'react-router-dom';
 import Mockman from "mockman-js";
+import Header from "./Componets/Header";
 
 
 function App() {
   return (
     <>
-    <h1>App</h1>
+    <Header/>
     <Routes>
         <Route path="/mock" element={<Mockman/>} />
         {/* <Route path="/" element={<Home/>} /> */}

@@ -15,3 +15,35 @@
 body{
     margin: 0;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: auto;
+  background-color:var(--primary-color-);
+  color: var(--secondary-color-);
+  margin-top: 0;  
+  border-bottom: 1px solid black;
+}
+
+.Nav {
+  /* padding: 1rem;   */
+  cursor: pointer;
+}
+
+.Nav.link {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-right:0.5rem ;   
+}
+.Nav .container {
+  /* margin-right: 1rem; */
+  font-size: large;
+}
+a{
+  text-decoration: none;
+}

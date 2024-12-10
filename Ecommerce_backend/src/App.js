@@ -1,8 +1,9 @@
+import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 import { Routes, Route } from 'react-router-dom';
 import Mockman from "mockman-js";
-import Header from "./Componets/Header";
-
+import Header from "./components/Header";
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
     <Header/>
     <Routes>
         <Route path="/mock" element={<Mockman/>} />
-        {/* <Route path="/" element={<Home/>} /> */}
+        <Route path="/" element={<Home/>} />
         {/* <Route path="/body" element={<Body/>} /> */}
         {/* <Route path="/cart" element={<Cart />} /> */}
 

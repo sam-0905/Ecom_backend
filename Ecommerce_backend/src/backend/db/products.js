@@ -6,6 +6,7 @@ import { v4 as uuid } from "uuid";
  * */
 
 export const products = [
+//Mobile,watch,Bud,tabet
 
   //Samsung Products
   {

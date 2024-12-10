@@ -10,6 +10,7 @@ function App() {
     <>
     <Header/>
     <Routes>
+
         <Route path="/mock" element={<Mockman/>} />
         <Route path="/" element={<Home/>} />
         {/* <Route path="/body" element={<Body/>} /> */}

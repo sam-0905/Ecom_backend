@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Mockman from "mockman-js";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
+import Body from "./Body";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 
         <Route path="/mock" element={<Mockman/>} />
         <Route path="/" element={<Home/>} />
-        {/* <Route path="/body" element={<Body/>} /> */}
+        <Route path="/body" element={<Body/>} />
         {/* <Route path="/cart" element={<Cart />} /> */}
 
         {/* <Route path="/wish" element={<WishList />} /> */}

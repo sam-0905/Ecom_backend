@@ -412,6 +412,18 @@ export const products = [
 },
 {
   _id: uuid(),
+  title: "Apple Watch Seris 9",
+  company : "IPHONE",
+  price: 49990,
+  discount_price : 39999,
+  type: "Watch",
+  image : require("../../assets/ProductImg/Apple-watch-9.png"),
+  starRating: 4.0,
+  description: "GPS+Cellular with Light Pink Sport Loop - M/L(45mm Display, Pink Aluminium Case",
+  categoryName: "Iphone Watch",
+},
+{
+  _id: uuid(),
   title: "Apple Watch Series 10",
   company : "IPHONE",
   price: 49999,

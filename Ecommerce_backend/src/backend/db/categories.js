@@ -9,20 +9,22 @@ export const categories = [
   {
     _id: uuid(),
     categoryName: "Mobile Phones",
-      // image: require("")
+    image: require("../../assets/ProductImg/galaxy-s23.png")
   },
   {
     _id: uuid(),
     categoryName: "Watches",
-      // image: require("")
-  }, {
+      image: require("../../assets/ProductImg/Redmi_watch5g.png")
+  }, 
+  {
     _id: uuid(),
     categoryName: "Buds",
-      // image: require("")
-  }, {
+      image: require("../../assets/ProductImg/Redmi-Buds5c.png")
+  }, 
+  {
     _id: uuid(),
     categoryName: "Tablets",
-      // image: require("")
+      image: require("../../assets/ProductImg/ipad_mini_.png")
   },
 ];
 

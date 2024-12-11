@@ -1,6 +1,5 @@
 import { useState,useEffect } from "react";
 import axios from 'axios';
-import { products } from './backend/db/products';
 
 const Body = () =>{
 
@@ -32,26 +31,21 @@ const Body = () =>{
                 image,
                 price,
                 starRating,
-                inStock,
-                level,
-                fastDelivery,
-                 ratings,
+                ratings,
+                company,
         }) => (
-             <div className="product-card">
+             <div className="card">
 
                 <div className="card-container">
 
                  <div key={id} className="product-image"> 
                     <img src={image} width="100%" height="auto" alt={title} /> </div>
-                
-                    <div className="card-details">
                     <h3 className="product-title"> {title} </h3>
+                    <div className="card-details">
+                    {/* <div>Brand :{company}</div> */}
                     <div className="price-container">₹ {price}</div>
-                    <div className="stock-label">  {inStock && <div className="in-stock"> In Stock </div>}
-                    {!inStock && <div className="out-stock">  Out of Stock </div>}</div>
-                    <div>{level}</div>
                     <div className="rating fa fa-star" style={{marginTop:"4px"}}>
-                        <div className=".rating-stars">{ratings}</div>
+                        <div className="rating-stars">{ratings}</div>
                         <span class="rating-count">{starRating}</span>
                     </div>
                      {/* {fastDelivery ? (
@@ -67,16 +61,15 @@ const Body = () =>{
                     )}
                      */}
                     <button className="button-54" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
-                 </div>
-
-                 <button className="button-32 wish-btn" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
+                    <button className="button-32 wish-btn" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                  </button>
+                 </div>
               </div>
                    
              </div>                       
              )
               )}
-            </div>
+          </div>
          </>
 }
 

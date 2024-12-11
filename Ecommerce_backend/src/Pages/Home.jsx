@@ -1,17 +1,28 @@
-import {useState,useEffect } from "react";
+import {useState,useEffect, use } from "react";
 import homePage from "../assets/ProductImg/homePage.png"
 import axios from "axios";
+import { useNavigate } from "react-router";
 
 const Home = () => {
-    const [category,setCategory] = useState([]) 
+    const [category,setCategory] = useState([])   
+    const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get("/api/categories")
-        .then((res) => {
-        setCategory(res.data.categories)
-        console.log(res.data.categories)
-        })
-    })
+            axios.get("/api/categories")
+            .then((res) => {
+            setCategory(res.data.categories)
+            console.log(res.data.categories)
+            })
+            .catch((err) =>{
+             console.log(err)
+            })
+    },[])    
+
+    const handleCategoryClick = (categoryId) => {
+        // Navigate to ProductsPage and pass categoryId as state
+        navigate("/products", { state: { categoryId } });
+      };
+
 
     return (
     <>
@@ -32,8 +43,8 @@ const Home = () => {
         <div>
             {category && category.map(({categoryName,_id,image}) => (
                <div className="home-category">
-                 <li key={_id} className="home-cateList">
-                 <img className="home-cateImg" src={image} width="100%" height="auto" alt={categoryName}  c/> 
+               <li key={_id} className="home-cateList" onClick={() =>handleCategoryClick(_id)}>
+                <img className="home-cateImg" src={image} width="100%" height="auto" alt={categoryName}/> 
                 <h1>{categoryName}</h1>
                 </li>
                </div>

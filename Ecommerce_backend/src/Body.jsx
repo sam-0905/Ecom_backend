@@ -35,11 +35,10 @@ const Body = () =>{
                 company,
         }) => (
              <div className="card">
-
-                <div className="card-container">
-
+                 <div className="card-container">
                  <div key={id} className="product-image"> 
-                    <img src={image} width="100%" height="auto" alt={title} /> </div>
+                      <img src={image} width="100%" height="auto" alt={title} />
+                  </div>
                     <h3 className="product-title"> {title} </h3>
                     <div className="card-details">
                     {/* <div>Brand :{company}</div> */}
@@ -64,8 +63,7 @@ const Body = () =>{
                     <button className="button-32 wish-btn" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                  </button>
                  </div>
-              </div>
-                   
+                 </div>
              </div>                       
              )
               )}

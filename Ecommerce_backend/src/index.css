@@ -12,6 +12,7 @@
     --secondary-color-:#ADEFD1;
 
 }
+
 body{
     margin: 0;
 }
@@ -40,7 +41,7 @@ body{
   font-weight: bold;
   margin-right:0.5rem ;   
 }
-.Nav .container {
+.Nav.container {
   /* margin-right: 1rem; */
   font-size: large;
 }
@@ -70,14 +71,22 @@ a{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   gap: 7px;
   width: 200px;
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
-  margin: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
   transition: transform 0.2s ease;
+}
+
+.card-container{
+  /* display: flex; */
+  /* flex-direction: column;
+  flex-wrap: wrap; */
 }
 
 .product-card:hover {

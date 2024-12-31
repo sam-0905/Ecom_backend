@@ -3,42 +3,40 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 const CategoryPage = () => {
-  const { categoryName } = useParams(); // Get category name from the URL
+  const { categoryId } = useParams(); // This will now represent the category name (e.g., "mobile")
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true); // To handle loading state
-  const [error, setError] = useState(null); // To handle error
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Fetch products based on categoryName from the backend
   useEffect(() => {
-    // Set loading to true while fetching data
     setLoading(true);
     setError(null);
 
+    // Fetch products based on category name
     axios
-      .get(`/api/products`) // Fetch products by categoryName
+      .get(`/api/products?category=${categoryId}`) // categoryId is now the category name
       .then((res) => {
-        setProducts(res.data.products); // Store fetched products in state
-        setLoading(false); // Set loading to false after data is fetched
+        setProducts(res.data.products || []); // Safely handle response
+        setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching filtered products:", err);
-        setError("Could not fetch products. Please try again later.");
-        setLoading(false); // Set loading to false even in case of error
+        console.error(err);
+        setError("Failed to load products. Please try again later.");
+        setLoading(false);
       });
-  }, [categoryName]); // Run effect when categoryName changes
+  }, [categoryId]);
 
-  // Conditional rendering based on the loading and error states
   if (loading) {
-    return <div>Loading products...</div>;
+    return <p>Loading products...</p>;
   }
 
   if (error) {
-    return <div>{error}</div>;
+    return <p>{error}</p>;
   }
 
   return (
     <div>
-      <h2>Products in {categoryName}</h2>
+      <h2>Products in {categoryId}</h2> {/* Display the category name */}
       {products.length > 0 ? (
         products.map(({ _id, name, price, image }) => (
           <div key={_id} className="product-card">
@@ -48,7 +46,7 @@ const CategoryPage = () => {
           </div>
         ))
       ) : (
-        <p>No products found in this category.</p>
+        <p>No products found for this category.</p>
       )}
     </div>
   );

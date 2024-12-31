@@ -16,7 +16,7 @@ function App() {
         <Route path="/mock" element={<Mockman/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/body" element={<Body/>} />
-        <Route path="/category/:categoryName" element={<CategoryPage/>} />
+        <Route path="/category/:categoryId" element={<CategoryPage/>} />
 
         {/* <Route path="/cart" element={<Cart />} /> */}
 

@@ -13,7 +13,7 @@ const CategoryPage = () => {
   useEffect(() => {
     setLoading(true);
     setError(null);
-
+    
     axios
       .get("/api/products?category=${categoryId}") // Fetch all products
       .then((res) => {

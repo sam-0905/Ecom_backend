@@ -19,7 +19,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi A4_5g.png"),
     starRating: 4.9,
     description: "Sparkle purple, 4GB RAM, 64GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | Free 33W Charger in Box",
-    category: "Mobiles",
+    category: "Mobile Phones",
   },
   { 
     _id: uuid(),
@@ -31,7 +31,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi_note_13pro.png"),
     starRating: 4.5,
     description: "Scarlet Red, 8GB RAM, 128GB Storage) | 1.5K AMOLED | 200MP Hi-Res Camera | Flagship 4nm SD 7s Gen 2 | 67W TurboCharge",
-    category: "Mobiles",
+    category: "Mobile Phones",
   },
   { 
     _id: uuid(),
@@ -43,7 +43,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi Note_13Pro+.png"),
     starRating: 4.5,
     description: "Fusion Black, 8GB RAM, 256GB Storage) | World's First Mediatek 7200 Ultra 5G | 200MP Hi-Res Camera | 1.5K Curved AMOLED | 120W HyperCharge",
-    category: "Mobiles",
+    category: "Mobile Phones",
   },
   { 
     _id: uuid(),
@@ -55,7 +55,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi_A3X.png"),
     starRating: 5.0,
     description: "Starry White, 3GB RAM, 64GB Storage) | Premium Halo Design | 90Hz Display | Powerful Octa Core Processor",
-    category: "Mobiles",
+    category: "Mobile Phones",
   },  
   { 
     _id: uuid(),
@@ -67,7 +67,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi_note_13pro.png"),
     starRating: 4.7,
     description: "Orchid Pink, 6GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera | 6.79in Largest Display in Segment",
-    category: "Mobiles",
+    category: "Mobile Phones",
   },
   { 
     _id: uuid(),
@@ -79,7 +79,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi_watch5g.png"),
     starRating: 4.0,
     description: "2 HD Screen|HyperOS connectivity|Metal body|18 days of Battery Life|200+ Watch Faces|IPX8 rating|140+ Sports Modes|Heart Rate,Period Cycle Monitor|Black",
-    category: "Watch",
+    category: "Watches",
   },
   { 
     _id: uuid(),
@@ -91,7 +91,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi_watch5g_lite.png"),
     starRating: 4.3,
     description: "1.96 AMOLED Screen|In-built GPS|BT Calling 2mic ENC|5 ATM|HyperOS Connectivity|18 days Battery Life|200+ WatchFaces|160+ SportsModes|SpO2,HeartRate&FemaleHealth Tracking|Light Gold",
-    category: "Watch",
+    category: "Watches",
   },
 
   { 
@@ -104,7 +104,7 @@ export const products = [
     image : require("../../assets/ProductImg/Redmi_watch5g_lite.png"),
     starRating: 4.3,
     description: "Bluetooth TWS Earbuds, Up to 46dB Hybrid Noise Cancellation, Quad Mic with AI Call Enhancement, 10mins Charge for 4Hours Life, Up to 38Hrs Playback| Fusion Purple",
-    category: "Buds",
+    category: "Watches",
   },
   { 
     _id: uuid(),
@@ -155,7 +155,10 @@ export const products = [
     category: "Tablets",
   },
 
+
 //Iphone
+
+
 {
   _id: uuid(),
   title: "iPhone 16 Pro",
@@ -166,7 +169,7 @@ export const products = [
   image : require("../../assets/ProductImg/iphone_16pro.png"),
   starRating: 4.6,
   description: "iPhone 16 Pro Max 256 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -178,7 +181,7 @@ export const products = [
   image : require("../../assets/ProductImg/iphone_16.png"),
   starRating: 4.9,
   description: "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Ultramarine",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -190,7 +193,7 @@ export const products = [
   image : require("../../assets/ProductImg/iphone_15.png"),
   starRating: 4.3,
   description: "Super Retina XDR display,6.1‑inch (diagonal) all‑screen OLED display,Dual 48MP camera system (Ultra Wide and Main),12MP TrueDepth camera,A16 Bionic chip,6‑core CPU with 2 performance and 4 efficiency cores,5‑core GPU,16‑core Neural Engine",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -202,7 +205,7 @@ export const products = [
   image : require("../../assets/ProductImg/iphone_14.png"),
   starRating: 4.2,
   description: "6.1-inch Super Retina XDR display,Dual 12MP camera system (Ultra Wide and Wide),12MP TrueDepth camera,Face ID	,A15 Bionic chip with 6-core CPU (2 performance and 4 efficiency cores), 5-core GPU, and 16-core Neural Engine",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -214,7 +217,7 @@ export const products = [
   image : require("../../assets/ProductImg/iphone_se.png"),
   starRating: 4.2,
   description: "11.94 cm (4.7-inch) Retina HD display,Advanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps,7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording,A15 Bionic chip for lightning-fast performance IP67,Touch ID for secure authentication,iOS 15 packs new features to do more with iPhone than ever before",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -226,7 +229,7 @@ export const products = [
   image : require("../../assets/ProductImg/Apple-watch-se.png"),
   starRating: 4.6,
   description: "Apple Watch SE (2nd Gen, 2023) [GPS + Cellular 40mm] Smartwatch with Aluminum Case with Starlight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display",
-  category: "Watch",
+  category: "Watches",
 },
 {
   _id: uuid(),
@@ -238,7 +241,7 @@ export const products = [
   image : require("../../assets/ProductImg/Apple-watch-9.png"),
   starRating: 4.0,
   description: "GPS+Cellular with Light Pink Sport Loop - M/L(45mm Display, Pink Aluminium Case",
-  category: "Watch",
+  category: "Watches",
 },
 {
   _id: uuid(),
@@ -250,7 +253,7 @@ export const products = [
   image : require("../../assets/ProductImg/Apple-watch-10.png"),
   starRating: 4.6,
   description: "[GPS 46 mm] Smartwatch with Jet Black Aluminium Case with Ink Sport Loop. Fitness Tracker, ECG App, Always-On Retina Display, Carbon Neutral",
-  category: "Watch",
+  category: "Watches",
 },
 {
   _id: uuid(),
@@ -262,7 +265,7 @@ export const products = [
   image : require("../../assets/ProductImg/Apple-watch-ultra2.png"),
   starRating: 4.6,
   description: "[GPS + Cellular 49 mm] Smartwatch, Sports Watch with Black Titanium Case with Black Ocean Band. Fitness Tracker, Precision GPS, Action Button, Bright Retina Display",
-  category: "Watch",
+  category: "Watches",
 },
 
 {
@@ -351,7 +354,10 @@ export const products = [
   category: "Tablets",
 },
 
+
  //Samsung Products
+
+
  {
   _id: uuid(),
   title: "Galaxy S24 FE",
@@ -362,7 +368,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-s24-Fe.png"),
   starRating: 4.6,
   description: "Galaxy AI ,Flagship Processor,8K Video Recording",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -374,7 +380,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-s24-ultra.png"),
   starRating: 4.3,
   description: "Industry-leading hardware meets world-changing AI,Made with titanium. Built to last200 MP high-resolution photography & hyper-",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -386,7 +392,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-s24.png"),
   starRating: 4.1,
   description:"Setting the new standard of mobile, now with Galaxy AI.Shrunken bezels & satin-finished aluminum .Space Zoom for pixel-perfect portraits & power for",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -398,7 +404,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-s24.png"),
   starRating: 4.1,
   description:"Setting the new standard of mobile, now with Galaxy AI.Shrunken bezels & satin-finished aluminum .Space Zoom for pixel-perfect portraits & power for",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -410,7 +416,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-s23-ultra.png"),
   starRating: 4.4,
   description:"Epic night shots that beg to be shared.Ultra-fast photography and gameplay.Designed for you, and the planet",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -422,7 +428,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-s23-ultra.png"),
   starRating: 4.5,
   description:"Snap your best night selfies yet .Epically fast photography and gameplay.Designed for you, and the planet",
-  category: "Mobiles",
+  category: "Mobile Phones",
 },
 {
   _id: uuid(),
@@ -434,7 +440,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-watch-ultra-.png"),
   starRating: 4.5,
   description:"4.7cm,Titanium grade4,Sapphire Crystal,10ATM+IP68,590mAh,3nm Processor,5 Core",
-  category: "Watch",
+  category: "Watches",
 },
 {
   _id: uuid(),
@@ -446,7 +452,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-watch7.png"),
   starRating: 4.2,
   description:"4.0cm,Armor Aluminum2,Sapphire Crystal,5ATM+IP68,425mAh|300mAh,3nm Processor,5 Core",
-  category: "Watch",
+  category: "Watches",
 },
 {
   _id: uuid(),
@@ -458,7 +464,7 @@ export const products = [
   image : require("../../assets/ProductImg/galaxy-watch5.png"),
   starRating: 4.2,
   description:"3.46 cm,Black leather strap,590mAh,1.18 GHz,CPU Type Dual-core",
-  category: "Watch",
+  category: "Watches",
 },
 {
   _id: uuid(),

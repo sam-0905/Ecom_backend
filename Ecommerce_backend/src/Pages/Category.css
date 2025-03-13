@@ -1,0 +1,28 @@
+body{
+    /* background-color: chartreuse; */
+}
+
+.category{
+    display:flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-wrap:break-word;
+    gap: 50px;
+    width: 150px;
+    border: 2px solid black;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+.category-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    height: auto;
+}

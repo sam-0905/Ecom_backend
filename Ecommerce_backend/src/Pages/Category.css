@@ -4,14 +4,10 @@ body{
 
 .category{
     display:flex;
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     word-wrap:break-word;
-    gap: 50px;
-    width: 150px;
+    gap: 1.5rem;
+    width: 100%;
     border: 2px solid black;
 }
 
@@ -21,8 +17,7 @@ img{
 }
 
 .category-card{
-    display: flex;
-    flex-direction: column;
     margin: 1rem;
+    width: 150px; 
     height: auto;
 }

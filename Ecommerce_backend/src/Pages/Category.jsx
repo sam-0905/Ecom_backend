@@ -45,21 +45,19 @@ const CategoryPage = () => {
   return (
     <div>
       <h2>Products in {categoryId}</h2> {/* Show selected category */}
-      
       {products.length > 0 ? (
         <div className="category">
-          {products.map(({ _id, name, price, image ,company,title}) => (
+          {products.map(({ _id, price, image ,company,title}) => (
             <div key={_id} className="category-card">
               <img src={image} alt={name} width="100%" height="auto" />
               <h2>{title}</h2>
-              <h2>{name}</h2>
               <p>Price: ${price}</p>
               <h2>{company}</h2>
             </div>
         ))}
         </div>
       ) : (
-        <p>No products found for this category.</p>
+        <p className="empty">No products found for this category.</p>
       )}
           <Link to="/">BacK To Home</Link>
     </div>

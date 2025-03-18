@@ -35,30 +35,32 @@ const Home = () => {
         }}
       >
         <div className="home">
-          <h1>Home</h1>
-          <Link to="/body"><button>Shop</button></Link>
+          {/* <h1>Home</h1> */}
+          <Link to="/body"><button className="button-9 home-btn">Shop</button></Link>
         </div>
       </div>
 
       {/* Categories Section */}
       <div>
-        {category.map(({ categoryName, _id, image }) => (
-          <div key={_id} className="home-category">
+      <div  className="home-category">
+        {category.map(({ categoryName,image }) => (
+        <div className="homeCategory-card">
             <li className="home-cateList">
               {/* Link to the category page using categoryName */}
               <Link to={`/category/${categoryName}`}>
                 <img
-                  className="home-cateImg"
                   src={image}
                   width="100%"
                   height="auto"
                   alt={categoryName}
                 />
-                <h1>{categoryName}</h1>
+                <h1 className="home-categoryName">{categoryName}</h1>
               </Link>
             </li>
-          </div>
+            </div>
         ))}
+        </div>
+
       </div>
     </>
   );

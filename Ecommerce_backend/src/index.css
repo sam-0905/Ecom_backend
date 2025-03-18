@@ -152,18 +152,23 @@ a{
   display: flex;
   flex-direction: row;
 }
-.product-image {
+/* .product-image {
   width: 100%;
   object-fit: contain;
   border-radius: 6px;
+} */
+.product-image{
+  height: 200px;             /* Fixed height for all images */
+  width: 100%;
+  object-fit: cover;         /* Crops image to fit perfectly */
 }
 
 .product-title {
   font-size: 16px;
   font-weight: 700;
-  color: lightyellow;
+  color: var(--secondary-color-);
   margin: 12px 0 8px;
-  line-height: 1.4;
+  line-height: 2.5;
   height: 44px;
   overflow: hidden;
 }
@@ -196,7 +201,7 @@ a{
 }
 
 .current-price {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color:lightgoldenrodyellow;
 }

@@ -318,7 +318,7 @@ export const products = [
 },
 {
   _id: uuid(),
-  title: "Apple iPad (10th Generation)",
+  title: "Apple iPad (10th)",
   company : "IPHONE",
   price: 33499,
   // discount_price : 699,
@@ -343,7 +343,7 @@ export const products = [
 },
 {
   _id: uuid(),
-  title: "Apple iPad Mini (A17 Pro)",
+  title: "Apple iPad Mini",
   company : "IPHONE",
   price: 59999,
   // discount_price : 699,

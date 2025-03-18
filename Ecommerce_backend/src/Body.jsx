@@ -37,10 +37,9 @@ const Body = () =>{
 
                  <div className="card-container product-card">
                  <div key={id} className="product-image"> 
-                      <img src={image} width="100%" height="auto" alt={title} />
+                      <img src={image} alt={title} />
                   </div>
-                    <h3 className="product-title"> {title} </h3>
-
+                    <h3 className="product-title"> {title} </h3 >
                  <div className="card-details">
                     <h4 className="brand">Brand :{company}</h4>
                     <p className="current-price">₹ {price}</p>

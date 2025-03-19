@@ -1,11 +1,22 @@
 import { useState,useEffect } from "react";
 import axios from 'axios';
 
-const Body = () =>{
+const Body = () => {
 
     const [products,setProducts] = useState([])
     const [loader , setLoader ] = useState(false)
+    const [search, setSearch] = useState("")
+    const [filterData, setFilterData] = useState([])
 
+    const filteredData = () => {
+        console.log("filter",search)
+        const filteredSearch = products.filter((product) => (
+            product?.title?.toLowerCase()?.includes?.(search?.toLowerCase())
+        ));
+        setFilterData(filteredSearch)
+    }
+
+    const changeSearchHandler = (e) => setSearch(e.target.value)
 
     useEffect(() =>{
         setLoader(true)
@@ -13,6 +24,7 @@ const Body = () =>{
         .then(res => {
         setLoader(false)
         setProducts(res.data.products)
+        setFilterData(res.data.products)
         console.log(res.data.products)
         })  
         .catch((err) => {
@@ -22,9 +34,19 @@ const Body = () =>{
     }, [])
 
     return <>
+            <div className="search-container">
+                <input 
+                type="text"
+                value={search}
+                onChange={changeSearchHandler}
+                className="search-bar"
+                placeholder="Still deciding? Search products here... 🔎"
+                ></input>
+                <button className="button-44" role="button" onClick={filteredData}>Search</button>
+                </div>
                 {loader && <div>loading...</div>}
                 <div className="card">               
-                {products && products.map(
+                {filterData && filterData.map(
                 ({
                 id,
                 title,

@@ -24,7 +24,7 @@ export const categories = [
   {
     _id: uuid(),
     categoryName: "Tablets",
-      image: require("../../assets/ProductImg/ipad_mini_.png")
+      image: require("../../assets/ProductImg/ipad_10th.png")
   },
 ];
 

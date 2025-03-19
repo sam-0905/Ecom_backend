@@ -43,17 +43,19 @@ const CategoryPage = () => {
   }
 
   return (
+    <>
     <div>
       <h2>Products in {categoryId}</h2> {/* Show selected category */}
       {products.length > 0 ? (
         <div className="category">
           {products.map(({ _id, price, image ,company,title}) => (
             <div key={_id} className="category-card">
-              <img src={image} alt={name} width="100%" height="auto" />
-              <h2>{title}</h2>
+              <img src={image} alt={name} width="100%" height="auto" className="category-image" />
+              <h2 className="category-title">{title}</h2>
               <p>Price: ${price}</p>
-              <h2>{company}</h2>
+              <h3>{company}</h3>
             </div>
+            
         ))}
         </div>
       ) : (
@@ -61,6 +63,7 @@ const CategoryPage = () => {
       )}
           <Link to="/">BacK To Home</Link>
     </div>
+    </>
   );
 };
 

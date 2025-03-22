@@ -2,6 +2,7 @@
 //Nav link
 import { NavLink } from 'react-router-dom';
 // import AppIcon from "../assets/images/AppIcon.svg"
+import Logo from "../assets/Icon/Logo.png"
 
 const getActiveLink = ({ isActive, isPending }) => ({
   margin: '1rem 0',
@@ -10,12 +11,14 @@ const getActiveLink = ({ isActive, isPending }) => ({
 
 export const Title = () => (
     <div>
-      <a href="/">
-        <img className="logo" src={""} alt="logo" />
+
+      <a href="/" className='logo-container'>
+        <img className="logo" src={Logo} alt="logo" />
+        <a className='logo-heading'>GadgetLoop</a>
       </a>
       <span className='Nav' style={{marginRight:"5rem",marginTop:"0.5rem"}}><NavLink style={getActiveLink} to="/body">
         <a className="fa fa-product-hunt container"> Products</a>
-        </NavLink></span>
+        </NavLink></span>     
     </div>
   );
 

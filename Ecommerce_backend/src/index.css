@@ -15,7 +15,33 @@
 
 body{
     margin: 0;
+
 }
+
+li{
+  text-decoration: none;
+}
+
+.logo-container{
+  display:inline;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.logo{
+  margin: 0;
+  width: 15%;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.logo-heading{
+  text-align: center;
+  color: var(--secondary-color-);
+  gap: 10px;
+  font-weight: 900;
+}
+
 
 .header{
   display: flex;
@@ -193,6 +219,8 @@ a{
   transition: transform 0.2s ease;
   margin: 2rem;
   justify-content: center;
+  background-color:var(--secondary-color-);
+
 }
 
 .card-container{

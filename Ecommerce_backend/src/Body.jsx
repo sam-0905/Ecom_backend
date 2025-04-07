@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import axios from 'axios';
 
 const Body = () => {
+    // const {state, dispatch } = useCart();
 
     const [products,setProducts] = useState([])
     const [loader , setLoader ] = useState(false)

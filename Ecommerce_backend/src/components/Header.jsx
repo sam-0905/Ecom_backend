@@ -11,14 +11,14 @@ const getActiveLink = ({ isActive, isPending }) => ({
 
 export const Title = () => (
     <div>
-
       <a href="/" className='logo-container'>
+        <span className='logo-heading'>Loopizo</span>
         <img className="logo" src={Logo} alt="logo" />
-        <a className='logo-heading'>GadgetLoop</a>
-      </a>
-      <span className='Nav' style={{marginRight:"5rem",marginTop:"0.5rem"}}><NavLink style={getActiveLink} to="/body">
+        <span className='Nav' style={{marginRight:"5rem",marginTop:"0.5rem"}}><NavLink style={getActiveLink} to="/body">
         <a className="fa fa-product-hunt container"> Products</a>
-        </NavLink></span>     
+        </NavLink></span>
+      </a>
+         
     </div>
   );
 

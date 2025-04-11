@@ -20,6 +20,8 @@ export const products = [
     starRating: 4.9,
     description: "Sparkle purple, 4GB RAM, 64GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | Free 33W Charger in Box",
     category: "Mobile Phones",
+    inStock:"true",
+    deliverable:"false",
   },
   { 
     _id: uuid(),
@@ -32,6 +34,8 @@ export const products = [
     starRating: 4.5,
     description: "Scarlet Red, 8GB RAM, 128GB Storage) | 1.5K AMOLED | 200MP Hi-Res Camera | Flagship 4nm SD 7s Gen 2 | 67W TurboCharge",
     category: "Mobile Phones",
+    inStock:"true",
+    deliverable:"true",
   },
   { 
     _id: uuid(),
@@ -44,6 +48,8 @@ export const products = [
     starRating: 4.5,
     description: "Fusion Black, 8GB RAM, 256GB Storage) | World's First Mediatek 7200 Ultra 5G | 200MP Hi-Res Camera | 1.5K Curved AMOLED | 120W HyperCharge",
     category: "Mobile Phones",
+    inStock:"false",
+    deliverable:"true",
   },
   { 
     _id: uuid(),
@@ -56,6 +62,8 @@ export const products = [
     starRating: 5.0,
     description: "Starry White, 3GB RAM, 64GB Storage) | Premium Halo Design | 90Hz Display | Powerful Octa Core Processor",
     category: "Mobile Phones",
+    inStock:"true",
+    deliverable:"true",
   },  
   { 
     _id: uuid(),
@@ -68,6 +76,8 @@ export const products = [
     starRating: 4.7,
     description: "Orchid Pink, 6GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera | 6.79in Largest Display in Segment",
     category: "Mobile Phones",
+    inStock:"false",
+    deliverable:"false",
   },
   { 
     _id: uuid(),
@@ -80,6 +90,8 @@ export const products = [
     starRating: 4.0,
     description: "2 HD Screen|HyperOS connectivity|Metal body|18 days of Battery Life|200+ Watch Faces|IPX8 rating|140+ Sports Modes|Heart Rate,Period Cycle Monitor|Black",
     category: "Watches",
+    inStock:"true",
+    deliverable:"true",
   },
   { 
     _id: uuid(),
@@ -92,6 +104,8 @@ export const products = [
     starRating: 4.3,
     description: "1.96 AMOLED Screen|In-built GPS|BT Calling 2mic ENC|5 ATM|HyperOS Connectivity|18 days Battery Life|200+ WatchFaces|160+ SportsModes|SpO2,HeartRate&FemaleHealth Tracking|Light Gold",
     category: "Watches",
+    inStock:"true",
+    deliverable:"false",
   },
 
   { 
@@ -105,6 +119,8 @@ export const products = [
     starRating: 4.3,
     description: "Bluetooth TWS Earbuds, Up to 46dB Hybrid Noise Cancellation, Quad Mic with AI Call Enhancement, 10mins Charge for 4Hours Life, Up to 38Hrs Playback| Fusion Purple",
     category: "Watches",
+    inStock:"false",
+    deliverable:"true",
   },
   { 
     _id: uuid(),
@@ -129,6 +145,8 @@ export const products = [
     starRating: 4.0,
     description: "MediaTek Helio G55| 8.7-inc Display | 6650mAh Battery | 90Hz Smooth Refresh Rate| 4GB, 64GB | 1340 x 800 Display | 1 Billion Colours | Dolby Atmos | Dual Speakers | Ocean Blue",
     category: "Tablets",
+    inStock:"true",
+    deliverable:"false",
   },
   { 
     _id: uuid(),  
@@ -141,6 +159,8 @@ export const products = [
     starRating: 4.2,
     description: "All Day Battery | Qualcomm Snapdragon 680| 90Hz Refresh Rate| 6GB, 128GB Tablet| FHD+ Display (11-inch/27.94cm)| Dolby Atmos| Quad Speakers| Wi-Fi| Green",
     category: "Tablets",
+    inStock:"true",
+    deliverable:"true",
   },
   { 
     _id: uuid(),
@@ -153,6 +173,8 @@ export const products = [
     starRating: 4.2,
     description: "Snapdragon 7s Gen 2|30.7cm(12.1) Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB|Quad Speakers |Wi-Fi 6 + 5G |Graphite Grey",
     category: "Tablets",
+    inStock:"false",
+    deliverable:"false",
   },
 
 
@@ -170,6 +192,8 @@ export const products = [
   starRating: 4.6,
   description: "iPhone 16 Pro Max 256 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -182,6 +206,8 @@ export const products = [
   starRating: 4.9,
   description: "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Ultramarine",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -194,6 +220,8 @@ export const products = [
   starRating: 4.3,
   description: "Super Retina XDR display,6.1‑inch (diagonal) all‑screen OLED display,Dual 48MP camera system (Ultra Wide and Main),12MP TrueDepth camera,A16 Bionic chip,6‑core CPU with 2 performance and 4 efficiency cores,5‑core GPU,16‑core Neural Engine",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -206,6 +234,8 @@ export const products = [
   starRating: 4.2,
   description: "6.1-inch Super Retina XDR display,Dual 12MP camera system (Ultra Wide and Wide),12MP TrueDepth camera,Face ID	,A15 Bionic chip with 6-core CPU (2 performance and 4 efficiency cores), 5-core GPU, and 16-core Neural Engine",
   category: "Mobile Phones",
+  inStock:"false",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -218,6 +248,8 @@ export const products = [
   starRating: 4.2,
   description: "11.94 cm (4.7-inch) Retina HD display,Advanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps,7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording,A15 Bionic chip for lightning-fast performance IP67,Touch ID for secure authentication,iOS 15 packs new features to do more with iPhone than ever before",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -230,6 +262,8 @@ export const products = [
   starRating: 4.6,
   description: "Apple Watch SE (2nd Gen, 2023) [GPS + Cellular 40mm] Smartwatch with Aluminum Case with Starlight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display",
   category: "Watches",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -242,6 +276,8 @@ export const products = [
   starRating: 4.0,
   description: "GPS+Cellular with Light Pink Sport Loop - M/L(45mm Display, Pink Aluminium Case",
   category: "Watches",
+  inStock:"false",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -254,6 +290,8 @@ export const products = [
   starRating: 4.6,
   description: "[GPS 46 mm] Smartwatch with Jet Black Aluminium Case with Ink Sport Loop. Fitness Tracker, ECG App, Always-On Retina Display, Carbon Neutral",
   category: "Watches",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -266,6 +304,8 @@ export const products = [
   starRating: 4.6,
   description: "[GPS + Cellular 49 mm] Smartwatch, Sports Watch with Black Titanium Case with Black Ocean Band. Fitness Tracker, Precision GPS, Action Button, Bright Retina Display",
   category: "Watches",
+  inStock:"true",
+  deliverable:"false",
 },
 
 {
@@ -279,6 +319,8 @@ export const products = [
   starRating: 3.6,
   description: "2024 Latest Version Wireless Bluetooth Earbuds with, Bluetooth 5.3,Running/Fitness(Touch Control,Sweat and Water Resistant) 100% Upto 60+ Hours of Use (A-P)",
   category: "Buds",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -291,6 +333,8 @@ export const products = [
   starRating: 4.0,
   description: "Bluetooth Headphones, Personalised Spatial Audio, Sweat and Water Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone",
   category: "Buds",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -303,6 +347,8 @@ export const products = [
   starRating: 4.5,
   description: "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, with Active Noise Cancellation, Adaptive Audio, Transparency Mode, Personalised Spatial Audio, USB-C Charging Case, Wireless Charging, H2 Chip",
   category: "Buds",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -315,6 +361,8 @@ export const products = [
   starRating: 4.5,
   description: "Ultra Retina XDR Display, 256GB, Landscape 12MP Front Camera / 12MP Back Camera, LiDAR Scanner, Wi-Fi 6E, Face ID, All-Day Battery Life, Standard Glass — Space Blackp",
   category: "Tablets",
+  inStock:"false",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -327,6 +375,8 @@ export const products = [
   starRating: 4.6,
   description: "with A14 Bionic chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Pink",
   category: "Tablets",
+  inStock:"true",
+  deliverable:"false",
 },
 
 {
@@ -340,6 +390,8 @@ export const products = [
   starRating: 4.4,
   description: "Liquid Retina Display, 128GB, Landscape 12MP Front Camera / 12MP Back Camera, Wi-Fi 6E, Touch ID, All-Day Battery Life — Purple",
   category: "Tablets",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -352,6 +404,8 @@ export const products = [
   starRating: 4.5,
   description: "Apple Intelligence, 21.08 cm (8.3″) Liquid Retina Display, 256GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Starlight",
   category: "Tablets",
+  inStock:"true",
+  deliverable:"true",
 },
 
 
@@ -369,6 +423,8 @@ export const products = [
   starRating: 4.6,
   description: "Galaxy AI ,Flagship Processor,8K Video Recording",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -381,6 +437,8 @@ export const products = [
   starRating: 4.3,
   description: "Industry-leading hardware meets world-changing AI,Made with titanium. Built to last200 MP high-resolution photography & hyper-",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -393,6 +451,8 @@ export const products = [
   starRating: 4.1,
   description:"Setting the new standard of mobile, now with Galaxy AI.Shrunken bezels & satin-finished aluminum .Space Zoom for pixel-perfect portraits & power for",
   category: "Mobile Phones",
+  inStock:"false",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -405,6 +465,8 @@ export const products = [
   starRating: 4.4,
   description:"Epic night shots that beg to be shared.Ultra-fast photography and gameplay.Designed for you, and the planet",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -417,6 +479,8 @@ export const products = [
   starRating: 4.5,
   description:"Snap your best night selfies yet .Epically fast photography and gameplay.Designed for you, and the planet",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -429,6 +493,8 @@ export const products = [
   starRating: 4.5,
   description:"Samsung Galaxy A56 5G (Awesome Graphite, 12GB, 256GB) | Awesome Intelligence - AI Smartphone: Best Face, Instant Slo-mo, Circle to Search | 6 OS & 6 Years Security Updates",
   category: "Mobile Phones",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -441,6 +507,8 @@ export const products = [
   starRating: 4.5,
   description:"4.7cm,Titanium grade4,Sapphire Crystal,10ATM+IP68,590mAh,3nm Processor,5 Core",
   category: "Watches",
+  inStock:"false",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -453,6 +521,8 @@ export const products = [
   starRating: 4.2,
   description:"4.0cm,Armor Aluminum2,Sapphire Crystal,5ATM+IP68,425mAh|300mAh,3nm Processor,5 Core",
   category: "Watches",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -465,6 +535,8 @@ export const products = [
   starRating: 4.2,
   description:"3.46 cm,Black leather strap,590mAh,1.18 GHz,CPU Type Dual-core",
   category: "Watches",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -477,6 +549,8 @@ export const products = [
   starRating: 4.5,
   description:"Ultimate Hi-Fi,Iconic design with Blade Lights,Adaptive Noise Control",
   category: "Buds",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -489,6 +563,8 @@ export const products = [
   starRating: 4.3,
   description:"Ultimate Hi-Fi,All-new, open-type design ,Adaptive EQ/ANC",
   category: "Buds",
+  inStock:"true",
+  deliverable:"true",
 },
 {
   _id: uuid(),
@@ -501,6 +577,8 @@ export const products = [
   starRating: 4.2,
   description:"Premium Sound Quality with ANC,Ergonomic & Intuitive Fit,Galaxy Ecosystem",
   category: "Buds",
+  inStock:"false",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -513,6 +591,8 @@ export const products = [
   starRating: 4.5,
   description:"World's First AI Tablet,AI-enhanced Note-taking,Sketch to Image",
   category: "Tablets",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -525,6 +605,8 @@ export const products = [
   starRating: 4.5,
   description:"World's First AI Tablet,AI-enhanced Note-taking,Sketch to Image",
   category: "Tablets",
+  inStock:"true",
+  deliverable:"false",
 },
 {
   _id: uuid(),
@@ -537,6 +619,8 @@ export const products = [
   starRating: 4.5,
   description:"Engaging viewing experience with large 27.82 cm LCD display, 90 Hz Refresh Rate, 1920 x 1200 (WQXGA),Qualcomm Snapdragon SM6375 Processor,8 MP AF Rear Camera,  5 MP FF Front camera, Quad",
   category: "Tablets",
+  inStock:"true",
+  deliverable:"true",
 },
 
 ];

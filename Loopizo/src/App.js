@@ -7,6 +7,8 @@ import Home from "./Pages/Home";
 import Body from "./Body";
 import CategoryPage from "./Pages/Category";
 
+import Cart from "./Pages/Cart";
+
 function App() {
   return (
     <>
@@ -18,7 +20,7 @@ function App() {
         <Route path="/body" element={<Body/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
 
-        {/* <Route path="/cart" element={<Cart />} /> */}
+        <Route path="/cart" element={<Cart />} />
 
         {/* <Route path="/wish" element={<WishList />} /> */}
         {/* <Route path="*" element={<Error />} />  */}

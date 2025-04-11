@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import axios from 'axios';
+import Filters from "./Pages/Filters";
 
 const Body = () => {
     // const {state, dispatch } = useCart();
@@ -35,6 +36,8 @@ const Body = () => {
     }, [])
 
     return <>
+            <Filters/>
+
             <div className="search-container">
                 <input 
                 type="text"

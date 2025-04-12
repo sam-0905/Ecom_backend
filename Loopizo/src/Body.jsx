@@ -37,9 +37,11 @@ const Body = () => {
 
 
     return <>
+            <div className="main-content">
             <Filters onFilter={(filteredList) => setFilteredProducts(filteredList)} />
 
-                <div className="search-container">
+            <div className="right-section">
+            <div className="search-container">
                 <input 
                 type="text"
                 value={search}
@@ -48,7 +50,7 @@ const Body = () => {
                 placeholder="Still deciding? Search products here... 🔎"
                 ></input>
                 <button className="button-44" role="button" onClick={filteredData}>Search</button>
-                </div>
+             </div>
                 {loader && <div>loading...</div>}
                 <div className="card">               
                 {filterData && filteredProducts.map(
@@ -68,7 +70,7 @@ const Body = () => {
                       <img src={image} alt={title} />
                   </div>
                     <div>
-                    <h3 className="product-title"> {title} </h3 >
+                    <h2 className="product-title"> {title} </h2 >
                     <h4 className="brand">Brand :{company}</h4>
 
                     </div>
@@ -93,8 +95,9 @@ const Body = () => {
                 
              )
               )}
-
-              
+  
+               </div>
+            </div>
           </div>
 
          </>

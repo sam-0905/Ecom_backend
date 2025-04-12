@@ -3,15 +3,16 @@
     width: 250px;
     padding: 16px;
     border-right: 1px solid #e0e0e0;
-    background-color: #fff;
     font-family: 'Segoe UI', sans-serif;
+    color: violet;
   }
   
   /* Headings */
   .filter-container h1 {
     font-size: 20px;
-    margin-bottom: 16px;
-    color:var(--secondary-color-);
+    margin-bottom: 16px;    
+    color:crimson;
+    font-weight: 900;
   }
   
   .filter-container h3 {
@@ -61,5 +62,53 @@
   .clear-btn:hover {
     background-color: #e0e0e0;
     border-color: #999;
+  }
+  
+  /* price-range */
+
+  .price-range {
+    margin-top: 1rem;
+  }
+  
+  .price-range h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price-slider {
+    width: 70%;
+    -webkit-appearance: none;
+    height: 6px;
+    background:#00203F;
+    border-radius: 4px;
+    outline: none;
+    transition: background 0.3s;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--secondary-color-);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  }
+  
+  .price-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .price-value {
+    font-size: 0.9rem;
+    color:gold;
   }
   

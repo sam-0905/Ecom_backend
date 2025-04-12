@@ -9,8 +9,9 @@ function Filters({onFilter}) {
     const[sort,setSort] = useState("");
     const[inStockOnly , setInStockOnly] = useState(false);
     const[deliverable,setDeliverable] = useState(false);
-    const[minRating , setMinRating] = useState(0)
-    const[products,setProducts] = useState([])
+    const[minRating , setMinRating] = useState(0);
+    const[maxPrice,setMaxPrice] = useState(130000)
+    const[products,setProducts] = useState([]);
 
     useEffect(() =>{
         axios.get('/api/products')
@@ -26,21 +27,35 @@ function Filters({onFilter}) {
             .filter(product =>(inStockOnly ? product.inStock:true))
             .filter(product => deliverable ? product.deliverable: true)
             .filter(product => product.starRating >= minRating)
+            .filter(product => product.price <= maxPrice)
             .sort((a,b) => {
               if(sort === "lowToHigh") return a.price - b.price;
               if(sort === "highToLow") return b.price - a.price;
               return 0;
             });
             onFilter(filtered)
-    },[products, sort, inStockOnly, deliverable, minRating]);
+    },[products, sort, inStockOnly, deliverable, minRating,maxPrice]);
 
  
   return (
     <>
-    <div className='filter-container'>
+    <div className="filter-container ">
     <h1>Filters</h1>
-      <h3>Sort By</h3>
+      <label className='price-range'>
+        <h3>Price Range</h3>
+        <input 
+        className='price-slider'
+        type="range"
+        min="0"
+        max="130000"
+        value={maxPrice}
+        onChange={(e) => setMaxPrice(Number(e.target.value))}
+        step="500"
+        />
+        <p style={{ marginTop: '0.5rem' }} className="price-value">Up to ₹ {maxPrice}</p>
 
+      </label>
+      <h3>Sort By</h3>
       <label>
         <input
           type="radio"
@@ -81,7 +96,7 @@ function Filters({onFilter}) {
         Deliverable Only
       </label>
 
-      <h3 style={{ marginTop: '1rem' }}>Rating</h3>
+      <h3 style={{ marginTop: '1rem' }}>Ratings</h3>
       {[4, 3, 2, 1].map((star) => (
         <label key={star} style={{ display: 'block', marginBottom: '5px' }}>
           <input
@@ -109,6 +124,7 @@ function Filters({onFilter}) {
           setInStockOnly(false);
           setDeliverable(false);
           setMinRating(0);
+          setMaxPrice(20000);
         }}
       >
         Clear All Filters

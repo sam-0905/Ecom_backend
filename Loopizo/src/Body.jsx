@@ -3,12 +3,12 @@ import axios from 'axios';
 import Filters from "./Pages/Filters";
 
 const Body = () => {
-    // const {state, dispatch } = useCart();
 
     const [products,setProducts] = useState([])
     const [loader , setLoader ] = useState(false)
     const [search, setSearch] = useState("")
     const [filterData, setFilterData] = useState([])
+    const [filteredProducts,setFilteredProducts] = useState([])
 
     const filteredData = () => {
         console.log("filter",search)
@@ -35,10 +35,11 @@ const Body = () => {
 
     }, [])
 
-    return <>
-            <Filters/>
 
-            <div className="search-container">
+    return <>
+            <Filters onFilter={(filteredList) => setFilteredProducts(filteredList)} />
+
+                <div className="search-container">
                 <input 
                 type="text"
                 value={search}
@@ -50,28 +51,35 @@ const Body = () => {
                 </div>
                 {loader && <div>loading...</div>}
                 <div className="card">               
-                {filterData && filterData.map(
+                {filterData && filteredProducts.map(
                 ({
                 id,
                 title,
                 image,
                 price,
                 starRating,
-                ratings,
                 company,
+                inStock,
+                deliverable
         }) => (
 
                  <div className="card-container product-card">
                  <div key={id} className="product-image"> 
                       <img src={image} alt={title} />
                   </div>
+                    <div>
                     <h3 className="product-title"> {title} </h3 >
-                 <div className="card-details">
                     <h4 className="brand">Brand :{company}</h4>
-                    <p className="current-price">₹ {price}</p>
+
+                    </div>
+                 <div className="card-details">
+                    <p className="current-price"> ₹ {price}</p>
                     <p className="rating  fa fa-star " style={{color:'yellow'}}>
-                        <span class="rating-count" >{starRating}</span>
+                        <span class="rating-count" > {starRating}</span>
                     </p>
+                    <p className="in-stock-label">{inStock ? 'In Stock' : 'Out of Stock'}</p>
+                    <p className="delivery-info">{deliverable ? 'Deliverable' : 'Not Deliverable'}</p>
+                    
                   </div>
                  
                     <div>
@@ -80,10 +88,13 @@ const Body = () => {
                     <button className="button-32 wish" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                     </button>
                     </div>
+            
                  </div>
-
+                
              )
               )}
+
+              
           </div>
 
          </>

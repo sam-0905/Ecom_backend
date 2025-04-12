@@ -150,19 +150,44 @@ a{
   box-shadow: rgba(131, 50, 234, .1) 0 3px 6px;
 }
 
-* search */
+/* Alignment */
+.main-content {
+  display: flex;
+  /* padding-top: 3%; height of navbar */
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  margin-top: 0;
+}
+
+/* Filter on left */
+.main-content > .filter-container {
+  width: 250px;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Right side: search bar + products */
+.right-section {
+  margin-top: 0;
+  flex: 1;
+  padding: 16px;
+}
+
+
+/* * search * */
 
 .search-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%
+  width: 70%;
+  margin-left:8rem;
 }
 
 .search-bar{
     margin: 1.5rem;
     padding: 1rem;
-    width: 40%;
+    width: 60%;
     height: 7vh;
     font-size: large;
     cursor: pointer;
@@ -226,7 +251,7 @@ a{
 }
 
 .card-container{
- width: 20%;
+ width: 210px;
  padding: 1rem;
  margin: 1rem;
  border: 1px solid black;
@@ -269,7 +294,7 @@ a{
 
 .brand{
   color: ghostwhite;
-  gap: 5px;
+  margin: 0;
 }
 .rating {
   display: flex; 

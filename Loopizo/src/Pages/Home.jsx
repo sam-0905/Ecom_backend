@@ -41,10 +41,10 @@ const Home = () => {
       </div>
 
       {/* Categories Section */}
-      <div key={_id}>
+      <div>
       <div  className="home-category">
-        {category.map(({ categoryName,image }) => (
-        <div className="homeCategory-card">
+        {category.map(({ categoryName,image,_id }) => (
+        <div className="homeCategory-card" key={_id}>
             <li className="home-cateList">
               {/* Link to the category page using categoryName */}
               <Link to={`/category/${categoryName}`}>

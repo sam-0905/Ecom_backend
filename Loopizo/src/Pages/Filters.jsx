@@ -1,6 +1,7 @@
 // Filters.js
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import "./filter.css"
 
 
 function Filters({onFilter}) {
@@ -20,7 +21,7 @@ function Filters({onFilter}) {
     },[])     
 
     useEffect(() => {
-      
+
       const filtered =  products
             .filter(product =>(inStockOnly ? product.inStock:true))
             .filter(product => deliverable ? product.deliverable: true)
@@ -36,7 +37,7 @@ function Filters({onFilter}) {
  
   return (
     <>
-    <div style={{ width: '250px', padding: '1rem', borderRight: '1px solid #ddd' }}>
+    <div className='filter-container'>
     <h1>Filters</h1>
       <h3>Sort By</h3>
 

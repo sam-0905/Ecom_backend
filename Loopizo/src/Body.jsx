@@ -53,7 +53,7 @@ const Body = () => {
              </div>
                 {loader && <div className="loader"></div>}
                 <div className="card">               
-                {filterData && filteredProducts.map(
+                { filteredProducts && filterData.map(
                 ({
                 id,
                 title,
@@ -63,7 +63,7 @@ const Body = () => {
                 company,
                 inStock,
                 deliverable
-        }) => (
+            }) => (
 
                  <div className="card-container product-card">
                  <div key={id} className="product-image"> 
@@ -94,7 +94,7 @@ const Body = () => {
                  </div>
                 
              )
-              )}
+                )}
   
                </div>
             </div>

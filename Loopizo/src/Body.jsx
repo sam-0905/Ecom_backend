@@ -51,7 +51,7 @@ const Body = () => {
                 ></input>
                 <button className="button-44" role="button" onClick={filteredData}>Search</button>
              </div>
-                {loader && <div>loading...</div>}
+                {loader && <div className="loader"></div>}
                 <div className="card">               
                 {filterData && filteredProducts.map(
                 ({

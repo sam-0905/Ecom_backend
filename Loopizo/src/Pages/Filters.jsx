@@ -55,6 +55,8 @@ function Filters({onFilter}) {
         <p style={{ marginTop: '0.5rem' }} className="price-value">Up to ₹ {maxPrice}</p>
 
       </label>
+      <hr/>
+
       <h3>Sort By</h3>
       <label>
         <input
@@ -75,7 +77,7 @@ function Filters({onFilter}) {
         />
         Price: High to Low
       </label>
-
+        <hr/>
       <h3 style={{ marginTop: '1rem' }}>Filters</h3>
 
       <label>
@@ -86,7 +88,7 @@ function Filters({onFilter}) {
         />
         In Stock Only
       </label>
-      <br />
+      <br/>
       <label>
         <input
           type="checkbox"
@@ -95,6 +97,7 @@ function Filters({onFilter}) {
         />
         Deliverable Only
       </label>
+      <hr/>
 
       <h3 style={{ marginTop: '1rem' }}>Ratings</h3>
       {[4, 3, 2, 1].map((star) => (
@@ -112,13 +115,7 @@ function Filters({onFilter}) {
       ))}
 
         <button
-        style={{
-          marginTop: "1rem",
-          padding: "6px 12px",
-          backgroundColor: "#eee",
-          border: "1px solid #ccc",
-          cursor: "pointer"
-        }}
+        className='clr-btn'
         onClick={() => {
           setSort("");
           setInStockOnly(false);

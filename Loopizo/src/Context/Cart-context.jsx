@@ -31,7 +31,7 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const removeOneFromCart = async (productId) => {
+  const removeFromCart = async (productId) => {
     try {
       const res = await axios.post(
         `/api/user/cart/${productId}`,
@@ -46,7 +46,7 @@ const CartProvider = ({ children }) => {
 
   const deleteFromCart = async (productId) => {
     try {
-      const res = await axios.delete(`/api/user/cart/${productId}`, config);
+      const res = await axios.delete(`/api/user/cart:${productId}`, config);
       dispatch({ type: "SET_CART", payload: res.data.cart });
     } catch (err) {
       console.error("Delete from cart error:", err);
@@ -60,7 +60,7 @@ const CartProvider = ({ children }) => {
   }, [token]);
 
   return (
-    <CartContext.Provider value={{ state, dispatch, addToCart, removeOneFromCart, deleteFromCart }}>
+    <CartContext.Provider value={{ state, dispatch, addToCart, removeFromCart, deleteFromCart }}>
       {children}
     </CartContext.Provider>
   );

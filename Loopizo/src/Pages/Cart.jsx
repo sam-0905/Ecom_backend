@@ -1,41 +1,63 @@
 import { useCart } from "../Context/Cart-context";
+import EmptyCart from "../assets/Icon/EmptyCart.png";
+import "animate.css";
+import "../Pages/cart.css"
 
 const Cart = () => {
-  const { state, addToCart, removeOneFromCart, deleteFromCart } = useCart();
+  const { state, dispatch } = useCart();
   const { cartItems, quantity, totalPrice } = state;
 
   return (
+    <>
     <div className="cart">
       <div>
         {cartItems.length > 0 ? (
-          cartItems.map(({ _id, name, price, qty, image }) => (
+          cartItems.map(({ _id,title, price, qty, image }) => (
             <div key={_id} className="cart-card">
               <div>
-                <img src={image} alt={name} />
+                <img src={image} alt={title} style={{ width: "200px" }} />
               </div>
               <div>
-                <h3>{name}</h3>
+                <h3>{title}</h3>
                 <p className="price">Price: ₹{price}</p>
                 <p className="quantity">Quantity: {qty}</p>
               </div>
               <div className="cart-btn">
                 <button
-                  className="button-32"
-                  onClick={() => addToCart({ _id, name, price, image })}  
+                  className="button"
+                  onClick={() =>
+                    dispatch({
+                      type: "ADD_TO_CART",
+                      payload: { _id, price },
+                    })
+                  }
                 >
                   +
                 </button>
                 <button
-                  className="button-32"
-                  onClick={() => removeOneFromCart(_id)}
+                  className="button"
+                  onClick={() =>
+                    dispatch({
+                      type: "REMOVE_FROM_CART",
+                      payload: { _id ,price },
+                    })
+                  }
                 >
                   -
                 </button>
                 <button
-                  className="button-32"
-                  onClick={() => deleteFromCart(_id)}
+                  className="button"
+                  onClick={() =>
+                    dispatch({
+                      type: "DELETE_FROM_CART",
+                      payload: { _id ,price },
+                    })
+                  }
                 >
-                  <i className="fa fa-trash-o" style={{ fontSize: "16px" }}></i>
+                  <i
+                    className="fa fa-trash-o"
+                    style={{ fontSize: "16px" }}
+                  ></i>
                 </button>
               </div>
             </div>
@@ -43,7 +65,7 @@ const Cart = () => {
         ) : (
           <div className="animate__animated animate__fadeInLeft">
             <img
-              src="/path-to-empty-cart-image.png"
+              src={EmptyCart}
               alt="Empty Cart"
               className="empty-cart"
             />
@@ -59,6 +81,7 @@ const Cart = () => {
         <h2>Total Price: ₹{totalPrice}</h2>
       </div>
     </div>
+    </>
   );
 };
 

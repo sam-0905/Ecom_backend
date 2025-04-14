@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import axios from 'axios';
 import Filters from "./Pages/Filters";
+import { useCart } from "./Context/Cart-context";
 
 const Body = () => {
 
@@ -9,6 +10,8 @@ const Body = () => {
     const [search, setSearch] = useState("")
     const [filterData, setFilterData] = useState([])
     const [filteredProducts,setFilteredProducts] = useState([])
+
+    const {state,dispatch} = useCart();
 
     const filteredData = () => {
         console.log("filter",search)

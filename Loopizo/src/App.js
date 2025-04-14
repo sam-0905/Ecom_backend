@@ -6,8 +6,7 @@ import Header from "./components/Header";
 import Home from "./Pages/Home";
 import Body from "./Body";
 import CategoryPage from "./Pages/Category";
-
-import Cart from "./Pages/Cart";
+import Cart from "./Pages/Cart"
 
 function App() {
   return (
@@ -29,8 +28,7 @@ function App() {
         {/* <Route path="/login" element={<LoginComp />} /> */}
         {/* <Route path="/about" element={<AboutComponent />} /> */}
         {/* this route shld also map to a component. */}
-        {/* <Route path="/product/:ProductId" element={<ProductComponent />} />
-        <Route path="/cateogry" element={<Category />} />*/}
+        {/* <Route path="/product/:ProductId" element={<ProductComponent />} />*/}
       </Routes>
     </>
   );

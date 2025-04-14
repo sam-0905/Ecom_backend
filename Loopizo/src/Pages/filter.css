@@ -5,6 +5,9 @@
     border-right: 1px solid black;
     font-family: 'Segoe UI', sans-serif;
     color: violet;
+    height: 120vh;
+    background-color:cornsilk;
+    margin-top: 0.7rem;
   }
   
   /* Headings */
@@ -20,6 +23,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
     color:#007bff;
+    font-weight: 800;
   }
   
   /* Label styles */
@@ -29,6 +33,7 @@
     font-size: 16px;
     color:darkgreen;
     cursor: pointer;
+    font-weight: 500;
   }
   
   /* Inputs */

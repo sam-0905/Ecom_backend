@@ -1,12 +1,8 @@
-
 export function cartRedFunc(state, action) {
-    console.log('Action:', action);
-  console.log('State:', state);
+  if (!state) return { cartItems: [], quantity: 0, totalPrice: 0 };
 
-  const price = parseFloat(action.payload.price) || 0;
-  if (!state) return { cartItems: [], quantity: 0, totalPrice: 0 }; // ✅ fallback
+  const price = parseFloat(action.payload?.price) || 0;
 
-  
   switch (action.type) {
     case "SET_CART": {
       const cartItems = action.payload || [];
@@ -24,80 +20,104 @@ export function cartRedFunc(state, action) {
         totalPrice,
       };
     }
-    case "ADD_TO_CART": {
-      const existingItem = state.cartItems.find(item => item._id === action.payload._id);
+
     
-      let updatedCartItems;
+    case 'ADD_TO_CART': {
+      // Ensure price is a number (parseFloat)
+      const price = parseFloat(action.payload.price) || 0;
+    
+      // Find the existing item in the cart
+      const existingItem = state.cartItems.find(item => item.id === action.payload.id);
     
       if (existingItem) {
-        // If item already exists, increase qty
-        updatedCartItems = state.cartItems.map(item =>
-          item._id === action.payload._id
-            ? { ...item, qty: item.qty + 1 }
+        // If item already exists, update the quantity and price
+        const updatedCartItems = state.cartItems.map(item =>
+          item.id === action.payload.id
+            ? { 
+                ...item, 
+                quantity: item.quantity + 1,  // Increment the quantity of the existing item
+                totalPrice: (item.quantity + 1) * item.price  // Update the total price for the existing item
+              }
             : item
         );
-      } else {
-        // If new item, add it with qty = 1
-        updatedCartItems = [...state.cartItems, { ...action.payload, qty: 1 }];
-      }
     
+        // Recalculate total quantity and total price for the whole cart
+        const totalQuantity = updatedCartItems.reduce((acc, item) => acc + item.quantity, 0);
+        const totalPrice = updatedCartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    
+        return {
+          ...state,
+          cartItems: updatedCartItems,
+          quantity: totalQuantity,  // Update total quantity of all items in the cart
+          totalPrice: totalPrice  // Update total price of all items in the cart
+        };
+      } else {
+        // If item doesn't exist, add it as a new entry with quantity 1
+        const newItem = { ...action.payload, quantity: 1 };
+    
+        const updatedCartItems = [...state.cartItems, newItem];
+    
+        // Recalculate total quantity and total price for the whole cart
+        const totalQuantity = updatedCartItems.reduce((acc, item) => acc + item.quantity, 0);
+        const totalPrice = updatedCartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    
+        return {
+          ...state,
+          cartItems: updatedCartItems,
+          quantity: totalQuantity,  // Update total quantity of all items in the cart
+          totalPrice: totalPrice  // Update total price of all items in the cart
+        };
+      }
+    }
+    
+    
+    case "REMOVE_FROM_CART": {
+      const existingItem = state.cartItems.find(item => item._id === action.payload._id);
+      if (!existingItem) return state;
+
+      const updatedCartItems = state.cartItems
+        .map(item =>
+          item._id === action.payload._id
+            ? { ...item, qty: item.qty - 1 }
+            : item
+        )
+        .filter(item => item.qty > 0);
+
       const quantity = updatedCartItems.reduce((acc, item) => acc + item.qty, 0);
       const totalPrice = updatedCartItems.reduce(
         (acc, item) => acc + item.price * item.qty,
         0
       );
-    
-      return { ...state, cartItems: updatedCartItems, quantity, totalPrice };
-    }
-    
 
-        case 'REMOVE_FROM_CART':{
-          const itemToRemove = state.cartItems.find(item => item.id === action.payload.id);
-  
-          if (!itemToRemove) return state; // If item doesn't exist, do nothing
-    
-          const updatedCartItems = state.cartItems.map(item =>
-              item.id === action.payload.id
-                ? { ...item, quantity: item.quantity - 1 }
-                : item
-            )
-            .filter(item => item.quantity > 0); // Remove items with quantity 0
-            
-            const quantity = updatedCartItems.reduce((acc, item) => acc + item.qty, 0);
-            const totalPrice = updatedCartItems.reduce(
-              (acc, item) => acc + item.price * item.qty,
-              0
-            );
-        }
-    
-          return {
-            ...state,
-            cartItems: updatedCartItems,
-            quantity: Math.max(0, state.quantity - 1), // Ensure no negative quantity
-            totalPrice: Math.max(0, state.totalPrice - price), // Ensure no negative price
-          };
-  
-          case "DELETE_FROM_CART": {
-            const itemToDelete = state.cartItems.find(item => item.id === action.payload.id);
-      
-            if (!itemToDelete) return state;
-      
-            const updatedCartItems = state.cartItems.filter(item => item.id !== action.payload.id);
-      
-            return {
-              ...state,
-              cartItems: updatedCartItems,
-              quantity: updatedCartItems.length > 0
-                ? state.quantity - itemToDelete.quantity
-                : 0, // Reset to 0 if no items left
-              totalPrice: updatedCartItems.length > 0
-                ? state.totalPrice - itemToDelete.price * itemToDelete.quantity
-                : 0, // Reset to 0 if no items left
-            };
-          }
-  
-        default:
-          return state;
-      }
+      return {
+        ...state,
+        cartItems: updatedCartItems,
+        quantity,
+        totalPrice,
+      };
     }
-    
+
+    case "DELETE_FROM_CART": {
+      const itemToDelete = state.cartItems.find(item => item._id === action.payload._id);
+      if (!itemToDelete) return state;
+
+      const updatedCartItems = state.cartItems.filter(item => item._id !== action.payload._id);
+
+      const quantity = updatedCartItems.reduce((acc, item) => acc + item.qty, 0);
+      const totalPrice = updatedCartItems.reduce(
+        (acc, item) => acc + item.price * item.qty,
+        0
+      );
+
+      return {
+        ...state,
+        cartItems: updatedCartItems,
+        quantity,
+        totalPrice,
+      };
+    }
+
+    default:
+      return state;
+  }
+}

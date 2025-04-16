@@ -315,7 +315,7 @@ export const products = [
   price: 1899,
   // discount_price : 699,
   type: "Buds",
-  image : require("../../assets/ProductImg/Apple-buds -pro2.png"),
+  image : require("../../assets/ProductImg/Apple-buds-pro2.png"),
   starRating: 3.6,
   description: "2024 Latest Version Wireless Bluetooth Earbuds with, Bluetooth 5.3,Running/Fitness(Touch Control,Sweat and Water Resistant) 100% Upto 60+ Hours of Use (A-P)",
   category: "Buds",
@@ -412,13 +412,13 @@ export const products = [
  //Samsung Products
 
 
- {
+ {  
   id: uuid(),
   title: "Galaxy S24 FE",
   company : "SAMSUNG",
   price: 65999,
   // discount_price : 699,
-  type: "Mobile",
+  type: "Mobile", 
   image : require("../../assets/ProductImg/galaxy-s24-Fe.png"),
   starRating: 3.6,
   description: "Galaxy AI ,Flagship Processor,8K Video Recording",
@@ -456,7 +456,7 @@ export const products = [
 },
 {
   id: uuid(),
-  title: "Galaxy S24",
+  title: "Galaxy S23 Ultra",
   company : "SAMSUNG",
   price: 109999,
   discount_price : 40000,
@@ -582,7 +582,7 @@ export const products = [
 },
 {
   id: uuid(),
-  title: "Galaxy Tab S10+ (Wi-Fi, 12 GB Memory)",
+  title: "Galaxy Tab S10+ ",
   company : "SAMSUNG",
   price: 90999,
   discount_price : 11000,
@@ -596,7 +596,7 @@ export const products = [
 },
 {
   id: uuid(),
-  title: "  Galaxy Tab S10 Ultra 5G (12 GB Memory)",
+  title: "  Galaxy Tab S10 Ultra 5G ",
   company : "SAMSUNG",
   price: 122999,
   discount_price : 15000,
@@ -610,7 +610,7 @@ export const products = [
 },
 {
   id: uuid(),
-  title: "  Galaxy Tab A9+ 5G (4 GB Memory)",
+  title: "  Galaxy Tab A9+ 5G ",
   company : "SAMSUNG",
   price: 22999,
   discount_price : 5000,

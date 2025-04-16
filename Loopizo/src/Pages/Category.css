@@ -8,6 +8,8 @@ body{
     word-wrap:break-word;
     gap: 1.5rem;
     width: 100%;
+    /* margin: 1rem; */
+    justify-content: center;
 }
 
 img{
@@ -17,7 +19,7 @@ img{
 
 .category-card{
     margin: 1rem;
-    width: 200px; 
+    width: 210px; 
     padding: 0.5rem;    
     border: 2px solid black;
     border-radius: 1rem;

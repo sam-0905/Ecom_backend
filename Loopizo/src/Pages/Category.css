@@ -23,6 +23,7 @@ img{
     border-radius: 1rem;
     background-color: var(--primary-color-);
     color: var(--secondary-color-);
+    position: relative;
 }
 
 .category-image{
@@ -41,6 +42,17 @@ img{
   overflow: hidden;
 }
 
+.category-price {
+  font-size: 18px;
+  font-weight: bold;
+  color:lightgoldenrodyellow;
+}
+
+.brand{
+  color: ghostwhite;
+  margin: 0;
+  margin-bottom: 1rem;
+}
 .empty{
     font-size: x-large;
     font-weight: 700;

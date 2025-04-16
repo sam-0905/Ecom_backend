@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Category.css" 
+import { useCart } from "../Context/Cart-context";
 
 const CategoryPage = () => {
   const { categoryId } = useParams(); // Extract category name from URL
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const {state,dispatch} = useCart()
 
   useEffect(() => {
     setLoading(true);
@@ -52,10 +54,15 @@ const CategoryPage = () => {
             <div key={id} className="category-card">
               <img src={image} alt={name} width="100%" height="auto" className="category-image" />
               <h2 className="category-title">{title}</h2>
-              <p>Price: ${price}</p>
-              <h3>{company}</h3>
+              <p className="category-price">Price: ${price}</p>
+              <h3 className="brand">Brand :{company}</h3>
+              <div>
+              <button className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
+
+                    <button className="button-32 wish" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
+                    </button>
+                    </div>
             </div>
-            
         ))}
         </div>
       ) : (

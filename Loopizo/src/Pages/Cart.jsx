@@ -12,15 +12,15 @@ const Cart = () => {
     <div className="cart">
       <div>
         {cartItems.length > 0 ? (
-          cartItems.map(({ _id,title, price, qty, image }) => (
-            <div key={_id} className="cart-card">
+          cartItems.map(({ id,title, price, quantity, image }) => (
+            <div key={id} className="cart-card">
               <div>
                 <img src={image} alt={title} style={{ width: "200px" }} />
               </div>
               <div>
                 <h3>{title}</h3>
                 <p className="price">Price: ₹{price}</p>
-                <p className="quantity">Quantity: {qty}</p>
+                <p className="quantity">Quantity: {quantity}</p>
               </div>
               <div className="cart-btn">
                 <button
@@ -28,7 +28,7 @@ const Cart = () => {
                   onClick={() =>
                     dispatch({
                       type: "ADD_TO_CART",
-                      payload: { _id, price },
+                      payload: { id, price,name,image },
                     })
                   }
                 >
@@ -39,7 +39,7 @@ const Cart = () => {
                   onClick={() =>
                     dispatch({
                       type: "REMOVE_FROM_CART",
-                      payload: { _id ,price },
+                      payload: { id },
                     })
                   }
                 >
@@ -50,7 +50,7 @@ const Cart = () => {
                   onClick={() =>
                     dispatch({
                       type: "DELETE_FROM_CART",
-                      payload: { _id ,price },
+                      payload: { id },
                     })
                   }
                 >

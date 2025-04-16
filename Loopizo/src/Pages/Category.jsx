@@ -48,8 +48,8 @@ const CategoryPage = () => {
       <h2>Products in {categoryId}</h2> {/* Show selected category */}
       {products.length > 0 ? (
         <div className="category">
-          {products.map(({ _id, price, image ,company,title}) => (
-            <div key={_id} className="category-card">
+          {products.map(({ id, price, image ,company,title}) => (
+            <div key={id} className="category-card">
               <img src={image} alt={name} width="100%" height="auto" className="category-image" />
               <h2 className="category-title">{title}</h2>
               <p>Price: ${price}</p>

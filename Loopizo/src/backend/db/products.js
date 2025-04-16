@@ -10,7 +10,7 @@ export const products = [
 
   //Redmi 
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi A4 5G",
     company : " REDMI",
     price: 8499,
@@ -24,7 +24,7 @@ export const products = [
     deliverable:false,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Note 13 Pro",
     company : " REDMI",
     price: 22999,
@@ -38,7 +38,7 @@ export const products = [
     deliverable:true,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Note 13 Pro+",
     company : " REDMI",
     price: 27999,
@@ -52,7 +52,7 @@ export const products = [
     deliverable:true,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi A3X",
     company : " REDMI",
     price: 7999,
@@ -66,7 +66,7 @@ export const products = [
     deliverable:true,
   },  
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi 13 5G",
     company : "REDMI",
     price: 12999,
@@ -80,7 +80,7 @@ export const products = [
     deliverable:false,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Watch 5 Active",
     company : "REDMI",
     price: 2499,
@@ -94,7 +94,7 @@ export const products = [
     deliverable:true,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Watch 5 Lite",
     company : "REDMI",
     price: 3399,
@@ -109,7 +109,7 @@ export const products = [
   },
 
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Buds 5",
     company : "REDMI",
     price: 2499,
@@ -123,7 +123,7 @@ export const products = [
     deliverable:true,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Buds 5C",
     company : "REDMI",
     price: 1799,
@@ -135,7 +135,7 @@ export const products = [
     category: "Buds",
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Pad SE 4g",
     company : "REDMI",
     price: 10999,
@@ -149,7 +149,7 @@ export const products = [
     deliverable:false,
   },
   { 
-    _id: uuid(),  
+    id: uuid(),  
     title: "Redmi Pad SE",
     company : "REDMI",
     price: 12999,
@@ -163,7 +163,7 @@ export const products = [
     deliverable:true,
   },
   { 
-    _id: uuid(),
+    id: uuid(),
     title: "Redmi Pad Pro 5G",
     company : "REDMI",
     price: 24999,
@@ -182,7 +182,7 @@ export const products = [
 
 
 {
-  _id: uuid(),
+  id: uuid(),
   title: "iPhone 16 Pro",
   company : "IPHONE",
   price: 119900,
@@ -196,7 +196,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "iPhone 16",
   company : "IPHONE",
   price: 79900,
@@ -210,7 +210,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "iPhone 15",
   company : "IPHONE",
   price: 69900,
@@ -224,7 +224,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "iPhone 14",
   company : "IPHONE",
   price: 59900,
@@ -238,7 +238,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "iPhone SE",
   company : "IPHONE",
   price: 15900, 
@@ -252,7 +252,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple Watch SE",
   company : "IPHONE",
   price: 29900,
@@ -266,7 +266,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple Watch Seris 9",
   company : "IPHONE",
   price: 49990,
@@ -280,7 +280,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple Watch Series 10",
   company : "IPHONE",
   price: 49999,
@@ -294,7 +294,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple Watch Ultra 2",
   company : "IPHONE",
   price: 89999,
@@ -309,7 +309,7 @@ export const products = [
 },
 
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Air-Pods Pro 2nd Gen",
   company : "IPHONE",
   price: 1899,
@@ -323,7 +323,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple AirPods 4 Wireless Earbuds",
   company : "IPHONE",
   price: 12999,
@@ -337,7 +337,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple AirPods 4 Wireless Earbuds NC",
   company : "IPHONE",
   price: 17999,
@@ -351,7 +351,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple iPad Pro 11 (M4)",
   company : "IPHONE",
   price: 99999,
@@ -365,7 +365,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple iPad (10th)",
   company : "IPHONE",
   price: 33499,
@@ -380,7 +380,7 @@ export const products = [
 },
 
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple iPad Air 13 (M2)",
   company : "IPHONE",
   price: 79999,
@@ -394,7 +394,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Apple iPad Mini",
   company : "IPHONE",
   price: 59999,
@@ -413,7 +413,7 @@ export const products = [
 
 
  {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy S24 FE",
   company : "SAMSUNG",
   price: 65999,
@@ -427,7 +427,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy S24 Ultra",
   company : "SAMSUNG",
   price: 129999,
@@ -441,7 +441,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy S24",
   company : "SAMSUNG",
   price: 89999,
@@ -455,7 +455,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy S24",
   company : "SAMSUNG",
   price: 109999,
@@ -469,7 +469,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy S23",
   company : "SAMSUNG",
   price: 64999,
@@ -483,7 +483,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy A56 5G",
   company : "SAMSUNG",
   price: 47999,
@@ -497,7 +497,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Watch ultra",
   company : "SAMSUNG",
   price: 59999,
@@ -511,7 +511,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Watch7",
   company : "SAMSUNG",
   price: 29999,
@@ -525,7 +525,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Watch5 Pro",
   company : "SAMSUNG",
   price: 19999,
@@ -539,7 +539,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Buds3 Pro",
   company : "SAMSUNG",
   price: 19999,
@@ -553,7 +553,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Buds3",
   company : "SAMSUNG",
   price: 14999,
@@ -567,7 +567,7 @@ export const products = [
   deliverable:true,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Buds FE",
   company : "SAMSUNG",
   price: 9999,
@@ -581,7 +581,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "Galaxy Tab S10+ (Wi-Fi, 12 GB Memory)",
   company : "SAMSUNG",
   price: 90999,
@@ -595,7 +595,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "  Galaxy Tab S10 Ultra 5G (12 GB Memory)",
   company : "SAMSUNG",
   price: 122999,
@@ -609,7 +609,7 @@ export const products = [
   deliverable:false,
 },
 {
-  _id: uuid(),
+  id: uuid(),
   title: "  Galaxy Tab A9+ 5G (4 GB Memory)",
   company : "SAMSUNG",
   price: 22999,
@@ -627,7 +627,7 @@ export const products = [
 
  // -------------------------------------
   // {
-  //   _id: uuid(),
+  //   id: uuid(),
   //   title: "Zebronics Zeb-Bang PRO Headphone",
   //   company : "Zebronics",
   //   price: 999,
@@ -638,21 +638,21 @@ export const products = [
   //   description: "Wireless bluetooth v5.0 headphone with built in microphone for call function.Foldable design with light weight structure, for easy portability.30H* approx. battery backup with the in built battery and Type C charging feature.40mm drivers for full range audio."
   // },
   // {
-  //   _id: uuid(),
+  //   id: uuid(),
   //   title: "You Can WIN",
   //   author: "Shiv Khera",
   //   price: "5000",
   //   category: "non-fiction",
   // },
   // {
-  //   _id: uuid(),
+  //   id: uuid(),
   //   title: "You are Winner",
   //   author: "Junaid Qureshi",
   //   price: "3000",
   //   category: "horror",
   // },
   // {
-  //   _id: uuid(),
+  //   id: uuid(),
   //   title: "Think and Grow Rich",
   //   author: "Shiv Khera",
   //   price: "1000",

@@ -37,7 +37,7 @@ const CategoryPage = () => {
   }, [categoryId]);
 
   if (loading) {
-    return <p>Loading products...</p>;
+    return <p className="loader"></p>;
   }
 
   if (error) {
@@ -47,7 +47,7 @@ const CategoryPage = () => {
   return (
     <>
     <div>
-      <h2>Products in {categoryId}</h2> {/* Show selected category */}
+      <h2 className="category-head">Products in {categoryId}</h2> {/* Show selected category */}
       {products.length > 0 ? (
         <div className="category">
           {products.map(({ id, price, image ,company,title}) => (
@@ -57,7 +57,7 @@ const CategoryPage = () => {
               <p className="category-price">Price: ${price}</p>
               <h3 className="brand">Brand :{company}</h3>
               <div>
-              <button className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
+              <button type="button" className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
 
                     <button className="button-32 wish" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                     </button>

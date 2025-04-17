@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Body from "./Body";
 import CategoryPage from "./Pages/Category";
 import Cart from "./Pages/Cart";
+import WishList from "./Pages/WishList";
 
 function App() {
   return (
@@ -18,10 +19,9 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/body" element={<Body/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
-
         <Route path="/cart" element={<Cart />} />
-
-        {/* <Route path="/wish" element={<WishList />} /> */}
+        <Route path="/wish" element={<WishList/>} />
+        
         {/* <Route path="*" element={<Error />} />  */}
 
         {/* <Route path="/user" element={<UserComponent />} /> */}

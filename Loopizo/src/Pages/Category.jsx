@@ -4,13 +4,16 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Category.css" 
 import { useCart } from "../Context/Cart-context";
+import { useWish } from "../Context/Wish-context";
 
 const CategoryPage = () => {
   const { categoryId } = useParams(); // Extract category name from URL
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const {state,dispatch} = useCart()
+  const {state,dispatch} = useCart();
+  const {state: { wishlist },deleteFromWish,} = useWish();
+
 
   useEffect(() => {
     setLoading(true);
@@ -59,7 +62,7 @@ const CategoryPage = () => {
               <div>
               <button type="button" className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
 
-                    <button className="button-32 wish" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
+                    <button className="button-32 wish" onClick={()=> deleteFromWish({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                     </button>
                     </div>
             </div>

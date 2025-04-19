@@ -12,7 +12,8 @@ const Cart = () => {
     <div className="cart">
       <div>
         {cartItems.length > 0 ? (
-          cartItems.map(({ id,title, price, quantity, image }) => (
+          cartItems.map(({ id, price, quantity, image,title }) => (
+            console.log("from cart",cartItems),
             <div key={id} className="cart-card">
               <div>
                 <img src={image} alt={title} style={{ width: "200px" }} />

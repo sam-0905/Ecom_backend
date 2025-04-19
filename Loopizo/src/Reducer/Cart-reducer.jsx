@@ -6,7 +6,6 @@ export function cartRedFunc(state, action) {
   switch (action.type) {
     case "SET_CART": {
       const cartItems = action.payload || [];
-
       const quantity = cartItems.reduce((acc, item) => acc + item.qty, 0);
       const totalPrice = cartItems.reduce(
         (acc, item) => acc + item.price * item.qty,

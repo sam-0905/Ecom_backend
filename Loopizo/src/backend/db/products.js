@@ -136,7 +136,7 @@ export const products = [
   },
   { 
     id: uuid(),
-    title: "Redmi Pad SE 4g",
+    title: "Redmi Pad SE 4g tab",
     company : "REDMI",
     price: 10999,
     // discount_price : 3999,
@@ -150,7 +150,7 @@ export const products = [
   },
   { 
     id: uuid(),  
-    title: "Redmi Pad SE",
+    title: "Redmi Pad SE tab",
     company : "REDMI",
     price: 12999,
     // discount_price : 2999,
@@ -164,7 +164,7 @@ export const products = [
   },
   { 
     id: uuid(),
-    title: "Redmi Pad Pro 5G",
+    title: "Redmi Pad Pro 5G tab",
     company : "REDMI",
     price: 24999,
     // discount_price : 2999,
@@ -179,7 +179,6 @@ export const products = [
 
 
 //Iphone
-
 
 {
   id: uuid(),

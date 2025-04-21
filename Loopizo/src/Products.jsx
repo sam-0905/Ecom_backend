@@ -4,7 +4,7 @@ import Filters from "./Pages/Filters";
 import { useCart } from "./Context/Cart-context";
 import { useWish } from "./Context/Wish-context";
 
-const Body = () => {
+const Products = () => {
 
 const [products,setProducts] = useState([])
 const [loader , setLoader ] = useState(false)
@@ -139,4 +139,4 @@ return (
 }
 
 
-export default Body;
+export default Products;

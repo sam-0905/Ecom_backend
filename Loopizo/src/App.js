@@ -17,7 +17,7 @@ function App() {
 
         <Route path="/mock" element={<Mockman/>} />
         <Route path="/" element={<Home/>} />
-        <Route path="/Products" element={<Products/>} />
+        <Route path="/products" element={<Products/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wish" element={<WishList/>} />

@@ -2,61 +2,90 @@ import { useState,useEffect } from "react";
 import axios from 'axios';
 import Filters from "./Pages/Filters";
 import { useCart } from "./Context/Cart-context";
+import { useWish } from "./Context/Wish-context";
 
 const Body = () => {
 
-    const [products,setProducts] = useState([])
-    const [loader , setLoader ] = useState(false)
-    const [search, setSearch] = useState("")
-    const [filterData, setFilterData] = useState([])
-    const [filteredProducts,setFilteredProducts] = useState([])
+const [products,setProducts] = useState([])
+const [loader , setLoader ] = useState(false)
+const [searchTerm, setSearchTerm] = useState("")
+const [filteredData, setfilteredData] = useState([])
 
-    const {state,dispatch} = useCart();
+const[sort,setSort] = useState("");
+const[inStockOnly , setInStockOnly] = useState(false);
+const[deliverable,setDeliverable] = useState(false);
+const[minRating , setMinRating] = useState(0);
+const[maxPrice,setMaxPrice] = useState(130000)
 
-    const filteredData = () => {
-        console.log("filter",search)
-        const filteredSearch = products.filter((product) => (
-            product?.title?.toLowerCase()?.includes?.(search?.toLowerCase())
-        ));
-        setFilterData(filteredSearch)
-    }
+const {state,dispatch} = useCart();
 
-    const changeSearchHandler = (e) => setSearch(e.target.value)
+const {state: { wishlist },AddToWish,} = useWish();
 
-    useEffect(() =>{
+
+const onSearchInputHandler = (e) => setSearchTerm(e.target.value)
+
+useEffect(() =>{
         setLoader(true)
         axios.get('/api/products')
-        .then(res => {
-        setLoader(false)
-        setProducts(res.data.products)
-        setFilterData(res.data.products)
-        console.log(res.data.products)
-        })  
-        .catch((err) => {
-        console.log(err)
-        })
+            .then(res => {
+                setLoader(false)
+                setProducts(res.data.products)
+                console.log(res.data.products)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+}, [])  
 
-    }, [])
+useEffect(() => {
 
+    const filteredProducts = products
+    .filter(product =>(inStockOnly ? product.inStock:true))
+    .filter(product => deliverable ? product.deliverable: true)
+    .filter(product => product.starRating >= minRating)
+    .filter(product => product.price <= maxPrice) 
+    .filter((product) => (product?.title?.toLowerCase()?.includes?.(searchTerm?.toLowerCase()))) 
+    .sort((a,b)=> {
+      if(sort === "lowToHigh") return a.price - b.price;
+      if(sort === "highToLow") return b.price - a.price;
+      return 0;
+      });
+      setfilteredData(filteredProducts)
 
-    return <>
-            <div className="main-content">
-            <Filters onFilter={(filteredList) => setFilteredProducts(filteredList)} />
+      },[products, sort, inStockOnly, deliverable, minRating, maxPrice, searchTerm]);
 
-            <div className="right-section">
+return (
+<>
+    <div className="main-content">
+        
+        <Filters 
+            sort={sort}
+            setSort={setSort}
+            inStockOnly={inStockOnly}
+            setInStockOnly={setInStockOnly}
+            deliverable={deliverable}
+            setDeliverable={setDeliverable}
+            minRating={minRating}
+            setMinRating={setMinRating}
+            maxPrice={maxPrice}
+            setMaxPrice={setMaxPrice}
+        />
+            
+        <div className="right-section">
             <div className="search-container">
-                <input 
-                type="text"
-                value={search}
-                onChange={changeSearchHandler}
-                className="search-bar"
-                placeholder="Still deciding? Search products here... 🔎"
-                ></input>
-                <button className="button-44" role="button" onClick={filteredData}>Search</button>
-             </div>
-                {loader && <div className="loader"></div>}
-                <div className="card">               
-                { filteredProducts && filterData.map(
+                <input type="text" value={searchTerm} onChange={onSearchInputHandler} className="search-bar"
+                    placeholder="Still deciding? Search products here... 🔎"></input>
+                <button className="button-44" role="button" onClick={()=>{setSearchTerm(searchTerm)}}>Search</button>
+            </div>
+            {loader && <div className="loader" key={""}></div>}
+            <div className="card">
+                {filteredData.length === 0 ? 
+                (<div className="no-products-message">
+                    <h2>No Products Found</h2>
+                    <p>Try adjusting your filters or search keyword.</p>
+                  </div>)
+              : (
+                filteredData.map(
                 ({
                 id,
                 title,
@@ -66,44 +95,47 @@ const Body = () => {
                 company,
                 inStock,
                 deliverable
-            }) => (
+                }) => (
 
-                 <div className="card-container product-card">
-                 <div key={id} className="product-image"> 
-                      <img src={image} alt={title} />
-                  </div>
+                <div className="card-container product-card">
+                    <div key={id} className="product-image">
+                        <img src={image} alt={title} />
+                    </div>
                     <div>
-                    <h2 className="product-title"> {title} </h2 >
-                    <h4 className="brand">Brand :{company}</h4>
+                        <h2 className="product-title"> {title} </h2>
+                        <h4 className="brand">Brand :{company}</h4>
 
                     </div>
-                 <div className="card-details">
-                    <p className="current-price"> ₹ {price}</p>
-                    <p className="rating  fa fa-star " style={{color:'yellow'}}>
-                        <span class="rating-count" > {starRating}</span>
-                    </p>
-                    <p className="in-stock-label">{inStock ? 'In Stock' : 'Out of Stock'}</p>
-                    <p className="delivery-info">{deliverable ? 'Deliverable' : 'Not Deliverable'}</p>
-                    
-                  </div>
-                 
-                    <div>
-                    <button className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
+                    <div className="card-details">
+                        <p className="current-price"> ₹ {price}</p>
+                        <p className="rating  fa fa-star " style={{color:'yellow'}}>
+                            <span class="rating-count"> {starRating}</span>
+                        </p>
+                        <p className="in-stock-label">{inStock ? 'In Stock' : 'Out of Stock'}</p>
+                        <p className="delivery-info">{deliverable ? 'Deliverable' : 'Not Deliverable'}</p>
 
-                    <button className="button-32 wish" onClick={()=> andFunctionSetWishlist({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
-                    </button>
                     </div>
-            
-                 </div>
-                
-             )
-                )}
-  
-               </div>
+
+                    <div>
+                        <button className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART",
+                            payload:{price,id,name,image}})}>ADD TO CART</button>
+
+                        <button className="button-32 wish" onClick={()=> AddToWish({type:"ADD_TO_WISHLIST",
+                            payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                )
+                )) 
+            }
+
             </div>
-          </div>
-
-         </>
+        </div>
+    </div>
+</>
+)
 }
 
 

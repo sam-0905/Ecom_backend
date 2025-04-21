@@ -4,10 +4,10 @@ import { Routes, Route } from 'react-router-dom';
 import Mockman from "mockman-js";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
-import Body from "./Body";
 import CategoryPage from "./Pages/Category";
 import Cart from "./Pages/Cart";
 import WishList from "./Pages/WishList";
+import Products from "./Products";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 
         <Route path="/mock" element={<Mockman/>} />
         <Route path="/" element={<Home/>} />
-        <Route path="/body" element={<Body/>} />
+        <Route path="/Products" element={<Products/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wish" element={<WishList/>} />

@@ -14,7 +14,7 @@ export const Title = () => (
       <a href="/" className='logo-container'>
         <span className='logo-heading'>Loopizo</span>
         <img className="logo" src={Logo} alt="logo" />
-        <span className='Nav' style={{marginRight:"5rem",marginTop:"0.5rem"}}><NavLink style={getActiveLink} to="/body">
+        <span className='Nav' style={{marginRight:"5rem",marginTop:"0.5rem"}}><NavLink style={getActiveLink} to="/products">
         <a className="fa fa-product-hunt container"> Products</a>
         </NavLink></span>
       </a>

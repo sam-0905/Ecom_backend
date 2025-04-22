@@ -1,69 +1,78 @@
-// ../Context/Wish-context.js
 import axios from "axios";
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { wishRedFunc } from "../Reducer/WishList-reducer";
 
-const initialState = {
-  wishlist: JSON.parse(localStorage.getItem("wishlist")) || [],
-};
-
 const WishContext = createContext();
 
-export const WishProvider = ({ children }) => {
+const initialState = {
+  wishlist: [],
+};
+
+const WishProvider = ({ children }) => {
   const [state, dispatch] = useReducer(wishRedFunc, initialState);
   const token = localStorage.getItem("token");
-  const config = { headers: { authorization: token } };
 
-  // fetch entire wishlist
+  const config = {
+    headers: { authorization: token },
+  };
+
+  // Get Wishlist
   const getWish = async () => {
+    if (!token) {
+      console.error("Token missing. Please log in.");
+      return;
+    }
     try {
-      const res = await axios.get("/api/user/wishlist", config);
-      dispatch({ type: "SET_WISH", payload: res.data.wishlist });
+      const res = await axios.get("https://mockbee.netlify.app/api/user/wishlist", config);
+      dispatch({ type: "SET_WISH", payload:res.data.wishlist });
     } catch (err) {
       console.error("Wishlist fetch failed:", err);
     }
   };
 
-  // add one product, then re‑sync
-  const AddToWish = async product => {
+  // Add to Wishlist
+  const AddToWish = async (product) => {
+    if (!token) {
+      console.error("Token missing. Please log in.");
+      return;
+    }
+  
     try {
-      const res = await axios.post("/api/user/wishlist", { product }, config);
+      const res = await axios.post("/api/user/wishlist", {product}, config);
       dispatch({ type: "SET_WISH", payload: res.data.wishlist });
     } catch (err) {
-      console.error("Add to wishlist error:", err);
+      console.error("Add to wishlist error:", err.response ? err.response.data : err);
     }
   };
+  
 
-  // delete one product, then re‑sync
-  const deleteFromWish = async productId => {
+  // Delete from Wishlist
+  const deleteFromWish = async (productId) => {
+    if (!token) {
+      console.error("Token missing. Please log in.");
+      return;
+    }
     try {
-      const res = await axios.delete(
-        `/api/user/wishlist/${productId}`,
-        config
-      );
+      const res = await axios.delete(`/api/user/wishlist/${productId}`, config);
       dispatch({ type: "SET_WISH", payload: res.data.wishlist });
     } catch (err) {
-      console.error("Delete from wishlist error:", err);
+      console.error("Delete from wishlist error:", err.response ? err.response.data : err);
     }
   };
+  
 
-  // keep localStorage in sync
-  useEffect(() => {
-    localStorage.setItem("wishlist", JSON.stringify(state.wishlist));
-  }, [state.wishlist]);
-
-  // initial load if token exists
+  // Fetch wishlist on token change
   useEffect(() => {
     if (token) getWish();
   }, [token]);
 
   return (
-    <WishContext.Provider
-      value={{ state, dispatch, AddToWish, deleteFromWish }}
-    >
+    <WishContext.Provider value={{ state, dispatch, AddToWish, deleteFromWish }}>
       {children}
     </WishContext.Provider>
   );
 };
 
-export const useWish = () => useContext(WishContext);
+const useWish = () => useContext(WishContext);
+
+export { WishProvider, useWish };

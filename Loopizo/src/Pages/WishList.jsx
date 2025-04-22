@@ -1,4 +1,3 @@
-// ../components/WishList.jsx
 import React from "react";
 import { useWish } from "../Context/Wish-context";
 // import emptyWish from "../assets/emptyWish.png";
@@ -9,13 +8,10 @@ const WishList = () => {
     deleteFromWish,
   } = useWish();
 
-  // guard in case someone passes non‑array
-  const items = Array.isArray(wishlist) ? wishlist : [];
-
-  if (items.length === 0) {
+  if (!Array.isArray(wishlist) || wishlist.length === 0) {
     return (
       <h1 className="empty-wish animate__animated animate__flash">
-        <img src={emptyWish} alt="empty-wish" />
+        {/* <img src={emptyWish} alt="empty-wish" /> */}
         Your wishlist is empty
       </h1>
     );
@@ -23,7 +19,8 @@ const WishList = () => {
 
   return (
     <>
-      {items.map(({ id,title, price, quantity, image  }) => (
+      {wishlist.map(({id, title, image, price }) => (
+        console.log("Wishlist:", wishlist),
         <div key={id} className="wishlist-item">
           <div>
             <img src={image} alt={title} />
@@ -33,10 +30,7 @@ const WishList = () => {
             <p className="price">Price: ${price}</p>
           </div>
           <div>
-            <button
-              className="button-32"
-              onClick={() => deleteFromWish(id)}
-            >
+            <button className="button-32" onClick={() => deleteFromWish(id)}>
               <i className="fa fa-trash-o" style={{ fontSize: "16px" }} />
             </button>
           </div>

@@ -40,6 +40,13 @@
     max-width: 600px;
 }
 
+.cart-img{
+    height: 150px;           
+    /* Fixed height for all images */
+     width: 80%;
+     object-fit: cover;
+     margin: 1rem;   
+}
 .price {
     font-size: 1.2em;
     color: #e28a2b;
@@ -57,15 +64,20 @@ align-content: center;
 }
 
 .empty-cart {
-    width: 50%;
+    width: 40%;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
 }
-.text {
+
+.empty-cart-text{    
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 900;
     color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem; 
+    border-radius: 50%;
 }
 
 .animate__animated.animate__fadeInLeft {

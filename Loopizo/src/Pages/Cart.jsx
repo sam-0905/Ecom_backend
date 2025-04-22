@@ -16,7 +16,7 @@ const Cart = () => {
             console.log("from cart",cartItems),
             <div key={id} className="cart-card">
               <div>
-                <img src={image} alt={title} style={{ width: "200px" }} />
+                <img src={image} alt={title} className="cart-img" />
               </div>
               <div>
                 <h3>{title}</h3>
@@ -70,7 +70,7 @@ const Cart = () => {
               alt="Empty Cart"
               className="empty-cart"
             />
-            <h1 className="text">Your cart is empty</h1>
+            <h2 className="empty-cart-text">🛍️ The shelves are full, but your cart isn’t! 🛒</h2>
           </div>
         )}
       </div>

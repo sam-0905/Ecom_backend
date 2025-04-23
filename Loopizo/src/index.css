@@ -9,7 +9,7 @@
   text-align: center;
   width: 100%;
   --primary-color: #0a1d29;
-  --secondary-color: #ff4c9f;
+  --secondary-color: #ADEFD1;
   --accent-color: #00d8ff;
   --light-color: #f0f4f8;
 }
@@ -351,6 +351,12 @@ a:hover {
   height: 40px;
   overflow: hidden;
 }
+.product-image{
+  height: 150px;
+  width: 80%;
+  object-fit: cover;
+  margin: 1rem;
+}
 
 /* Price and Stock */
 .price-container {
@@ -393,6 +399,7 @@ a:hover {
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: 700;
   color: #000;
   cursor: pointer;
   border: 3px solid;
@@ -406,6 +413,11 @@ a:hover {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
+}
+
+.button-56:hover{
+  background-color:#ff2d94;
+  color: black
 }
 
 @media (min-width: 768px) {
@@ -428,7 +440,9 @@ a:hover {
 
 .button-32:not(:disabled):hover,
 .button-32:not(:disabled):focus {
-  background: #f4e603;
+  /* background: #f4e603; */
+  color: red;
+  background-color: beige;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, .2), 0 3px 8px 0 rgba(0, 0, 0, .15);
 }
 

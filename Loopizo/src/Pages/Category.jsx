@@ -57,7 +57,7 @@ const CategoryPage = () => {
             <div key={id} className="category-card">
               <img src={image} alt={name} width="100%" height="auto" className="category-image" />
               <h2 className="category-title">{title}</h2>
-              <p className="category-price">Price: ${price}</p>
+              <p className="category-price">Price: $ {price}</p>
               <h3 className="brand">Brand :{company}</h3>
               <div>
               <button type="button" className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>

@@ -352,7 +352,7 @@ a:hover {
   overflow: hidden;
 }
 .product-image{
-  height: 150px;
+  height: 160px;
   width: 80%;
   object-fit: cover;
   margin: 1rem;

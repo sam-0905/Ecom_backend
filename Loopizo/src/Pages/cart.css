@@ -37,6 +37,7 @@
     color: var(--secondary-color);
     width: 90%;
     max-width: 600px;
+    margin: 0.5rem;
 }
 
 .cart-img{

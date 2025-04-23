@@ -78,6 +78,7 @@ align-content: center;
     padding: 1rem;
     margin: 1rem; 
     border-radius: 50%;
+    font-family:cursive;
 }
 
 .animate__animated.animate__fadeInLeft {

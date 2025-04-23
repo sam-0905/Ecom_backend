@@ -71,7 +71,7 @@ const CategoryPage = () => {
       ) : (
         <p className="empty">No products found for this category.</p>
       )}
-          <Link to="/" className="button-74">BacK To Home</Link>
+          <Link to="/" className="button-74">Back To Home</Link>
     </div>
     </>
   );

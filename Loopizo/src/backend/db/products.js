@@ -115,11 +115,11 @@ export const products = [
     price: 2499,
     // discount_price : 3999,
     type: "Buds",
-    image : require("../../assets/ProductImg/Redmi_watch5g_lite.png"),
+    image : require("../../assets/ProductImg/Redmi-Buds5.png"),
     starRating: 2.3,
     description: "Bluetooth TWS Earbuds, Up to 46dB Hybrid Noise Cancellation, Quad Mic with AI Call Enhancement, 10mins Charge for 4Hours Life, Up to 38Hrs Playback| Fusion Purple",
-    category: "Watches",
-    inStock:false,
+    category: "Buds",
+    inStock:true,
     deliverable:true,
   },
   { 
@@ -133,6 +133,8 @@ export const products = [
     starRating: 4.3,
     description: "Bluetooth TWS in Ear Earbuds, Up to 40Db Hybrid Noise Cancellation, Quad Mic, Custom Eq, 10Mins Charge for 2Hours Life, Up to 36Hrs Playback, Gaming TWS| Acoustic Black",
     category: "Buds",
+    inStock:true,
+    deliverable:false,
   },
   { 
     id: uuid(),

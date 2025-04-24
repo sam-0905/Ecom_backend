@@ -4,6 +4,8 @@ import Filters from "./Pages/Filters";
 import { useCart } from "./Context/Cart-context";
 import { useWish } from "./Context/Wish-context";
 import { Link, useParams } from "react-router";
+import info from "./assets/Icon/Info.png"
+
 
 const Products = () => {
 
@@ -127,8 +129,7 @@ return (
                             payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                         </button>
                     </div>
-                    <div><Link to={`/product/${id}`}>see details</Link></div>
-
+                    <div className="info-btn"><Link to={`/product/${id}`}><img src={info} alt="" /></Link></div>
                 </div>
                 
                 )

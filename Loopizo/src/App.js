@@ -8,6 +8,7 @@ import CategoryPage from "./Pages/Category";
 import Cart from "./Pages/Cart";
 import WishList from "./Pages/WishList";
 import Products from "./Products";
+import ProductDetail from "./Pages/ProductDetail";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/mock" element={<Mockman/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/products" element={<Products/>} />
+        <Route path="/product/:productId" element={<ProductDetail/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wish" element={<WishList/>} />
@@ -28,7 +30,6 @@ function App() {
         {/* <Route path="/login" element={<LoginComp />} /> */}
         {/* <Route path="/about" element={<AboutComponent />} /> */}
         {/* this route shld also map to a component. */}
-        {/* <Route path="/product/:ProductId" element={<ProductComponent />} />*/}
       </Routes>
     </>
   );

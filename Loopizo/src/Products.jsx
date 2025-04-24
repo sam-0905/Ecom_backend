@@ -3,6 +3,7 @@ import axios from 'axios';
 import Filters from "./Pages/Filters";
 import { useCart } from "./Context/Cart-context";
 import { useWish } from "./Context/Wish-context";
+import { Link } from "react-router";
 
 const Products = () => {
 
@@ -125,10 +126,12 @@ return (
                         </button>
                     </div>
 
+                    <div><Link to={`/product/${id}`}>see details</Link></div>
+
                 </div>
 
                 )
-                )) 
+                ))  
             }
 
             </div>

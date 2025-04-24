@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Category.css" 
 import { useCart } from "../Context/Cart-context";
 import { useWish } from "../Context/Wish-context";
+import info from "../assets/Icon/Info.png"
 
 const CategoryPage = () => {
   const { categoryId } = useParams(); // Extract category name from URL
@@ -64,6 +65,8 @@ const CategoryPage = () => {
 
                     <button className="button-32 wish" onClick={()=> deleteFromWish({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                     </button>
+                <div className="info-btn"><Link to={`/product/${id}`}><img src={info} alt="" /></Link></div>
+                    
                     </div>
             </div>
         ))}

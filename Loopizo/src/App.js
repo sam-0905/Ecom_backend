@@ -9,6 +9,8 @@ import Cart from "./Pages/Cart";
 import WishList from "./Pages/WishList";
 import Products from "./Products";
 import ProductDetail from "./Pages/ProductDetail";
+import Error from "./Pages/Error";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -23,13 +25,11 @@ function App() {
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wish" element={<WishList/>} />
-        
-        {/* <Route path="*" element={<Error />} />  */}
+        <Route path="*" element={<Error/>} /> 
 
         {/* <Route path="/user" element={<UserComponent />} /> */}
-        {/* <Route path="/login" element={<LoginComp />} /> */}
+        <Route path="/login" element={<Login/>} />
         {/* <Route path="/about" element={<AboutComponent />} /> */}
-        {/* this route shld also map to a component. */}
       </Routes>
     </>
   );

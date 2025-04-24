@@ -3,7 +3,7 @@ import axios from 'axios';
 import Filters from "./Pages/Filters";
 import { useCart } from "./Context/Cart-context";
 import { useWish } from "./Context/Wish-context";
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 
 const Products = () => {
 
@@ -11,6 +11,8 @@ const [products,setProducts] = useState([])
 const [loader , setLoader ] = useState(false)
 const [searchTerm, setSearchTerm] = useState("")
 const [filteredData, setfilteredData] = useState([])
+const { productId } = useParams();
+
 
 const[sort,setSort] = useState("");
 const[inStockOnly , setInStockOnly] = useState(false);
@@ -95,7 +97,7 @@ return (
                 starRating,
                 company,
                 inStock,
-                deliverable
+                deliverable,
                 }) => (
 
                 <div className="card-container product-card">
@@ -125,11 +127,10 @@ return (
                             payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
                         </button>
                     </div>
-
                     <div><Link to={`/product/${id}`}>see details</Link></div>
 
                 </div>
-
+                
                 )
                 ))  
             }

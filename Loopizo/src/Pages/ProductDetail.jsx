@@ -8,23 +8,28 @@ const ProductDetail = () => {
     const [error, setError] = useState("");
 
     useEffect(() => {
-        axios.get(`/api/products/${productId}`)
-            .then((res) => {
-                console.log("API response:", res.data);
-
-                const product = res.data.product;
-
-                if (!product || String(product.id) !== String(productId)) {
-                    setError("No product found in API response.");
-                } else {
-                    setProductDetails(product);
-                }
-            })
-            .catch((err) => {
-                console.error("API error:", err);
-                setError("Failed to load product. Please try again later.");
-            });
-    }, [productId]);
+        axios.get("/api/products")
+          .then((res) => {
+            const productList = res.data.products;
+      
+            function getProductDetails(productList, productId) {
+              return productList.find((item) => String(item.id) === String(productId));
+            }
+      
+            const product = getProductDetails(productList, productId);
+      
+            if (!product) {
+              setError("No product found in API response.");
+            } else {
+              setProductDetails(product);
+            }
+          })
+          .catch((err) => {
+            console.error("API error:", err);
+            setError("Failed to load product. Please try again later.");
+          });
+      }, [productId]);
+      
 
     if (error) {
         return <h2 style={{ color: "red" }}>{error}</h2>;
@@ -34,17 +39,24 @@ const ProductDetail = () => {
         return <h2 style={{ color: "white" }}>Loading...</h2>;
     }
 
-    const { title, image, description, price } = productDetails;
+    const { title, image, description, price,company } = productDetails;
 
     return (
         <>
-            <h1 style={{ color: "white" }}>Product Details</h1>
-            <div>
-                <img src={image} alt={title} />
-                <h2>{title}</h2>
-                <h3>Price: ₹{price}</h3>
-                <h4>{description}</h4>
-            </div>
+  <div className="product-details-container">
+                    <h1>Product Details</h1>
+        <div className="product-details-content">
+             <img src={productDetails.image} alt={productDetails.title} />
+            <div className="product-details-text">
+                <h2>{productDetails.title}</h2> 
+                <h3 style={{color:"darkred"}}>Brand : {productDetails.company}</h3>
+                <h3>Price: ₹{productDetails.price}</h3>
+             <h4>Description : {productDetails.description}</h4>
+          </div>
+      </div>
+</div>
+
+
         </>
     );
 };

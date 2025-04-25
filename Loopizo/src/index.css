@@ -506,11 +506,11 @@ a:hover {
   color: var(--primary-color);
   border-radius: 16px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, #ADEFD1, #888);
+  background: linear-gradient(135deg, #ADEFD1, #e53dc3);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease-in-out;
-  height: auto;
+  height: max-content;
 }
 
 /* Heading */
@@ -527,9 +527,9 @@ a:hover {
 .product-details-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 1.2rem;
   justify-content: center;
+  padding: 1rem;
 }
 
 /* Image - smaller & hover effect */
@@ -559,18 +559,18 @@ a:hover {
 
 .product-details-text h2 {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .product-details-text h3 {
   color: lightgoldenrodyellow;
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .product-details-text h4 {
   font-size: 0.9rem;
-  color: #f1f1f1;
+  color: ghostwhite;
   line-height: 1.4;
 }
 

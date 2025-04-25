@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { useCart } from "../Context/Cart-context";
 
 const ProductDetail = () => {
   const { productId } = useParams();
   const [productDetails, setProductDetails] = useState(null);
   const [error, setError] = useState("");
+  const {state,dispatch} = useCart()
 
   useEffect(() => {
     axios.get("/api/products")
@@ -36,11 +38,11 @@ const ProductDetail = () => {
     return <h2 style={{ color: "white" }}>Loading...</h2>;
   }
 
-  const { title, image, description, price, company } = productDetails;
+  const { title, image, description, price, company,id } = productDetails;
 
   return (
     <div className="product-details-container">
-      <h1>Product Details</h1>
+      {/* <h1>Product Details</h1> */}
       <div className="product-details-content">
         <img src={image} alt={title} />
         <div className="product-details-text">
@@ -48,6 +50,7 @@ const ProductDetail = () => {
           <h3 style={{ color: "darkred" }}>Brand : {company}</h3>
           <h3>Price: ₹{price}</h3>
           <h4>Description : {description}</h4>
+          <button className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
         </div>
       </div>
     </div>

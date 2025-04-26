@@ -2,10 +2,18 @@ import { useCart } from "../Context/Cart-context";
 import EmptyCart from "../assets/Icon/EmptyCart.png";
 import "animate.css";
 import "../Pages/cart.css"
+import { useState } from "react";
+import Alert from "../components/Alert";
 
 const Cart = () => {
   const { state, dispatch } = useCart();
   const { cartItems, quantity, totalPrice } = state;
+  const [alert,setAlert] = useState(null);
+
+  const showAlert = (message,type) => {
+    setAlert({message,type})
+}
+
 
   return (
     <>
@@ -35,17 +43,19 @@ const Cart = () => {
                 >
                   +
                 </button>
-                <button
-                  className="button"
-                  onClick={() =>
+                  
+                 <button
+                  className="button remove"
+                  onClick={() => {
                     dispatch({
                       type: "REMOVE_FROM_CART",
                       payload: { id },
-                    })
-                  }
-                >
+                    });
+                    showAlert("Removed from Cart", "error");
+                   }}
+                 >
                   -
-                </button>
+               </button>
                 <button
                   className="button"
                   onClick={() =>
@@ -71,8 +81,16 @@ const Cart = () => {
               className="empty-cart"
             />
             <h2 className="empty-cart-text">🛍️ The shelves are full, but your cart isn’t! 🛒</h2>
+
           </div>
         )}
+               {alert && (
+                     <Alert
+                       message={alert.message}
+                       type={alert.type}
+                       onClose={() => setAlert(null)}
+                      />
+                     )}
       </div>
 
       <div className="cart-order">

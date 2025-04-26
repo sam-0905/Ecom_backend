@@ -11,6 +11,7 @@ import Products from "./Products";
 import ProductDetail from "./Pages/ProductDetail";
 import Error from "./Pages/Error";
 import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
 
 function App() {
   return (
@@ -25,10 +26,10 @@ function App() {
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wish" element={<WishList/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
         <Route path="*" element={<Error/>} /> 
 
-        {/* <Route path="/user" element={<UserComponent />} /> */}
-        <Route path="/login" element={<Login/>} />
         {/* <Route path="/about" element={<AboutComponent />} /> */}
       </Routes>
     </>

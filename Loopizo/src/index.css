@@ -584,6 +584,48 @@ a:hover {
    margin-right:0.5rem;
 }
 
+
+/* .alert */
+.alert {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  z-index: 9999;
+  opacity: 0;
+  animation: slideIn 0.3s ease forwards, fadeOut 0.5s ease 1.5s forwards;
+}
+
+.alert-success {
+  background-color: #28a745;
+}
+
+.alert-error {
+  background-color: #dc3545;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
 /* .discount {
   color: #388e3c;
   font-size: 14px;

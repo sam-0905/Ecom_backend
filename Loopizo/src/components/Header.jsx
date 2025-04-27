@@ -3,6 +3,7 @@
 import { NavLink } from 'react-router-dom';
 // import AppIcon from "../assets/images/AppIcon.svg"
 import Logo from "../assets/Icon/Logo.png"
+import { useAuth } from '../Context/Auth-context';
 
 const getActiveLink = ({ isActive, isPending }) => ({
   margin: '1rem 0',
@@ -22,8 +23,8 @@ export const Title = () => (
     </div>
   );
 
-const Header = () => {
-
+const Header = () => {    
+    const {login,setLogin} = useAuth()
    return (
     <>   
     <div className="header">
@@ -38,8 +39,18 @@ const Header = () => {
         <NavLink style={getActiveLink} to="/cart">
         <a className="fa fa-cart-arrow-down container"> Cart</a>
         </NavLink>
-        <NavLink style={getActiveLink} to="/login">
-          <a className="fa fa-sign-in container" > Login</a>
+        <NavLink 
+  style={getActiveLink} 
+  to="/login" 
+  onClick={() => setLogin((prev) => !prev)}
+  
+>
+  <a className="fa fa-sign-in container">  {login ? "Logout" : "Login"}
+  </a>
+</NavLink>
+
+        <NavLink style={getActiveLink} to="/address">
+        <a className="fa fa-cart-arrow-down container"> address</a>
         </NavLink>
       </nav>
     </div>

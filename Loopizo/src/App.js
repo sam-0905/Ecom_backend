@@ -12,8 +12,11 @@ import ProductDetail from "./Pages/ProductDetail";
 import Error from "./Pages/Error";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
+import Address from "./Pages/Private/Address";
+import RequireAuth from "./components/RequireAuth";
 
 function App() {
+
   return (
     <>
     <Header/>
@@ -26,8 +29,13 @@ function App() {
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wish" element={<WishList/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/login" element={<Login/>} />  
+        <Route path="/signup" element={
+          <RequireAuth><Signup/></RequireAuth>
+        } />
+        <Route path="/address" element={
+          <RequireAuth><Address/></RequireAuth>
+        } />
         <Route path="*" element={<Error/>} /> 
 
         {/* <Route path="/about" element={<AboutComponent />} /> */}

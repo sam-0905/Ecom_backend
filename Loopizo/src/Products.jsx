@@ -6,6 +6,7 @@
     import { Link, useParams } from "react-router";
     import info from "./assets/Icon/Info.png"
     import Alert from "./components/Alert";
+    import { useAlert } from "./Context/Alert-context";
 
 
     const Products = () => {
@@ -26,11 +27,7 @@
 
     const {state: { wishlist },AddToWish,} = useWish();
 
-    const [alert,setAlert] = useState(null);
-
-    const showAlert = (message,type) => {
-        setAlert({message,type})
-    }
+    const {showAlert,alert, hideAlert} = useAlert();
 
     const onSearchInputHandler = (e) => setSearchTerm(e.target.value)
 
@@ -159,7 +156,7 @@
                      <Alert
                        message={alert.message}
                        type={alert.type}
-                       onClose={() => setAlert(null)}
+                       onClose={hideAlert}
                       />
                      )}
             </div>

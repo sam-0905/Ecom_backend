@@ -2,12 +2,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { useCart } from "../Context/Cart-context";
+import Alert from './../components/Alert';
+import { useAlert } from "../Context/Alert-context";
 
 const ProductDetail = () => {
   const { productId } = useParams();
   const [productDetails, setProductDetails] = useState(null);
   const [error, setError] = useState("");
   const {state,dispatch} = useCart()
+  
 
   useEffect(() => {
     axios.get("/api/products")
@@ -40,6 +43,9 @@ const ProductDetail = () => {
 
   const { title, image, description, price, company,id } = productDetails;
 
+  const {showAlert,alert, hideAlert} = useAlert();
+
+
   return (
     <div className="product-details-container">
       {/* <h1>Product Details</h1> */}
@@ -50,8 +56,18 @@ const ProductDetail = () => {
           <h3 style={{ color: "darkred" }}>Brand : {company}</h3>
           <h3>Price: ₹{price}</h3>
           <h4>Description : {description}</h4>
-          <button className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
+          <button className="button-56" onClick={()=> {
+            dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}});
+            showAlert("Added to Cart!", "success");
+          }}>ADD TO CART</button>
         </div>
+            {alert && (
+                     <Alert
+                       message={alert.message}
+                       type={alert.type}
+                       onClose={hideAlert}
+                      />
+                     )}
       </div>
     </div>
   );

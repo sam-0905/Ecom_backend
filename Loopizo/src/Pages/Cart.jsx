@@ -4,16 +4,13 @@ import "animate.css";
 import "../Pages/cart.css"
 import { useState } from "react";
 import Alert from "../components/Alert";
+import { useAlert } from "../Context/Alert-context";
 
 const Cart = () => {
   const { state, dispatch } = useCart();
   const { cartItems, quantity, totalPrice } = state;
-  const [alert,setAlert] = useState(null);
-
-  const showAlert = (message,type) => {
-    setAlert({message,type})
-}
-
+   const {showAlert,alert, hideAlert} = useAlert();
+  
 
   return (
     <>
@@ -58,12 +55,13 @@ const Cart = () => {
                </button>
                 <button
                   className="button"
-                  onClick={() =>
-                    dispatch({
+                  onClick={() =>{
+                      dispatch({
                       type: "DELETE_FROM_CART",
                       payload: { id },
                     })
-                  }
+                    showAlert("Deleted from Cart", "error");
+                  }}
                 >
                   <i
                     className="fa fa-trash-o"
@@ -88,7 +86,7 @@ const Cart = () => {
                      <Alert
                        message={alert.message}
                        type={alert.type}
-                       onClose={() => setAlert(null)}
+                       onClose={hideAlert}
                       />
                      )}
       </div>

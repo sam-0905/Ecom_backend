@@ -6,6 +6,8 @@ import "./Category.css"
 import { useCart } from "../Context/Cart-context";
 import { useWish } from "../Context/Wish-context";
 import info from "../assets/Icon/Info.png"
+import { useAlert } from "../Context/Alert-context";
+import Alert from "../components/Alert";
 
 const CategoryPage = () => {
   const { categoryId } = useParams(); // Extract category name from URL
@@ -14,6 +16,7 @@ const CategoryPage = () => {
   const [error, setError] = useState(null);
   const {state,dispatch} = useCart();
   const {state: { wishlist },deleteFromWish,} = useWish();
+  const {showAlert , alert, hideAlert} = useAlert();
 
 
   useEffect(() => {
@@ -61,15 +64,29 @@ const CategoryPage = () => {
               <p className="category-price">Price: $ {price}</p>
               <h3 className="brand">Brand :{company}</h3>
               <div>
-              <button type="button" className="button-56" onClick={()=> dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})}>ADD TO CART</button>
+              <button type="button" className="button-56" onClick={()=> {
+                dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})
+                showAlert("Added to Cart!", "success");
+              }}>ADD TO CART</button>
 
-                    <button className="button-32 wish" onClick={()=> deleteFromWish({type:"ADD_TO_WISHLIST", payload:{id}})}> <i class="fa fa-heart" aria-hidden="true"></i>
+                    <button className="button-32 wish" onClick={()=> {
+                      deleteFromWish({type:"ADD_TO_WISHLIST", payload:{id}})
+                      showAlert("Added to Wishlist!", "success");
+                    }}> <i class="fa fa-heart" aria-hidden="true"></i>
                     </button>
                 <div className="info-btn"><Link to={`/product/${id}`}><img src={info} alt="" /></Link></div>
                     
                     </div>
+                    
             </div>
         ))}
+           {alert && (
+                     <Alert
+                       message={alert.message}
+                       type={alert.type}
+                       onClose={hideAlert}
+                      />
+                     )}
         </div>
       ) : (
         <p className="empty">No products found for this category.</p>

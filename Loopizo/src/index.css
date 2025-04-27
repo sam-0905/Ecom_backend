@@ -428,7 +428,7 @@ a:hover {
 
 .button-32 {
   background-color: #fff000;
-  border-radius: 30%;
+  border-radius: 50%;
   color: #000;
   cursor: pointer;
   font-weight: bold;
@@ -582,6 +582,7 @@ a:hover {
    width: 15%;
    cursor: pointer; 
    margin-right:0.5rem;
+   padding: 0.5rem;
 }
 
 

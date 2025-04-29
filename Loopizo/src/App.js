@@ -28,8 +28,10 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetail/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/wish" element={<WishList/>} />
         <Route path="/login" element={<Login/>} />  
+        <Route path="/wish" element={
+          <RequireAuth><WishList/></RequireAuth>
+        } />
         <Route path="/signup" element={
           <RequireAuth><Signup/></RequireAuth>
         } />

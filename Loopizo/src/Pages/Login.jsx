@@ -1,6 +1,5 @@
-import { use, useState } from "react";
-import { useNavigate } from "react-router";
-import Signup from './Signup';
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router";
 import { useAuth } from "../Context/Auth-context";
 
 const Login = () =>{
@@ -8,12 +7,14 @@ const Login = () =>{
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("");
     const [error,setError] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location)
 
     function handleLogin() {
         if (password === "4242"){
             setLogin(true)
-            navigate("/Signup")
+            navigate(location.state?.from?.pathname);
         }else{
             setPassword("");
             setError(true)

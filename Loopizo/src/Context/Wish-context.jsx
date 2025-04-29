@@ -4,7 +4,7 @@ import { wishReducer } from './../Reducer/WishList-reducer';
 
 const WishContext = createContext();
 
-const initialState = [];
+const initialState = JSON.parse(localStorage.getItem("wishlist")) || [];
 
 const WishListProvider = ({ children }) => {
   const [wishState, wishDispatch] = useReducer(wishReducer, initialState);
@@ -54,7 +54,10 @@ const WishListProvider = ({ children }) => {
     }
   };
   
-
+  useEffect(() => {
+    localStorage.setItem("wishlist", JSON.stringify(wishState));
+  }, [wishState]);
+  
   return (
     <WishContext.Provider value={{ wishState, wishDispatch, removeFromWishlist, addToWishlist }}>
       {children}

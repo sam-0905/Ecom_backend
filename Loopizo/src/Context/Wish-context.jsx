@@ -44,17 +44,16 @@ const WishListProvider = ({ children }) => {
     }
   };
 
-  const removeFromWishlist = async (product) => {
+  const removeFromWishlist = async (productId) => {
     try {
       const config = getAuthConfig();
-      const response = await axios.delete(`/api/user/wishlist/${product.id}`, config);
-      wishDispatch({ type: "REMOVE_FROM_WISHLIST", payload: product.id });
+      const response = await axios.delete(`/api/user/wishlist/${productId}`, config);
+      wishDispatch({ type: "SET_WISH", payload: response.data.wishlist }); 
     } catch (error) {
       console.error("Failed to remove from wishlist:", error);
     }
   };
   
-    
 
   return (
     <WishContext.Provider value={{ wishState, wishDispatch, removeFromWishlist, addToWishlist }}>

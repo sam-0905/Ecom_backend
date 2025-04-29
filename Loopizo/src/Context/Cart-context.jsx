@@ -7,10 +7,10 @@ const CartContext = createContext();
 const CartProvider = ({ children }) => {
   const initialState = { cartItems: [], quantity: 0, totalPrice: 0 };
   const [state, dispatch] = useReducer(cartRedFunc, initialState);
-  const token = localStorage.getItem("token");
+  const encodedToken = localStorage.getItem("token");
 
   const config = {
-    headers: { authorization: token },
+    headers: { authorization: encodedToken },
   };
 
   const getCart = async () => {
@@ -54,10 +54,10 @@ const CartProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    if (token) {
+    if (encodedToken) {
       getCart();
     }
-  }, [token]);
+  }, [encodedToken]);
 
   return (
     <CartContext.Provider value={{ state, dispatch, addToCart, removeFromCart, deleteFromCart }}>

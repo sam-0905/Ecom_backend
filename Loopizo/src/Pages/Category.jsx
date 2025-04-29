@@ -15,7 +15,7 @@ const CategoryPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const {state,dispatch} = useCart();
-  const {state: { wishlist },deleteFromWish,} = useWish();
+  const { wishState, wishDispatch } = useWish();
   const {showAlert , alert, hideAlert} = useAlert();
 
 
@@ -65,12 +65,12 @@ const CategoryPage = () => {
               <h3 className="brand">Brand :{company}</h3>
               <div>
               <button type="button" className="button-56" onClick={()=> {
-                dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}})
+                dispatch({type:"ADD_TO_CART", payload:{price,id,title,image}})
                 showAlert("Added to Cart!", "success");
               }}>ADD TO CART</button>
 
-                    <button className="button-32 wish" onClick={()=> {
-                      deleteFromWish({type:"ADD_TO_WISHLIST", payload:{id}})
+                    <button className="button-32 wish-btn" onClick={()=> {
+                      wishDispatch({type:"ADD_TO_WISHLIST", payload:{price,id,title,image}})
                       showAlert("Added to Wishlist!", "success");
                     }}> <i class="fa fa-heart" aria-hidden="true"></i>
                     </button>

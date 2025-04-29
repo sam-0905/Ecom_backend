@@ -25,7 +25,7 @@
 
     const {state,dispatch} = useCart();
 
-    const {state: { wishlist },AddToWish,} = useWish();
+    const { wishState, wishDispatch} = useWish();
 
     const {showAlert,alert, hideAlert} = useAlert();
 
@@ -132,11 +132,11 @@
                 }}> ADD TO CART</button>
 
              <button
-                  className="button-32 wish"
+                  className="button-32 wish-btn"
                   onClick={() => {
-                      AddToWish({
+                    wishDispatch({
                       type: "ADD_TO_WISHLIST",
-                      payload: { id },
+                      payload: { price, id, title, image },
                           })
                       showAlert("Added to Wishlist!", "success");
                          }}

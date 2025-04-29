@@ -5,9 +5,9 @@ import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { CartProvider } from "./Context/Cart-context";
-import { WishProvider } from "./Context/Wish-context";
 import { AlertProvider } from "./Context/Alert-context";
 import { AuthProvider } from "./Context/Auth-context";
+import { WishListProvider } from "./Context/Wish-context";
 
 
 // Call make Server
@@ -18,11 +18,11 @@ ReactDOM.render(
     <Router>
           <AuthProvider>
          <AlertProvider>
-        <WishProvider>
+        <WishListProvider>
        <CartProvider>
     <App />
        </CartProvider>
-       </WishProvider>
+       </WishListProvider>
        </AlertProvider>
        </AuthProvider>
    </Router>

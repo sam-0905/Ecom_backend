@@ -14,8 +14,8 @@ const WishList = () => {
   return (
     <>
       {wishState.length === 0 ? (
-          <div className=" animate__animated animate__rubberBand">
-          <img src={EmptyWish} alt="wish-card"className="empty-wish" />
+          <div className=" animate__animated animate__rubberBand empty-wish">
+          <img src={EmptyWish} alt="wish-card" />
           <h2 className="empty-wish-text">🛍️ Nothing here yet... go find something you love!</h2>
           </div>
       ) : (

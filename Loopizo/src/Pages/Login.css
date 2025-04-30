@@ -1,0 +1,123 @@
+
+  .login-wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 18px; /* Rounded corners for postcard shape */
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 1px 5px rgba(0, 0, 0, 0.05); /* Soft shadow with inset effect */
+    transition: all 0.3s ease-in-out; /* Smooth hover transition */
+    background: linear-gradient(145deg, #f0f0f0, #ffffff); /* Light gradient effect */
+  }
+  
+  .login-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2), inset 0 1px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+  }
+  
+  .login-card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff; /* Card title color */
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for input focus */
+  }
+  
+  .login-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow effect on focus */
+  }
+  
+  .login-label {
+    display: block;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+  
+  .login-label-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  
+  .remember-label {
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-right: 3.2rem;
+  }
+  
+  .set-cred-btn {
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .set-cred-btn:hover {
+    text-decoration: none;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth button hover transition */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+  
+  .create-account-link {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .create-account-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .create-account-link a:hover {
+    text-decoration: underline;
+  }
+  

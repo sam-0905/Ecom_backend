@@ -7,7 +7,7 @@ import Alert from "../components/Alert";
 import { Link } from "react-router";
 
 const Login = () => {
-  const { setLogin } = useAuth();
+  const { setIsLoggedIn } = useAuth();
   const {showAlert,alert,hideAlert} = useAlert();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,7 +26,7 @@ const Login = () => {
 
   const handleLogin = () => {
     if (password === "4242") {
-      setLogin(true);
+      setIsLoggedIn(true);
       // Save credentials in localStorage if "Remember Me" is checked
       if (remember) {
         localStorage.setItem("rememberedEmail", email);

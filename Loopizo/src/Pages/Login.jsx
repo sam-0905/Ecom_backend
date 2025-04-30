@@ -35,12 +35,12 @@ const Login = () => {
         localStorage.removeItem("rememberedEmail");
         localStorage.removeItem("rememberedPassword");
       }
-
+      showAlert("Logged in successfully!", "success");
       navigate(location.state?.from?.pathname || "/");
-      showAlert("LoggedIn successful!", "success");
     } else {
       setError(true);
       setPassword("");
+      showAlert("Incorrect password!", "error");
     }
   };
 

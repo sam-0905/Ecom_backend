@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 // import AppIcon from "../assets/images/AppIcon.svg"
 import Logo from "../assets/Icon/Logo.png"
 import { useAuth } from '../Context/Auth-context';
+import { useAlert } from '../Context/Alert-context';
 
 const getActiveLink = ({ isActive, isPending }) => ({
   margin: '1rem 0',
@@ -24,7 +25,8 @@ export const Title = () => (
   );
 
 const Header = () => {    
-    const {login,setLogin} = useAuth()
+    const {login,setLogin} = useAuth();
+    const {showAlert,alert,hideAlert} = useAlert()
    return (
     <>   
     <div className="header">
@@ -39,15 +41,15 @@ const Header = () => {
         <NavLink style={getActiveLink} to="/cart">
         <a className="fa fa-cart-arrow-down container"> Cart</a>
         </NavLink>
-        <NavLink 
-  style={getActiveLink} 
-  to="/login" 
-  onClick={() => setLogin((prev) => !prev)}
-  
->
-  <a className="fa fa-sign-in container">  {login ? "Logout" : "Login"}
-  </a>
-</NavLink>
+        <NavLink style={getActiveLink} to="/login" 
+        onClick={() =>{ {
+          setLogin((prev) => !prev)
+          showAlert("Logged out successfully!", "error")
+        }
+      }}
+        >
+        <a className="fa fa-sign-in container">  {login ? "Logout" : "Login"} </a>
+        </NavLink>
 
         <NavLink style={getActiveLink} to="/address">
         <a className="fa fa-cart-arrow-down container"> address</a>

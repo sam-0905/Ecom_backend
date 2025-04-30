@@ -25,8 +25,8 @@ export const Title = () => (
   );
 
 const Header = () => {    
-    const {login,setLogin} = useAuth();
-    const {showAlert,alert,hideAlert} = useAlert()
+    const {isLoggedIn,setIsLoggedIn} = useAuth();
+    const {showAlert} = useAlert()
    return (
     <>   
     <div className="header">
@@ -43,12 +43,12 @@ const Header = () => {
         </NavLink>
         <NavLink style={getActiveLink} to="/login" 
         onClick={() =>{ {
-          setLogin((prev) => !prev)
+          setIsLoggedIn((prev) => !prev)
           showAlert("Logged out successfully!", "error")
         }
       }}
         >
-        <a className="fa fa-sign-in container">  {login ? "Logout" : "Login"} </a>
+        <a className="fa fa-sign-in container">  {isLoggedIn ? "Logout" : "Login"} </a>
         </NavLink>
 
         <NavLink style={getActiveLink} to="/address">

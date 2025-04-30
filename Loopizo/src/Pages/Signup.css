@@ -1,72 +1,75 @@
-/* Reset some defaults */
-/* body, input, button {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-   */
-  .signup-container {
+.signup-container {
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f0f2f5;
+    /* background: linear-gradient(145deg, #f0f0f0, #ffffff); */
     padding: 20px;
+    margin-top: 3rem;
+    font-family: 'Segoe UI', sans-serif;
   }
   
   .signup-card {
-    background-color: #ffffff;
-    padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 18px;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 1px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .signup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2), inset 0 1px 8px rgba(0, 0, 0, 0.1);
   }
   
   .signup-title {
     text-align: center;
-    font-size: 26px;
-    margin-bottom: 24px;
-    color: #333333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1rem;
   }
   
   .signup-form .form-group {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   
   .signup-form label {
     display: block;
-    margin-bottom: 6px;
-    color: #555555;
-    font-weight: 500;
     text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
   }
   
   .signup-form input {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
+    padding: 0.75rem;
+    font-size: 1rem;
     border-radius: 8px;
-    font-size: 15px;
-    transition: border-color 0.2s ease;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
   }
   
   .signup-form input:focus {
     border-color: #007bff;
     outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   }
   
   .signup-button {
     width: 100%;
+    padding: 0.75rem;
     background-color: #007bff;
     color: white;
-    font-weight: 600;
     border: none;
-    padding: 10px 0;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.3s ease;
   }
   
   .signup-button:hover {
@@ -74,15 +77,16 @@
   }
   
   .signup-footer {
-    margin-top: 16px;
+    margin-top: 1rem;
+    font-size: 0.85rem;
     text-align: center;
-    font-size: 14px;
-    color: #555;
+    color: #333;
   }
   
   .signup-footer a {
     color: #007bff;
     text-decoration: none;
+    font-weight: 500;
   }
   
   .signup-footer a:hover {

@@ -32,9 +32,7 @@ function App() {
         <Route path="/wish" element={
           <RequireAuth><WishList/></RequireAuth>
         } />
-        <Route path="/signup" element={
-          <RequireAuth><Signup/></RequireAuth>
-        } />
+        <Route path="/signup" element={<Signup/>} />
         <Route path="/address" element={
           <RequireAuth><Address/></RequireAuth>
         } />

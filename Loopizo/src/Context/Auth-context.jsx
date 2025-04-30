@@ -8,14 +8,17 @@ const getStoredLogin = () => {
 };
 
 const AuthProvider = ({ children }) => {
-  const [login, setLogin] = useState(getStoredLogin);
+  const [isLoggedIn , setIsLoggedIn] = useState(getStoredLogin);
+
+  const login = () => setIsLoggedIn(true);
+  const logout = () => setIsLoggedIn(false);
 
   useEffect(() => {
-    localStorage.setItem("login", login);
-  }, [login]);
+    localStorage.setItem("login", isLoggedIn);
+  }, [isLoggedIn]);
 
   return (
-    <AuthContext.Provider value={{ login, setLogin }}>
+    <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn ,login,logout }}>
       {children}
     </AuthContext.Provider>
   );

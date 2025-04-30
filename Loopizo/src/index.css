@@ -578,27 +578,33 @@ a:hover {
 /* wish.css */
 
 .empty-wish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;               
+  justify-content: center;           
   text-align: center;
-  font-weight: 900;
-  padding: 1rem;
-  margin: 1rem auto;
-  max-width: 400px;
-  width: 20%;
-  object-fit: cover;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  width: 100%;
 }
 
-.empty-wish-text{
-  text-align: center;
+.empty-wish>img{
+  width: 20%;
+}
+
+.empty-wish-text {
+  display: inline-block;               
   font-weight: 900;
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  padding: 1rem;
-  margin: 1rem; 
-  border-radius: 80%;
-  font-family:cursive;
-  width: 60%;
-  margin-left: 16rem;
+  padding: 1rem 2rem;
+  margin: 1rem auto;                  
+  border-radius: 8px;
+  font-family: cursive;
+  text-align: center;
 }
+
+
 .wish-card {
   display: flex;
   align-items: center;

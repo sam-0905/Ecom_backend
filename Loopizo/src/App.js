@@ -27,12 +27,14 @@ function App() {
         <Route path="/products" element={<Products/>} />
         <Route path="/product/:productId" element={<ProductDetail/>} />
         <Route path="/category/:categoryId" element={<CategoryPage/>} />
-        <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login/>} />  
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/cart" element={
+          <RequireAuth><Cart /></RequireAuth>
+        } />
         <Route path="/wish" element={
           <RequireAuth><WishList/></RequireAuth>
         } />
-        <Route path="/signup" element={<Signup/>} />
         <Route path="/address" element={
           <RequireAuth><Address/></RequireAuth>
         } />

@@ -1,8 +1,5 @@
-
 //Nav link
 import { NavLink } from 'react-router-dom';
-// import AppIcon from "../assets/images/AppIcon.svg"
-import Logo from "../assets/Icon/Logo.png"
 import { useAuth } from '../Context/Auth-context';
 import { useAlert } from '../Context/Alert-context';
 
@@ -15,10 +12,6 @@ export const Title = () => (
     <div>
       <a href="/" className='logo-container'>
         <span className='logo-heading'>Loopizo</span>
-        <img className="logo" src={Logo} alt="logo" />
-        <span className='Nav' style={{marginRight:"5rem",marginTop:"0.5rem"}}><NavLink style={getActiveLink} to="/products">
-        <a className="fa fa-product-hunt container"> Products</a>
-        </NavLink></span>
       </a>
          
     </div>
@@ -32,8 +25,8 @@ const Header = () => {
     <div className="header">
          <Title/>
     <nav className="Nav link ">
-        <NavLink style={getActiveLink} to="/">
-        <a className="fa fa-home container"> Home  </a>
+        <NavLink style={getActiveLink} to="/products">
+        <a className="fa fa-product-hunt container"> Products  </a>
         </NavLink>
         <NavLink style={getActiveLink} to="/wish">
         <a className="fa fa-heart container"> Wishlist</a>

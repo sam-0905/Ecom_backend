@@ -25,9 +25,10 @@
 
     const {state,dispatch} = useCart();
 
-    const { wishState, wishDispatch} = useWish();
+    const { wishDispatch} = useWish();
 
     const {showAlert,alert, hideAlert} = useAlert();
+
 
     const onSearchInputHandler = (e) => setSearchTerm(e.target.value)
 
@@ -85,12 +86,14 @@
                     <button className="button-44" role="button" onClick={()=>{setSearchTerm(searchTerm)}}>Search</button>
                 </div>
                 {loader && <div className="loader" key={""}></div>}
+                
                 <div className="card">
                     {filteredData.length === 0 ? 
                     (<div className="no-products-message">
                         <h2>No Products Found</h2>
                         <p>Try adjusting your filters or search keyword.</p>
-                    </div>)
+                    </div>   
+                )
                 : (
                     filteredData.map(
                     ({
@@ -118,22 +121,31 @@
                             <p className="rating  fa fa-star " style={{color:'yellow'}}>
                                 <span class="rating-count"> {starRating}</span>
                             </p>
-                            <p className="in-stock-label">{inStock ? 'In Stock' : 'Out of Stock'}</p>
-                            <p className="delivery-info">{deliverable ? 'Deliverable' : 'Not Deliverable'}</p>
+                            <p className="in-stock-label"
+                               style={{ color: !inStock ? 'red' : "" }}
+
+                            >
+                            {inStock ? 'In Stock' : 'Out of Stock'}
+                            </p>
+
+                            <p className="delivery-info"
+                                style={{ color: !deliverable ? 'red' : "" }}
+                            >{deliverable ? 'Deliverable' : 'Not Deliverable'}</p>
 
                         </div>
-           <div>
-                <button className="button-56"onClick={() =>{
+                      
+                       <div>      
+                      <button className="button-56"onClick={() =>{
                        dispatch({
                         type: "ADD_TO_CART",
                         payload: { price, id, title, image },
                       });
                       showAlert("Added to Cart!", "success");
-                }}> ADD TO CART</button>
+                     }}> ADD TO CART</button>
 
-             <button
-                  className="button-32 wish-btn"
-                  onClick={() => {
+                     <button
+                      className="button-32 wish-btn"
+                    onClick={() => {
                     wishDispatch({
                       type: "ADD_TO_WISHLIST",
                       payload: { price, id, title, image },
@@ -144,14 +156,15 @@
                      <i className="fa fa-heart" aria-hidden="true"></i>
                       </button>
                 </div>
-                        <div className="info-btn"><Link to={`/product/${id}`}><img src={info} alt="" /></Link></div>
+                         
+                    <div className="info-btn"><Link to={`/product/${id}`}><img src={info} alt="" /></Link></div>
                     </div>
-                    
+    
                     )
                     ))  
                 }
-
                 </div>
+
                 {alert && (
                      <Alert
                        message={alert.message}

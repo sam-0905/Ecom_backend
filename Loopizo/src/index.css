@@ -9,11 +9,11 @@
   text-align: center;
   width: 100%;
   --primary-color: #0a1d29;
-  --secondary-color: #ADEFD1;
+  --secondary-color: #e1f1fa;
   --accent-color: #00d8ff;
   --light-color: #f0f4f8;
 }
-
+/* e1eff7 */
 html {
   box-sizing: border-box;
 }

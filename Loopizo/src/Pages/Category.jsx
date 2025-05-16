@@ -54,7 +54,7 @@ const CategoryPage = () => {
   return (
     <>
     <div>
-      <h2 className="category-head">Products in {categoryId}</h2> {/* Show selected category */}
+      <h2 className="category-head">{categoryId}</h2> 
       {products.length > 0 ? (
         <div className="category">
           {products.map(({ id, price, image ,company,title}) => (

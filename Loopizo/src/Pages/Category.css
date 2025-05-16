@@ -8,8 +8,7 @@ body {
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
-    color: darkorange;
-    background-color: ghostwhite;
+    color: var(--secondary-color);
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -75,7 +74,7 @@ img {
 .category-price {
     font-size: 18px;
     font-weight: bold;
-    color: lightgoldenrodyellow;
+    color: lightyellow;
 }
 
 /* Brand Name Styling */

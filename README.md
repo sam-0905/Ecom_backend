@@ -34,16 +34,29 @@ Loopizo is a modern, responsive e-commerce web app built with **React**. It offe
 ---
 
 ## 📁 Folder Structure
- src/
-├── assets / # contain Images,Icons,Logos
-├── components/ # Reusable UI components
-├── pages/ # Route components (Home, Cart, Wishlist, etc.)
-├── context/ # Global state using Context API
-├── reducers/ # Reducers for cart, wishlist, etc.
-├── services/ # API call functions (if any)
-├── App.js # Main app with routes
-└── index.js # Entry point
+
+    /*
+     src/
+    ├── assets / # contain Images,Icons,Logos
+    ├── components/ # Reusable UI components
+    ├── pages/ # Route components (Home, Cart, Wishlist, etc.)
+    ├── context/ # Global state using Context API
+    ├── reducers/ # Reducers for cart, wishlist, etc.
+    ├── App.js # Main app with routes
+    └── index.js # Entry point
+    */
+
 ---
+ 
+ ### Install dependencies
+
+- npm install  
+
+### Start the app
+
+- npm start
+🔗 Open (http://localhost:3000) in your browse
+
 
 ## 🧪 How to Run Locally
 

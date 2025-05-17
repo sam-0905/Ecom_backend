@@ -1,10 +1,37 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import homePage from "../assets/ProductImg/homePage.png";
+import homePage from "../assets/carouselImg/homePage.png";
+import homePage2 from "../assets/carouselImg/homePage2.png";
+import homePage3 from "../assets/carouselImg/homePage3.png";
+import homePage4 from "../assets/carouselImg/homePage4.png";
+
+import "../Pages/Home.css"
+
 import axios from "axios";
 
 const Home = () => {
   const [category, setCategory] = useState([]);
+  const images = [homePage,homePage2,homePage3,homePage4]
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
 
   // Fetch categories
   useEffect(() => {
@@ -24,7 +51,7 @@ const Home = () => {
       {/* Background Section */}
       <div
         style={{
-          backgroundImage: `url(${homePage})`,
+          backgroundImage: `url(${images[currentIndex]})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -34,6 +61,19 @@ const Home = () => {
           marginBottom: "0",
         }}
       >
+          <button className="carousel-btn prev" onClick={goToPrev}>◀</button>
+          <button className="carousel-btn next" onClick={goToNext}>▶</button>
+
+          <div className="carousel-dots">
+        {images.map((_, idx) => (
+          <div
+            key={idx}
+            className={`dot ${idx === currentIndex ? "active" : ""}`}
+            onClick={() => goToSlide(idx)}
+          />
+        ))}
+      </div>
+
         <div className="home">
           {/* <h1>Home</h1> */}
           <Link to="/products"><button className="button-9 home-btn">Shop</button></Link>

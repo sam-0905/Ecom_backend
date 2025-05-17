@@ -26,7 +26,7 @@ const WishList = () => {
               <img src={image} alt={title} className="wish-img" />
             </div>
             <div>
-              <h2>{title}</h2>
+              <h2 className="title">{title}</h2>
               <p className="price">Price: ${price}</p>
             </div>
             <div>

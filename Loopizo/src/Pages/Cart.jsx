@@ -23,7 +23,7 @@ const Cart = () => {
               <div>
                 <img src={image} alt={title} className="cart-img" />
               </div>
-              <div>
+              <div className="cart-details">
                 <h3>{title}</h3>
                 <p className="price">Price: ₹{price}</p>
                 <p className="quantity">Quantity: {quantity}</p>

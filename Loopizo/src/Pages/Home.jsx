@@ -22,7 +22,7 @@ const Home = () => {
   }, [images.length]);
 
   const goToPrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 ) % images.length);
   };
 
   const goToNext = () => {

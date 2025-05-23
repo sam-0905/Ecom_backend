@@ -9,7 +9,9 @@ const ProductDetail = () => {
   const { productId } = useParams();
   const [productDetails, setProductDetails] = useState(null);
   const [error, setError] = useState("");
-  const {state,dispatch} = useCart()
+  const {state,dispatch} = useCart();
+  const { title, image, description, price, company,id } = productDetails;
+  const {showAlert,alert, hideAlert} = useAlert();
   
 
   useEffect(() => {
@@ -41,9 +43,7 @@ const ProductDetail = () => {
     return <h2 style={{ color: "white" }}>Loading...</h2>;
   }
 
-  const { title, image, description, price, company,id } = productDetails;
 
-  const {showAlert,alert, hideAlert} = useAlert();
 
 
   return (
@@ -53,8 +53,8 @@ const ProductDetail = () => {
         <img src={image} alt={title} />
         <div className="product-details-text">
           <h2>{title}</h2>
-          <h3 style={{ color: "darkred" }}>Brand : {company}</h3>
           <h3>Price: ₹{price}</h3>
+          <h3 style={{ color: "darkgreen" }}>Brand : {company}</h3>
           <h4>Description : {description}</h4>
           <button className="button-56" onClick={()=> {
             dispatch({type:"ADD_TO_CART", payload:{price,id,name,image}});

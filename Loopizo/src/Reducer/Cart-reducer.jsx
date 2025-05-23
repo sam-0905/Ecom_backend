@@ -6,9 +6,9 @@ export function cartRedFunc(state, action) {
   switch (action.type) {
     case "SET_CART": {
       const cartItems = action.payload || [];
-      const quantity = cartItems.reduce((acc, item) => acc + item.qty, 0);
+      const quantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
       const totalPrice = cartItems.reduce(
-        (acc, item) => acc + item.price * item.qty,
+        (acc, item) => acc + item.price * item.quantity,
         0
       );
 
@@ -59,7 +59,7 @@ export function cartRedFunc(state, action) {
             ? { ...item, quantity: item.quantity - 1 }
             : item
         )
-        .filter(item => item.quantity > 0); // remove if qty = 0
+        .filter(item => item.quantity > 0); // remove if quantity = 0
 
       const quantity = updatedCartItems.reduce((acc, item) => acc + item.quantity, 0);
       const totalPrice = updatedCartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);

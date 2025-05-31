@@ -10,7 +10,6 @@ const ProductDetail = () => {
   const [productDetails, setProductDetails] = useState(null);
   const [error, setError] = useState("");
   const {state,dispatch} = useCart();
-  const { title, image, description, price, company,id } = productDetails;
   const {showAlert,alert, hideAlert} = useAlert();
   
 
@@ -43,6 +42,7 @@ const ProductDetail = () => {
     return <h2 style={{ color: "white" }}>Loading...</h2>;
   }
 
+  const { title, image, description, price, company,id } = productDetails;
 
 
 

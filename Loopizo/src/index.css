@@ -414,11 +414,10 @@ li {
   max-width: 700px;
   margin: 3rem auto;
   padding: 1.5rem;
-  background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: 16px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, #ADEFD1, #e53dc3);
+  background: linear-gradient(135deg, var(--secondary-color), #3a73ee);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease-in-out;
@@ -451,14 +450,12 @@ li {
   border-radius: 12px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  background-color: var(--primary-color);
 }
 
 .product-details-content img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 165, 0, 0.25); 
-  background-color:#eefa41;
+  /* box-shadow: 0 8px 24px rgba(255, 165, 0, 0.25);  */
+  /* background-color:#eefa41; */
 }
 
 /* Text Side */
@@ -475,14 +472,14 @@ li {
 }
 
 .product-details-text h3 {
-  color: lightgoldenrodyellow;
+  color: var(--primary-color);
   font-size: 1rem;
   margin-bottom: 0.2rem;
 }
 
 .product-details-text h4 {
   font-size: 0.9rem;
-  color: ghostwhite;
+  color: #e3eb07;
   line-height: 1.4;
 }
 

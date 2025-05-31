@@ -44,7 +44,7 @@ const Header = () => {
           )}
         </NavLink>
         {isLoggedIn ? (
-          <NavLink style={getActiveLink} to="/login" onClick={handleLogout}>
+          <NavLink style={getActiveLink} to="/login" >
             <span className="fa fa-sign-in container"> Logout </span>
           </NavLink>
         ) : (

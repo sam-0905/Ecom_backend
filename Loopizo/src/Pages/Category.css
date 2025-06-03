@@ -1,18 +1,22 @@
 /* Body Styling */
 body {
     background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Category Header */
 .category-head {
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
-    color: var(--secondary-color);
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+    padding: 1.25rem 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
 }
 
 /* Category Section */
@@ -22,73 +26,82 @@ body {
     gap: 1.5rem;
     justify-content: center;
     background-color: var(--secondary-color);
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 /* Images inside Category */
 img {
     width: 100%;
     height: auto;
+    display: block;
+    border-radius: 0.5rem;
 }
 
 /* Category Card Styling */
 .category-card {
-    margin: 1rem;
     width: 210px;
+    max-width: 100%;
+    margin: 1rem;
     padding: 1rem;
+    background-color: var(--primary-color);
     border: 2px solid #ddd;
     border-radius: 1rem;
-    background-color: var(--primary-color);
     color: var(--secondary-color);
     position: relative;
-    max-width: 210px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Category Card Hover Effect */
 .category-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Category Image Styling */
 .category-image {
-    height: 150px;
     width: 80%;
+    height: 150px;
     object-fit: cover;
-    margin: 1rem;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 0.5rem;
 }
 
 /* Category Title Styling */
 .category-title {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 900;
     color: var(--secondary-color);
     margin: 12px 0 8px;
-    line-height: 1.6;
     height: 44px;
     overflow: hidden;
+    line-height: 1.5;
+    text-align: center;
 }
 
 /* Category Price Styling */
 .category-price {
-    font-size: 18px;
-    font-weight: bold;
-    color: lightyellow;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff799;
+    text-align: center;
 }
 
 /* Brand Name Styling */
 .brand {
     color: #fff;
-    margin: 0;
     margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 /* Empty State Message */
 .empty {
-    font-size: x-large;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #888;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 /* Button Styling */
@@ -101,26 +114,21 @@ img {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
     line-height: 50px;
     text-align: center;
     text-decoration: none;
     user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button Hover Effect */
 .button-74:hover {
     background-color: #fff;
     transform: scale(1.05);
 }
 
-/* Button Active State */
 .button-74:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
@@ -129,7 +137,7 @@ img {
 /* Media Query for Larger Screens */
 @media (min-width: 768px) {
     .button-74 {
-        min-width: 120px;
-        padding: 0 25px;
+        min-width: 140px;
+        padding: 0 2rem;
     }
 }

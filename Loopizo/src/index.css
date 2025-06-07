@@ -638,6 +638,13 @@ li {
 /* mobile view */
 @media (max-width: 768px) {
 
+  .logo-heading{
+        font-size: 1rem;
+  }
+  .header{
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
   .main-content {
     flex-direction: column;
     padding: 0.5rem;
@@ -686,6 +693,7 @@ li {
     padding: 0.5rem;
     border-radius: 20px;
     width: 70%;
+    margin-left: auto;
   }
 
   .search-icon {
@@ -700,6 +708,11 @@ li {
     outline: none;
     width: 100%;  
     font-size: 1rem;
+  }
+  .button-44{
+     padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
   }
 }
 

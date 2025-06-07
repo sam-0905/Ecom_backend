@@ -18,7 +18,7 @@ export const Title = () => (
 );
 
 const Header = () => {
-  const { isLoggedIn} = useAuth();
+  const { isLoggedIn,logout} = useAuth();
   const { showAlert } = useAlert();
   const { state } = useCart();
   const { wishState } = useWish();
@@ -43,15 +43,25 @@ const Header = () => {
             <span className="badge">{state.quantity}</span>
           )}
         </NavLink>
-        {isLoggedIn ? (
-          <NavLink style={getActiveLink} to="/login" >
-            <span className="fa fa-sign-in container"> Logout </span>
-          </NavLink>
-        ) : (
-          <NavLink style={getActiveLink} to="/login">
-            <span className="fa fa-sign-in container"> Login </span>
-          </NavLink>
+
+       {isLoggedIn ? (
+        <NavLink style={getActiveLink} >
+         <span
+          className="fa fa-sign-out container"
+          onClick={() => {
+          logout();
+          showAlert("Logged out successfully", "success");
+          }}
+        >
+        Logout
+        </span>
+        </NavLink>
+     ) : (
+        <NavLink style={getActiveLink} to="/login">
+        <span className="fa fa-sign-in container">Login</span>
+        </NavLink>
         )}
+
         <NavLink style={getActiveLink} to="/address">
           <span className="fa fa-cart-arrow-down container"> Address</span>
         </NavLink>

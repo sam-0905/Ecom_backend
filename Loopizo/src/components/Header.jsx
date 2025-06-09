@@ -62,9 +62,9 @@ const Header = () => {
         </NavLink>
         )}
 
-        <NavLink style={getActiveLink} to="/address">
+        {/* <NavLink style={getActiveLink} to="/address">
           <span className="fa fa-cart-arrow-down container"> Address</span>
-        </NavLink>
+        </NavLink> */}
       </nav>
     </div>
   );

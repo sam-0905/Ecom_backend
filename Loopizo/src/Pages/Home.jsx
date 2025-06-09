@@ -50,6 +50,7 @@ const Home = () => {
     <>
       {/* Background Section */}
       <div
+        className="Carousel"
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
           backgroundPosition: "center",

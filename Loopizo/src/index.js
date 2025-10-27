@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./src/App";
+import App from "./App";
 import "./index.css"
-import { makeServer } from "./src/server";
+import "./App.css";
+import { makeServer } from "./server";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { CartProvider } from "./src/Context/Cart-context";
-import { AlertProvider } from "./src/Context/Alert-context";
-import { AuthProvider } from "./src/Context/Auth-context";
-import { WishListProvider } from "./src/Context/Wish-context";
+import { CartProvider } from "./Context/Cart-context";
+import { AlertProvider } from "./Context/Alert-context";
+import { AuthProvider } from "./Context/Auth-context";
+import { WishListProvider } from "./Context/Wish-context";
 
 
 // Call make Server

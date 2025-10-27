@@ -4,7 +4,7 @@ import { useAuth } from "../Context/Auth-context";
 import "./Login.css";
 import { useAlert } from "../Context/Alert-context";
 import Alert from "../components/Alert";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { setIsLoggedIn } = useAuth();

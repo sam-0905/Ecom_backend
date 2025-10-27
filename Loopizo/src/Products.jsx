@@ -3,7 +3,7 @@
     import Filters from "./Pages/Filters";
     import { useCart } from "./Context/Cart-context";
     import { useWish } from "./Context/Wish-context";
-    import { Link, useParams } from "react-router";
+    import { Link,useParams } from "react-router-dom";
     import info from "./assets/Icon/Info.png"
     import Alert from "./components/Alert";
     import { useAlert } from "./Context/Alert-context";

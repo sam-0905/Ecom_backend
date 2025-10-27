@@ -2,7 +2,7 @@
   "name": "e-commerce-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://.",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "animate.css": "^4.1.1",
@@ -15,14 +15,13 @@
     "mockman-js": "^1.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router": "^7.0.1",
-    "react-router-dom": "^7.0.1",
+    "react-router-dom": "^6.26.0",
     "react-scripts": "^0.0.0",
     "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "parcel index.html && parcel watch index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -40,5 +39,8 @@
   },
   "devDependencies": {
     "parcel": "^2.16.0"
-  }
+  },
+  "description": "This folder contains the Mock Backend created for E-Commerce App. It contains different API end-points and database configuration for building E-Commerce; so that you can focus on building Frontend.",
+  "author": "",
+  "license": "ISC"
 }

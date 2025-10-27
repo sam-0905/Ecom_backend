@@ -29,7 +29,7 @@
 49E:\Github\Ecom_backend\Loopizo\node_modules\@jest134060453577626631 1
 96E:\Github\Ecom_backend\Loopizo\node_modules\whatwg-url\node_modules\webidl-conversions\README.md133772527877525606 0
 63E:\Github\Ecom_backend\Loopizo\node_modules\react-dom\server.js133773594773911120 0
-62E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24-Fe.8bf2f193.png134060570380640695 0
+62E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24-Fe.8bf2f193.png134060602511983222 0
 90E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\features\css-motion-paths.js134060452985058044 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\3f0bc6d93436d8fe0c5bad783d6a5dbaeafdf201a4fecce12210501d70d9d448.json133783151039810195 0
 86E:\Github\Ecom_backend\Loopizo\node_modules\mockman-js\node_modules\axios\package.json133772360089685883 0
@@ -40,10 +40,10 @@
 42E:\Github\Ecom_backend\Loopizo\src\App.css133772670364771645 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\regions\PS.js134060453000425659 0
 48E:\Github\Ecom_backend\Loopizo\package-lock.json134060557833521196 0
-62E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-a9.d4b8d291.png134060570378774131 0
+62E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-a9.d4b8d291.png134060602509356416 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\react-router-dom\dist134060481139134295 1
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4c697ce070757065b3601801e037ca85a139a7e7bfa82835319c4226797f1b0f.json133918502809621871 0
-35E:\Github\Ecom_backend\Loopizo\dist134060578767860236 1
+35E:\Github\Ecom_backend\Loopizo\dist134060602513759130 1
 67E:\Github\Ecom_backend\Loopizo\node_modules\web-vitals\package.json133772360076210844 0
 53E:\Github\Ecom_backend\Loopizo\node_modules\fbemitter133772360053055908 1
 41E:\Github\Ecom_backend\Loopizo\.gitignore133772360220977557 0
@@ -187,7 +187,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\589f54b8b1564720001a4ad49b549bfa1eab62159c734ebd76c9e3a7af01b3d2.json133901268978873547 0
 105E:\Github\Ecom_backend\Loopizo\node_modules\react-textarea-autosize\dist\react-textarea-autosize.cjs.d.ts133772527942958924 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\lodash\_createCtor.js133772360116641754 0
-47E:\Github\Ecom_backend\Loopizo\src\Products.jsx134060494366466793 0
+47E:\Github\Ecom_backend\Loopizo\src\Products.jsx134060588700348894 0
 84E:\Github\Ecom_backend\Loopizo\build\static\media\ipad_10th.8a061c0c83a3ab60b8db.png134060394613042556 0
 48E:\Github\Ecom_backend\Loopizo\node_modules\uuid133772360101787436 1
 65E:\Github\Ecom_backend\Loopizo\node_modules\lodash\sortedIndex.js133772360149616259 0
@@ -288,7 +288,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\67e3bfe7f7dc6372424a2d8df588a3ff25d4a63148ae97d588ce14321dfd80ed.json133772543782244009 0
 73E:\Github\Ecom_backend\Loopizo\node_modules\pure-color\convert\hsv2hsl.js133772527931869946 0
 50E:\Github\Ecom_backend\Loopizo\node_modules\base-x134060452811441661 1
-49E:\Github\Ecom_backend\Loopizo\src\Pages\Home.jsx133939505584534128 0
+49E:\Github\Ecom_backend\Loopizo\src\Pages\Home.jsx134060599075401416 0
 72E:\Github\Ecom_backend\Loopizo\node_modules\uuid\dist\umd\uuidNIL.min.js133772360087601713 0
 76E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\src\relativeUrl.js134060452975277908 0
 73E:\Github\Ecom_backend\Loopizo\src\assets\ProductImg\Redmi_note_13pro.png133865887265170366 0
@@ -381,7 +381,7 @@
 75E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\regions\AW.js134060452950385815 0
 54E:\Github\Ecom_backend\Loopizo\src\backend\controllers133772359312181933 1
 64E:\Github\Ecom_backend\Loopizo\node_modules\lodash\lodash.min.js133772360146225725 0
-59E:\Github\Ecom_backend\Loopizo\src\backend\db\categories.js134060543433015506 0
+59E:\Github\Ecom_backend\Loopizo\src\backend\db\categories.js134060602503262689 0
 87E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\watcher\src\linux\InotifyBackend.cc134060452846985940 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\locale\en-il.js133772528012019168 0
 93E:\Github\Ecom_backend\Loopizo\node_modules\mockman-js\node_modules\react-json-view\README.md133773594773376793 0
@@ -403,7 +403,7 @@
 71E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\reporter-tracer\src134060452889988324 1
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\d5c44fa809b45c6731998f3dab13975c5b562637dbc77cfb19a3e98e5906748d.json133775957782643347 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\axios\lib\core\buildFullPath.js133772360064186930 0
-57E:\Github\Ecom_backend\Loopizo\src\backend\db\products.js133899656148419904 0
+57E:\Github\Ecom_backend\Loopizo\src\backend\db\products.js134060587354973184 0
 59E:\Github\Ecom_backend\Loopizo\node_modules\lodash\clamp.js133772360132090842 0
 59E:\Github\Ecom_backend\Loopizo\node_modules\uuid\dist\v1.js133772360092891585 0
 81E:\Github\Ecom_backend\Loopizo\node_modules\@swc\helpers\esm\_class_call_check.js134060452976935084 0
@@ -738,7 +738,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\7d3d5be3ac40b32a06783988927a2ba603efae74981ad11344a8797fdabf7f34.json133892955608494742 0
 61E:\Github\Ecom_backend\Loopizo\node_modules\lodash\_baseLt.js133772360105900473 0
 85E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\features\textencoder.js134060453003648922 0
-57E:\Github\Ecom_backend\Loopizo\dist\ipad_air.46cd0f9d.png134060570381835282 0
+57E:\Github\Ecom_backend\Loopizo\dist\ipad_air.46cd0f9d.png134060602513279698 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4ff27c1581434c3c1403e803e7853e1210da4ab271aae7cb770b37cfb5cdeb54.json133798669871716289 0
 64E:\Github\Ecom_backend\Loopizo\node_modules\.es6-symbol-hZ9kFrxN133772718781773392 1
 97E:\Github\Ecom_backend\Loopizo\node_modules\mockman-js\node_modules\axios\lib\helpers\buildURL.js133772360065652591 0
@@ -747,7 +747,7 @@
 83E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\core\lib\dumpGraphToGraphViz.js134060452974914084 0
 72E:\Github\Ecom_backend\Loopizo\node_modules\use-isomorphic-layout-effect133772527893288356 1
 82E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\watcher-win32-x64\watcher.node134060452842011547 0
-64E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds-fe-.6b1d520a.png134060570380650669 0
+64E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds-fe-.6b1d520a.png134060602511993231 0
 61E:\Github\Ecom_backend\Loopizo\node_modules\has-flag\index.js133783115339987163 0
 69E:\Github\Ecom_backend\Loopizo\src\assets\ProductImg\Redmi-Buds5c.png133865889731655443 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\namer-default134060452886097858 1
@@ -1134,7 +1134,7 @@
 60E:\Github\Ecom_backend\Loopizo\node_modules\.terser-HvVhNek3133783114360684282 1
 62E:\Github\Ecom_backend\Loopizo\node_modules\lodash\isRegExp.js133772360140319664 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\2264ed13df8c17b518a0c2d8b47111cfcb272e7f9a2a20e22271d82c0f9c8865.json133772543809807161 0
-58E:\Github\Ecom_backend\Loopizo\dist\iphone_16.729ed7e2.png134060570378804216 0
+58E:\Github\Ecom_backend\Loopizo\dist\iphone_16.729ed7e2.png134060602512155663 0
 68E:\Github\Ecom_backend\Loopizo\node_modules\lodash\_baseFindIndex.js133772360092984313 0
 92E:\Github\Ecom_backend\Loopizo\node_modules\@swc\helpers\cjs\_apply_decorated_descriptor.cjs134060452810418857 0
 56E:\Github\Ecom_backend\Loopizo\node_modules\@tootallnate134060453559648876 1
@@ -1822,7 +1822,7 @@
 71E:\Github\Ecom_backend\Loopizo\node_modules\uuid\dist\esm-browser\v3.js133772360093098172 0
 78E:\Github\Ecom_backend\Loopizo\node_modules\.cache\default-development\56.pack133904753602775864 0
 89E:\Github\Ecom_backend\Loopizo\node_modules\node-gyp-build-optional-packages\node_modules134060452801966718 1
-68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.15f7c1a6.eot134060570379769598 0
+68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.15f7c1a6.eot134060602510051638 0
 96E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\test\input\sourcemap\referenced-min.js134060452975096303 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4608339526f7a262abaff7d60b1af594e8fc5c4ca6f3762edcb071756fa9a5fe.json133892674253778628 0
 68E:\Github\Ecom_backend\Loopizo\node_modules\weak-lru-cache\README.md134060452830141669 0
@@ -2485,7 +2485,7 @@
 113E:\Github\Ecom_backend\Loopizo\node_modules\react-textarea-autosize\dist\react-textarea-autosize.cjs.default.d.ts133772527943399012 0
 69E:\Github\Ecom_backend\Loopizo\node_modules\loose-envify\package.json133772360033127915 0
 111E:\Github\Ecom_backend\Loopizo\node_modules\react-textarea-autosize\dist\react-textarea-autosize.cjs.default.js133772527892552546 0
-57E:\Github\Ecom_backend\Loopizo\dist\homePage.a906689c.png134060570382014681 0
+57E:\Github\Ecom_backend\Loopizo\dist\homePage.a906689c.png134060602510627668 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\regions\MU.js134060452997990555 0
 103E:\Github\Ecom_backend\Loopizo\node_modules\react-textarea-autosize\dist\react-textarea-autosize.cjs.js133772527893694456 0
 104E:\Github\Ecom_backend\Loopizo\node_modules\react-textarea-autosize\dist\react-textarea-autosize.cjs.mjs133772527936775165 0
@@ -2725,7 +2725,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\a86f5fbcfd62e445099126aff61cd4b5a11aa9cd2ec4115c549d3f7b89d87faa.json133890863570624531 0
 71E:\Github\Ecom_backend\Loopizo\node_modules\miragejs\dist\mirage-umd.js133772361145269322 0
 84E:\Github\Ecom_backend\Loopizo\node_modules\react-dom\cjs\react-dom.profiling.min.js133773594773820400 0
-58E:\Github\Ecom_backend\Loopizo\dist\EmptyCart.da481bf2.png134060570380608587 0
+58E:\Github\Ecom_backend\Loopizo\dist\EmptyCart.da481bf2.png134060602511973215 0
 69E:\Github\Ecom_backend\Loopizo\node_modules\@swc\counter\CHANGELOG.md134060452810310634 0
 98E:\Github\Ecom_backend\Loopizo\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\README.md134060452810669643 0
 73E:\Github\Ecom_backend\Loopizo\node_modules\@lmdb\lmdb-win32-x64\index.js134060452809084032 0
@@ -3060,7 +3060,7 @@
 89E:\Github\Ecom_backend\Loopizo\node_modules\node-gyp-build-optional-packages\package.json134060452812266151 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\dist\lib134060453002411085 1
 66E:\Github\Ecom_backend\Loopizo\node_modules\.type-zJ1quIeM\promise133772718786299843 1
-60E:\Github\Ecom_backend\Loopizo\dist\Redmi-Buds5.2b2f5812.png134060570380809940 0
+60E:\Github\Ecom_backend\Loopizo\dist\Redmi-Buds5.2b2f5812.png134060602509401916 0
 86E:\Github\Ecom_backend\Loopizo\node_modules\node-gyp-build-optional-packages\README.md134060452814413704 0
 101E:\Github\Ecom_backend\Loopizo\node_modules\@swc\helpers\cjs\_class_static_private_field_spec_set.cjs134060452906975839 0
 112E:\Github\Ecom_backend\Loopizo\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\index.d.ts134060452900270428 0
@@ -3416,7 +3416,7 @@
 67E:\Github\Ecom_backend\Loopizo\node_modules\lodash\sortedIndexOf.js133772360149678934 0
 100E:\Github\Ecom_backend\Loopizo\node_modules\mockman-js\node_modules\axios\lib\helpers\combineURLs.js133772360068913344 0
 100E:\Github\Ecom_backend\Loopizo\node_modules\@swc\helpers\_\_is_native_reflect_construct\package.json134060452988151938 0
-59E:\Github\Ecom_backend\Loopizo\dist\galaxy-s23.e06a27cd.png134060570380608587 0
+59E:\Github\Ecom_backend\Loopizo\dist\galaxy-s23.e06a27cd.png134060602511973215 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\9cd91d58643785732920f5093cd88000f8603665efab808d33093d70758f5557.json133888138670562065 0
 90E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\features\css-first-letter.js134060452982572053 0
 70E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\dropLastWhile.js133772360134960428 0
@@ -4127,7 +4127,7 @@
 58E:\Github\Ecom_backend\Loopizo\node_modules\lmdb\native.js134060452978491844 0
 64E:\Github\Ecom_backend\Loopizo\node_modules\lodash\_arrayEach.js133772360052517002 0
 95E:\Github\Ecom_backend\Loopizo\node_modules\@fortawesome\fontawesome-svg-core\import.macro.d.ts133783111749452139 0
-60E:\Github\Ecom_backend\Loopizo\dist\Loopizo.61d3354a.css.map134060578765928124 0
+60E:\Github\Ecom_backend\Loopizo\dist\Loopizo.61d3354a.css.map134060602510287582 0
 66E:\Github\Ecom_backend\Loopizo\node_modules\lodash\_arrayFilter.js133772360062798666 0
 83E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\reporter-cli\src\CLIReporter.js134060452897784448 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\8b2265980b2aba39cc40419990b9dd70e212a80e97ac5839ea57b10351d11976.json133899707462612497 0
@@ -4493,7 +4493,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\c892625bdba19deb780741c73536ab28549b59981941eb5c15efe23c6011be6c.json133783247821227949 0
 63E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\escape.js133772360135647060 0
 68E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\curryRightN.js133772360133937483 0
-62E:\Github\Ecom_backend\Loopizo\dist\Redmi_watch5g.cf04ce67.png134060570379857778 0
+62E:\Github\Ecom_backend\Loopizo\dist\Redmi_watch5g.cf04ce67.png134060602510121663 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\regions\MZ.js134060452998204074 0
 61E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\date.js133772360134023657 0
 71E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\workers\lib\process134060452909323371 1
@@ -4512,7 +4512,7 @@
 91E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\features\chacha20-poly1305.js134060452978150394 0
 67E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\difference.js133772360134698819 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\3a62fcbc57f30cd03252decb37e98c9d851b7662136a96b578e60506936111a8.json133904069838170690 0
-61E:\Github\Ecom_backend\Loopizo\dist\Redmi-Buds5c.a1ef2729.png134060570380608587 0
+61E:\Github\Ecom_backend\Loopizo\dist\Redmi-Buds5c.a1ef2729.png134060602511973215 0
 69E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\differenceBy.js133772360134743335 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\regions\MS.js134060452997917846 0
 63E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\dissoc.js133772360134807676 0
@@ -4682,7 +4682,7 @@
 62E:\Github\Ecom_backend\Loopizo\dist\Redmi_watch5g.595ed3bc.png134060509581652652 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\99017931a70141fc10e481f2fedabc473879595c31baea68d7a8e7d5422a2ce1.json133863228799821573 0
 63E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\isDate.js133772360138784026 0
-60E:\Github\Ecom_backend\Loopizo\dist\Apple-buds4.d5464403.png134060570380894553 0
+60E:\Github\Ecom_backend\Loopizo\dist\Apple-buds4.d5464403.png134060602509452002 0
 61E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\tail.js133772360150335946 0
 63E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\sample.js133772360149238249 0
 66E:\Github\Ecom_backend\Loopizo\node_modules\lodash\fp\isElement.js133772360138853803 0
@@ -5374,7 +5374,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\f1afe8420142ecd204c79095a4fd56035b419c2aec97a4ca5afd520775c542be.json133783750891330445 0
 63E:\Github\Ecom_backend\Loopizo\node_modules\get-port\index.d.ts134060452810324327 0
 61E:\Github\Ecom_backend\Loopizo\node_modules\get-port\index.js134060452810746129 0
-64E:\Github\Ecom_backend\Loopizo\dist\Redmi-Pad-Pro5g.f622266f.png134060570379878385 0
+64E:\Github\Ecom_backend\Loopizo\dist\Redmi-Pad-Pro5g.f622266f.png134060602512656981 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\get-port\package.json134060452809206645 0
 69E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\watcher-win32-x64134060452811311006 1
 82E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\features\progress.js134060453000305116 0
@@ -5522,7 +5522,7 @@
 90E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\features\link-rel-preload.js134060452995931104 0
 102E:\Github\Ecom_backend\Loopizo\node_modules\animate.css\source\rotating_entrances\rotateInDownLeft.css133872210182055471 0
 68E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\esm\plugin\weekday133772528063453342 1
-69E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-s10-ultra.291b4dd8.png134060570380650669 0
+69E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-s10-ultra.291b4dd8.png134060602511993231 0
 87E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-wasm\src\wasm-sourcemap.js134060452853584344 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\fbjs\lib\enumerate.js133772528016968774 0
 80E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\esm\plugin\weekYear\index.d.ts133772528063789198 0
@@ -5533,7 +5533,7 @@
 62E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\locale\bm.js133772527945866621 0
 70E:\Github\Ecom_backend\Loopizo\node_modules\fbjs\lib\equalsIterable.js133772528018140405 0
 66E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\optimizer-html134060452895707117 1
-68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.d3b5c43f.eot134060570381172131 0
+68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.d3b5c43f.eot134060602512497880 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\fbjs\lib\equalsIterable.js.flow133772528018268124 0
 86E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\core\src\requests\DevDepRequest.js134060452974751151 0
 66E:\Github\Ecom_backend\Loopizo\node_modules\fbjs\lib\ErrorUtils.js133772527924200787 0
@@ -5916,7 +5916,7 @@
 66E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\esm\locale\eo.js133772528013489363 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\locale\bn-bd.js133772527946755608 0
 75E:\Github\Ecom_backend\Loopizo\node_modules\caniuse-lite\data\regions\NZ.js134060452998893259 0
-60E:\Github\Ecom_backend\Loopizo\dist\Loopizo.aa436662.css.map134060570381991807 0
+60E:\Github\Ecom_backend\Loopizo\dist\Loopizo.aa436662.css.map134060602513119621 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\e859f403b3d8665ba9b203003a4bb32d246110262b5553828e37aad09f64d707.json133797789873978082 0
 62E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\locale\bn.js133772527947180876 0
 62E:\Github\Ecom_backend\Loopizo\node_modules\dayjs\locale\bo.js133772527947788258 0
@@ -7803,7 +7803,7 @@
 62E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\test134060452976134780 1
 65E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\markdown-ansi134060452849505363 1
 70E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\node-resolver-core134060452849117955 1
-59E:\Github\Ecom_backend\Loopizo\dist\Loopizo.31b563d9.js.map134060578767860236 0
+59E:\Github\Ecom_backend\Loopizo\dist\Loopizo.31b563d9.js.map134060602512791966 0
 65E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\optimizer-swc134060452894985254 1
 64E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-css134060452856095928 1
 78E:\Github\Ecom_backend\Loopizo\node_modules\.cache\default-development\18.pack133919566899058780 0
@@ -7994,7 +7994,7 @@
 79E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\src\parseCSSImport.js134060452973884143 0
 69E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\src\path.js134060452974039589 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\0d8b3e2510f92bfd87674b9bc62aac094365d187dfc11b9152111e6aaacf6011.json133904197504556907 0
-58E:\Github\Ecom_backend\Loopizo\dist\iphone_14.6e44c0d3.png134060570382334287 0
+58E:\Github\Ecom_backend\Loopizo\dist\iphone_14.6e44c0d3.png134060602513749106 0
 77E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\src\PromiseQueue.js134060452974926078 0
 71E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\src\schema.js134060452975523415 0
 74E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\utils\src\sourcemap.js134060452975618390 0
@@ -8260,7 +8260,7 @@
 68E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-svg\src134060452849254171 1
 83E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-svg\src\SVGPackager.js134060452849291580 0
 83E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-svg\lib\SVGPackager.js134060452848884002 0
-62E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch7.237b3bf9.png134060570380650669 0
+62E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch7.237b3bf9.png134060602511993231 0
 77E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-raw\package.json134060452854075314 0
 68E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-raw\src134060452850167675 1
 83E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\packager-raw\src\RawPackager.js134060452851103446 0
@@ -8336,7 +8336,7 @@
 105E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\package-manager\test\fixtures\has-a-not-yet-installed134060452938540102 1
 92E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\package-manager\test\fixtures\packages\a134060452943244774 1
 98E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\package-manager\test\fixtures\packages\foo-2.0134060452943796936 1
-67E:\Github\Ecom_backend\Loopizo\dist\Redmi_watch5g_lite.5eabe951.png134060570380456952 0
+67E:\Github\Ecom_backend\Loopizo\dist\Redmi_watch5g_lite.5eabe951.png134060602513017662 0
 101E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\package-manager\test\fixtures\packages\a\index.js134060452906562068 0
 105E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\package-manager\test\fixtures\packages\a\package.json134060452943280095 0
 102E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules134060452904592447 1
@@ -8387,7 +8387,7 @@
 73E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\markdown-ansi\LICENSE134060452843297545 0
 78E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\markdown-ansi\package.json134060452849557775 0
 69E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\markdown-ansi\src134060452848816323 1
-60E:\Github\Ecom_backend\Loopizo\dist\Redmi A4_5g.99a358b5.png134060570381202187 0
+60E:\Github\Ecom_backend\Loopizo\dist\Redmi A4_5g.99a358b5.png134060602509861634 0
 70E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\markdown-ansi\test134060452849249116 1
 86E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\markdown-ansi\lib\markdown-ansi.js134060452847229634 0
 61E:\Github\Ecom_backend\Loopizo\node_modules\@parcel\graph\src134060452903581416 1
@@ -8936,7 +8936,7 @@
 71E:\Github\Ecom_backend\Loopizo\node_modules\.react-scripts-6BPWy6N6\bin133783146530046287 1
 74E:\Github\Ecom_backend\Loopizo\node_modules\.react-scripts-6BPWy6N6\config133783146533935256 1
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\1ef53ab64b19956660a6f5cab3eeff8b4c1f7fa6bf4c148398b14e01bd9648bb.json133905066709784425 0
-65E:\Github\Ecom_backend\Loopizo\dist\Redmi_note_13pro.6824e589.png134060570379739597 0
+65E:\Github\Ecom_backend\Loopizo\dist\Redmi_note_13pro.6824e589.png134060602512442289 0
 71E:\Github\Ecom_backend\Loopizo\node_modules\.react-scripts-6BPWy6N6\lib133783135335156673 1
 75E:\Github\Ecom_backend\Loopizo\node_modules\.react-scripts-6BPWy6N6\scripts133783146535001648 1
 70E:\Github\Ecom_backend\Loopizo\node_modules\.object-hash-A6xUS6nx\test133783146531124655 1
@@ -9099,7 +9099,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\09b0f086ffd23fe6aa97f510b7589922ecfffb3b74e4c097a8fb795806fc68ad.json133772543809418443 0
 73E:\Github\Ecom_backend\Loopizo\node_modules\.bin\baseline-browser-mapping134060453008327277 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\09cf79e79874fb9ba0f8fa01d399cea7f3f14d5b6ab8197ee5eee80a5c37c419.json133783871890871883 0
-63E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-10.f18f87bb.png134060570380560548 0
+63E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-10.f18f87bb.png134060602513095149 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\09d380f69a244b4d70b17564ff3f4b7ece07560acc5a66e3f3d0e8a4419b14b5.json133895484181533479 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\09e3f8c178e93b0df8ca433a893740da887e059b6f26ae6913459e43aeea27fd.json133903840480646870 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\a34336b7ffbbc0be9fbd12bc52c3d2ea555f5101cf0d0127c4c1152808defb9d.json133783872681319396 0
@@ -9461,7 +9461,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\d41ae655210dec16f3c4905941dfe1533b4a9ecad32c87ce671329553c22afa9.json133903890619490178 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\325faad6c785d20f2febfae3a934efa244dea1885c2f4f7938f2ef1f99171c81.json133864963218807601 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\326b279dbfc1b05e021a46297820cfce7a86bab13ccf13ddadf826cceb4b43b0.json133918558454227779 0
-58E:\Github\Ecom_backend\Loopizo\dist\EmptyWish.f2419510.png134060570381413953 0
+58E:\Github\Ecom_backend\Loopizo\dist\EmptyWish.f2419510.png134060602510542532 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\c958b0a25b780e4f9de13ed1cbd440491e1566ea05bb4e0df86892c51e319c87.json133889098894793627 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\32991d59adaa9f7a260c77e248b922f97e87652f71b68dface81869ddd0cac65.json133888320834350978 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\32c83648c185e3a88ac142c1ed78a8bb8faaed303dec139320c327c48b0451bc.json133868690261513970 0
@@ -9734,7 +9734,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4dfdfcd8b3e6ecca2c4269a406afa31b437abdc30d223165577830e4301d5fde.json133918506838804709 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4e0f908ebcb48cf5fd0e4f2f620ed0a794f09b3c3f148c959228e959dcfb6c95.json133863248801034986 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4e4e302e8958bde7d10295378dadacc8a12738c787b7fb22ec3be478c1fcd41d.json133772543792519772 0
-57E:\Github\Ecom_backend\Loopizo\dist\ipad Pro.af7e8fc1.png134060570379759604 0
+57E:\Github\Ecom_backend\Loopizo\dist\ipad Pro.af7e8fc1.png134060602512467885 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4e5a877e76e493e82939b62fe65ecac3badd5f125a7595f0bf088261e1bbce46.json133867919948999091 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4e5b240b10d91c46536664c66f1042e75bc9d4955378962b8354db4f8587d0e4.json133902273560849427 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\4e5c9938bb4c9bc190878c8ffdd59cc1eb66c901a3f3e81073db7305d770969c.json133868689430119736 0
@@ -9828,7 +9828,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\571dd66c804a183023c8112caa6125fbd70c854925688a3dfdbe0113e393f6f8.json133772543810793390 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\5788fdb3f8f3d6535533b458c15ccdcc2a7681d245eacf58718e05ef7bc85fb6.json133892949558959037 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\5790f88546b99f5a9318ad97e4447de3c180abe5623127b1ada0d76a2e2f0d49.json133799530401301612 0
-67E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-ultra2.7422420d.png134060570380467012 0
+67E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-ultra2.7422420d.png134060602513032795 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\5794f0a12a3653bbe0944f1228e1458dd82deeb4f3ca8ad09b242285d977f9e5.json133783119662750519 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\57a60b0eea59ad0c78de719a84d25bab83dd83e26fa581fda919a4e116483cf3.json133898844300448401 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\57a6eca93fe8deb36a87170c26af478f16496a410b2a995e1a90ecd907c1d212.json133888138673151712 0
@@ -10103,7 +10103,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\6fed167caa55f4e969bc39bf2f64889c854eed624d9d1b98905412cac15b9698.json133798670805187821 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\6ff99f7ebf1ab9ed5fff948e99cc96e3692918d16c859ebcdd14a84b59845692.json133783903301022126 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\6ffece3ee32f8468add751fe4b61b1962246cdd290a785dc8211a373c5a1b892.json133888138757840432 0
-65E:\Github\Ecom_backend\Loopizo\dist\galaxy-s23-ultra.7805f27a.png134060570378762324 0
+65E:\Github\Ecom_backend\Loopizo\dist\galaxy-s23-ultra.7805f27a.png134060602509356416 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\703711b11dc09fd0e9b86f327483e8beae19017ce0896f96ed7ea2e535a1b3aa.json133905066680674053 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\70426bfbf4c9da9e032ab9c05ae41497d54a3f72e7f3075c3060a0c22a2c91e6.json133902153963464924 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\7072ca3da562cc916469ed998e8f9f0aa4b83250f5e56463d3cef3db4697264a.json133773586930569418 0
@@ -10414,7 +10414,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\903e2448cd62d9c697bec3cb5fcb8e33bd9f47c41b92b27f41c00215f5325f8f.json133783151037993434 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\9044fa95787e0ec7c11b4bf7d450c2db9357046209c3f115f5b0a5d3d9bb0699.json133772543800927259 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\90531da4f6388cc6bc906dbefac65c649ef42a971c19e9871c37eb5f23f92128.json133905066719025525 0
-46E:\Github\Ecom_backend\Loopizo\dist\index.html134060578765825241 0
+46E:\Github\Ecom_backend\Loopizo\dist\index.html134060602511941767 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\9f727b7782839bcb36ecb1d0904a99bbe3f6d094a667d8e429943e973c10fe43.json134060394273512281 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\905a67ad8d13ccdac15b30c5a78e160966ed19add8f215ffa49f36f3fbe632b0.json133919531370576365 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\907f5e9320560361d1569c894089b78c128353653056e251d165adb1e82d548a.json133865854056277759 0
@@ -10996,7 +10996,7 @@
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\e70b90000b2fe9ae85bec014137331df49d24ae0ab0b113d116ac7e54c733edc.json133773586933910413 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\c9dce45c89d9d3d22b784048dc929079b09cbd83de1ae8ddfd5426f3d271a280.json133902518049816588 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\ca12879f3c072e74e3c730b3ffe42be50b92457a07c6fe7349e65d5e588990a9.json133905066685998594 0
-65E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24-ultra.22d6c546.png134060570378762324 0
+65E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24-ultra.22d6c546.png134060602509356416 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\ca14b58d2fa6e739c2072346faf3e540d92df48e5155f27e386875583463a3a3.json133783119655639630 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\ca172340c8543221cc697f7f3b92eec2b6348245da201712112deb0387c6f2a3.json133775956243164263 0
 133E:\Github\Ecom_backend\Loopizo\node_modules\.cache\babel-loader\ca20beef1c3da4ab187a1df906beeac734aebb0027cbee7dd4b0db8f1d939500.json133888138713123505 0
@@ -11513,67 +11513,67 @@
 75E:\Github\Ecom_backend\Loopizo\node_modules\.bin\update-browserslist-db.cmd134060453008462337 0
 57E:\Github\Ecom_backend\Loopizo\node_modules\.bin\uuid.ps1133772360168456755 0
 64E:\Github\Ecom_backend\Loopizo\dist\Apple-buds-pro2.89bb56c9.png134060509482367753 0
-64E:\Github\Ecom_backend\Loopizo\dist\Apple-buds-pro2.91145bd0.png134060570380640695 0
+64E:\Github\Ecom_backend\Loopizo\dist\Apple-buds-pro2.91145bd0.png134060602509346371 0
 60E:\Github\Ecom_backend\Loopizo\dist\Apple-buds4.8dda4105.png134060509482367753 0
 63E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-10.884a13bf.png134060509581652652 0
-62E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-9.4b6cbb5d.png134060570381384270 0
+62E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-9.4b6cbb5d.png134060602509961731 0
 62E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-9.7e271cbf.png134060509482367753 0
-63E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-se.7a45ed80.png134060570379898426 0
+63E:\Github\Ecom_backend\Loopizo\dist\Apple-watch-se.7a45ed80.png134060602512666981 0
 58E:\Github\Ecom_backend\Loopizo\dist\EmptyCart.165140ff.png134060509482377854 0
-68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.3073213d.svg134060570380523953 0
+68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.3073213d.svg134060602511941767 0
 68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.3981e506.eot134060509581012895 0
 70E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.58488e7e.woff2134060509581012895 0
-70E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.77f3c83b.woff2134060570379529600 0
-68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.8ecea74b.ttf134060570379769598 0
+70E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.77f3c83b.woff2134060602509779621 0
+68E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.8ecea74b.ttf134060602510051638 0
 69E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.ed962b83.woff134060509482347761 0
-69E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.f477251c.woff134060570380700895 0
+69E:\Github\Ecom_backend\Loopizo\dist\fontawesome-webfont.f477251c.woff134060602512310847 0
 64E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds-fe-.115f19d3.png134060509482377854 0
 65E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds3-pro.517e4517.png134060509482377854 0
-65E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds3-pro.a0b896a8.png134060570380650669 0
+65E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds3-pro.a0b896a8.png134060602511993231 0
 61E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds3.3079f427.png134060509581652652 0
-61E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds3.3d897d6d.png134060570378762324 0
+61E:\Github\Ecom_backend\Loopizo\dist\galaxy-buds3.3d897d6d.png134060602509356416 0
 65E:\Github\Ecom_backend\Loopizo\dist\galaxy-s23-ultra.b8b0f641.png134060509581652652 0
 59E:\Github\Ecom_backend\Loopizo\dist\galaxy-s23.f773043f.png134060509482377854 0
 65E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24-ultra.bc0cf8e1.png134060509581652652 0
-59E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24.3f220354.png134060570380640695 0
+59E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24.3f220354.png134060602511983222 0
 59E:\Github\Ecom_backend\Loopizo\dist\galaxy-s24.ba6eba46.png134060509482377854 0
 62E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-a9.fdf9b8de.png134060509581652652 0
-63E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-s10.1f330d06.png134060570378774131 0
+63E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-s10.1f330d06.png134060602509356416 0
 63E:\Github\Ecom_backend\Loopizo\dist\galaxy-tab-s10.20170929.png134060509581652652 0
 68E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch-ultra-.4ab00f50.png134060509581652652 0
-68E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch-ultra-.c56438c2.png134060570378762324 0
-62E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch5.46e5ecda.png134060570378774131 0
+68E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch-ultra-.c56438c2.png134060602509356416 0
+62E:\Github\Ecom_backend\Loopizo\dist\galaxy-watch5.46e5ecda.png134060602509356416 0
 57E:\Github\Ecom_backend\Loopizo\dist\homePage.b90f2525.png134060509581652652 0
 58E:\Github\Ecom_backend\Loopizo\dist\homePage2.00209bbc.png134060509482377854 0
-58E:\Github\Ecom_backend\Loopizo\dist\homePage2.99fa1331.png134060570382092715 0
-58E:\Github\Ecom_backend\Loopizo\dist\homePage3.f92721d5.png134060570382214891 0
-58E:\Github\Ecom_backend\Loopizo\dist\homePage4.0766b863.png134060570382092715 0
-53E:\Github\Ecom_backend\Loopizo\dist\Info.7f899134.png134060570378752141 0
+58E:\Github\Ecom_backend\Loopizo\dist\homePage2.99fa1331.png134060602513581996 0
+58E:\Github\Ecom_backend\Loopizo\dist\homePage3.f92721d5.png134060602510677647 0
+58E:\Github\Ecom_backend\Loopizo\dist\homePage4.0766b863.png134060602513581996 0
+53E:\Github\Ecom_backend\Loopizo\dist\Info.7f899134.png134060602509332595 0
 57E:\Github\Ecom_backend\Loopizo\dist\ipad Pro.55f0096b.png134060509581652652 0
 58E:\Github\Ecom_backend\Loopizo\dist\ipad_10th.0bba4fb8.png134060509581652652 0
-58E:\Github\Ecom_backend\Loopizo\dist\ipad_10th.90363083.png134060570378752141 0
-59E:\Github\Ecom_backend\Loopizo\dist\ipad_mini_.840bbaff.png134060570380121140 0
+58E:\Github\Ecom_backend\Loopizo\dist\ipad_10th.90363083.png134060602509346371 0
+59E:\Github\Ecom_backend\Loopizo\dist\ipad_mini_.840bbaff.png134060602510458692 0
 59E:\Github\Ecom_backend\Loopizo\dist\ipad_mini_.d857eb2a.png134060509581652652 0
 58E:\Github\Ecom_backend\Loopizo\dist\iphone_14.e084286e.png134060509581652652 0
-58E:\Github\Ecom_backend\Loopizo\dist\iphone_15.a12bb275.png134060570380884534 0
+58E:\Github\Ecom_backend\Loopizo\dist\iphone_15.a12bb275.png134060602509442017 0
 58E:\Github\Ecom_backend\Loopizo\dist\iphone_16.939c1881.png134060509581652652 0
 61E:\Github\Ecom_backend\Loopizo\dist\iphone_16pro.20c04382.png134060509482377854 0
-61E:\Github\Ecom_backend\Loopizo\dist\iphone_16pro.a83109a7.png134060570380914552 0
+61E:\Github\Ecom_backend\Loopizo\dist\iphone_16pro.a83109a7.png134060602509452002 0
 58E:\Github\Ecom_backend\Loopizo\dist\iphone_se.4ee9d5b1.png134060509482377854 0
-58E:\Github\Ecom_backend\Loopizo\dist\iphone_se.b3ed9457.png134060570382290765 0
-55E:\Github\Ecom_backend\Loopizo\dist\Loopizo.31b563d9.js134060578767745157 0
+58E:\Github\Ecom_backend\Loopizo\dist\iphone_se.b3ed9457.png134060602510717699 0
+55E:\Github\Ecom_backend\Loopizo\dist\Loopizo.31b563d9.js134060602511952423 0
 55E:\Github\Ecom_backend\Loopizo\dist\Loopizo.3879b1b3.js134060509581917981 0
-56E:\Github\Ecom_backend\Loopizo\dist\Loopizo.61d3354a.css134060578765855525 0
-56E:\Github\Ecom_backend\Loopizo\dist\Loopizo.aa436662.css134060570381825206 0
-60E:\Github\Ecom_backend\Loopizo\dist\Redmi 13 5G.a26d85b4.png134060570381212193 0
+56E:\Github\Ecom_backend\Loopizo\dist\Loopizo.61d3354a.css134060602509332595 0
+56E:\Github\Ecom_backend\Loopizo\dist\Loopizo.aa436662.css134060602512626828 0
+60E:\Github\Ecom_backend\Loopizo\dist\Redmi 13 5G.a26d85b4.png134060602509851642 0
 60E:\Github\Ecom_backend\Loopizo\dist\Redmi A4_5g.d4152d1c.png134060509482377854 0
-66E:\Github\Ecom_backend\Loopizo\dist\Redmi Note_13Pro+.61d1414d.png134060570380864544 0
+66E:\Github\Ecom_backend\Loopizo\dist\Redmi Note_13Pro+.61d1414d.png134060602509391779 0
 60E:\Github\Ecom_backend\Loopizo\dist\Redmi-Buds5.a8020350.png134060509482377854 0
-61E:\Github\Ecom_backend\Loopizo\dist\Redmi-Pad-SE.eb9e78c6.png134060570381222200 0
-63E:\Github\Ecom_backend\Loopizo\dist\Redmi-Pad-SE4g.6e44ac94.png134060570379739597 0
-58E:\Github\Ecom_backend\Loopizo\dist\Redmi_A3X.756af301.png134060570379739597 0
+61E:\Github\Ecom_backend\Loopizo\dist\Redmi-Pad-SE.eb9e78c6.png134060602509971747 0
+63E:\Github\Ecom_backend\Loopizo\dist\Redmi-Pad-SE4g.6e44ac94.png134060602512442289 0
+58E:\Github\Ecom_backend\Loopizo\dist\Redmi_A3X.756af301.png134060602512442289 0
 67E:\Github\Ecom_backend\Loopizo\dist\Redmi_watch5g_lite.fee92f3c.png134060509581652652 0
-67E:\Github\Ecom_backend\Loopizo\dist\samsung-galaxy-a56.470d8f6d.png134060570380640695 0
+67E:\Github\Ecom_backend\Loopizo\dist\samsung-galaxy-a56.470d8f6d.png134060602511993231 0
 56E:\Github\Ecom_backend\Loopizo\build\asset-manifest.json134060394613687371 0
 48E:\Github\Ecom_backend\Loopizo\build\favicon.ico133299097730000000 0
 50E:\Github\Ecom_backend\Loopizo\build\manifest.json133299097730000000 0

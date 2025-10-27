@@ -9,23 +9,23 @@ export const categories = [
   {
     id: uuid(),
     categoryName: "Mobile Phones",
-    image: require("../../assets/ProductImg/galaxy-s23.png")
+    image: new URL("../../assets/ProductImg/galaxy-s23.png", import.meta.url).href
   },
   {
     id: uuid(),
     categoryName: "Watches",
-      image: require("../../assets/ProductImg/Redmi_watch5g.png")
+      image: new URL("../../assets/ProductImg/Redmi_watch5g.png",import.meta.url).href
   }, 
   {
     id: uuid(),
     categoryName: "Buds",
-      image: require("../../assets/ProductImg/Redmi-Buds5c.png")
+      image:  new URL( "../../assets/ProductImg/Redmi-Buds5c.png",import.meta.url).href
   }, 
   {
     id: uuid(),
     categoryName: "Tablets",
-      image: require("../../assets/ProductImg/ipad_10th.png")
-  },
+      image:new URL( "../../assets/ProductImg/ipad_10th.png",import.meta.url).href
+  }, 
 ];
 
 

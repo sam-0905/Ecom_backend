@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import homePage from "../assets/carouselImg/homePage.png";
-import homePage2 from "../assets/carouselImg/homePage2.png";
-import homePage3 from "../assets/carouselImg/homePage3.png";
-import homePage4 from "../assets/carouselImg/homePage4.png";
-
 import "../Pages/Home.css"
 
 import axios from "axios";
 
 const Home = () => {
   const [category, setCategory] = useState([]);
-  const images = [homePage,homePage2,homePage3,homePage4]
+const images = [
+  new URL("../assets/carouselImg/homePage.png",import.meta.url).href,
+  new URL("../assets/carouselImg/homePage2.png", import.meta.url).href,
+  new URL("../assets/carouselImg/homePage3.png", import.meta.url).href,
+  new URL("../assets/carouselImg/homePage4.png", import.meta.url).href
+];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

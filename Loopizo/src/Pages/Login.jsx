@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/Auth-context";
 import "./Login.css";
 import { useAlert } from "../Context/Alert-context";

@@ -2,6 +2,7 @@
   "name": "e-commerce-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "animate.css": "^4.1.1",
@@ -16,14 +17,14 @@
     "react-dom": "^18.3.1",
     "react-router": "^7.0.1",
     "react-router-dom": "^7.0.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^0.0.0",
     "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "parcel index.html && parcel watch index.html",
+    "build": "parcel build index.html",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -37,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
   }
 }

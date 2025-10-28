@@ -2,7 +2,7 @@
   "name": "e-commerce-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "animate.css": "^4.1.1",

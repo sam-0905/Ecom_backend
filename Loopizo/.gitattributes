@@ -1,3 +1,4 @@
 *.parcel-cache filter=lfs diff=lfs merge=lfs -text
 *.data.mdb filter=lfs diff=lfs merge=lfs -text
 *data.mdb filter=lfs diff=lfs merge=lfs -text
+*.data.mdbLoopizo/.parcel-cache/data.mdb filter=lfs diff=lfs merge=lfs -text

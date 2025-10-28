@@ -46,7 +46,6 @@ const ProductDetail = () => {
 
   return (
     <div className="product-details-container">
-      <h1>Info</h1>
       <div className="product-details-content">
         <img   src={new URL(image, import.meta.url).href} alt={title} />
         <div className="product-details-text">

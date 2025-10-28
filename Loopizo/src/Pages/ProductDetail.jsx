@@ -11,13 +11,12 @@ const ProductDetail = () => {
   const [error, setError] = useState("");
   const {state,dispatch} = useCart();
   const {showAlert,alert, hideAlert} = useAlert();
-  
+    console.log("This is a product detail page")
 
   useEffect(() => {
     axios.get("/api/products")
       .then((res) => {
-        const productList = res.data.products;
-
+        const productList = res.data.products;  
         const product = productList.find(
           (item) => String(item.id) === String(productId)
         );
@@ -45,12 +44,11 @@ const ProductDetail = () => {
   const { title, image, description, price, company,id } = productDetails;
 
 
-
   return (
     <div className="product-details-container">
-      {/* <h1>Product Details</h1> */}
+      <h1>Info</h1>
       <div className="product-details-content">
-        <img src={image} alt={title} />
+        <img   src={new URL(image, import.meta.url).href} alt={title} />
         <div className="product-details-text">
           <h2>{title}</h2>
           <h3>Price: ₹{price}</h3>

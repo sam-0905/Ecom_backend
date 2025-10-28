@@ -74,7 +74,7 @@ const Cart = () => {
         ) : (
           <div className="animate__animated animate__fadeInLeft">
             <img
-              src={EmptyCart}
+              src={new URL("../assets/Icon/EmptyCart.png",import.meta.url).href}
               alt="Empty Cart"
               className="empty-cart"
             />

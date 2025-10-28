@@ -157,7 +157,7 @@
                       </button>
                 </div>
                          
-                    <div className="info-btn"><Link to={`/product/${id}`}><img src={info} alt="" /></Link></div>
+                    <div className="info-btn"><Link to={`/product/${id}`}><img src={new URL("./assets/Icon/Info.png",import.meta.url).href} alt="" /></Link></div>
                     </div>
     
                     )
